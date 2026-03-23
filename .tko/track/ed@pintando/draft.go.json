@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-20-30",
+            "content": "@@ -24,36 +24,15 @@\n mt%22 \n-%0A        %22math%22%0A        )   \n+%22math%22)\n %0Afun\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_16-21-11",
+            "content": "@@ -194,34 +194,22 @@\n ip*(\n-semi\n p-n1)*(\n-semi\n p-n2)*(\n-semi\n p-n3\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_16-21-31",
+            "content": "@@ -99,12 +99,10 @@\n rea \n-floa\n+in\n t%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_16-21-41",
+            "content": "@@ -104,10 +104,8 @@\n loat\n-64\n %0A   \n@@ -247,11 +247,9 @@\n f(%22%25\n-.2f\n+d\n %22, a\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_16-22-03",
+            "content": "@@ -252,10 +252,8 @@\n %25.2f\n-%5Cn\n %22, a\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_16-22-14",
+            "content": "@@ -19,16 +19,17 @@\n t (%22fmt%22\n+ \n %0A       \n@@ -45,16 +45,19 @@\n        )\n+   \n %0Afunc ma\n@@ -103,16 +103,20 @@\n float64%0A\n+    \n %0A    fmt\n@@ -240,19 +240,22 @@\n fmt.\n-p\n+P\n rint\n+f\n (%22%25.2f\n+%5Cn\n %22, a\n@@ -259,11 +259,10 @@\n , area)%0A\n-%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_16-26-56",
+            "content": "@@ -233,17 +233,16 @@\n mt.print\n-f\n (%22%25.2f%22,\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-27-01",
+            "content": "@@ -232,9 +232,9 @@\n fmt.\n-P\n+p\n rint\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-27-08",
+            "content": "@@ -244,10 +244,8 @@\n %25.2f\n-%5Cn\n %22, a\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-27-16",
+            "content": "package main\nimport (\"fmt\"\n        \"math\"\n        )\nfunc main() {\n    var n1, n2, n3, semip, area float64\n\n    fmt.Scan(&n1, &n2, &n3)\n\n    semip = (n1 + n2 + n3)/2\n    area = math.Sqrt(semip*(semip-n1)*(semip-n2)*(semip-n3))\n\n    fmt.Printf(\"%.2f\\n\", area)\n\n}\n",
+            "lines": "15"
+        }
+    ]
+}
