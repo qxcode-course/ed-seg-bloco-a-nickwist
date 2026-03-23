@@ -21,3 +21,15 @@
 2026-03-23 16:27:08, EXEC, v:1, k:ed@pintando, mode:FULL, rate:0, size:15
 2026-03-23 16:27:16, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100, size:15
 2026-03-23 16:27:19, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-03-23 16:31:35, SELF, v:1, k:ed@pintando, self:1, rate:100, study:7, friend:nao
+2026-03-23 16:31:59, SELF, v:1, k:ed@pintando, self:1, rate:100, study:7, friend:Nao
+2026-03-23 16:32:09, MOVE, v:1, k:ed@mumia, mode:DOWN
+2026-03-23 16:32:10, MOVE, v:1, k:ed@mumia, mode:PICK
+2026-03-23 16:43:57, EXEC, v:1, k:ed@mumia, mode:FULL, size:29, fail:COMP
+2026-03-23 16:43:58, EXEC, v:1, k:ed@mumia, mode:FULL, fail:COMP
+2026-03-23 16:44:26, EXEC, v:1, k:ed@mumia, mode:FULL, size:27, fail:COMP
+2026-03-23 16:44:36, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:21
+2026-03-23 16:44:52, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100, size:21
+2026-03-23 16:45:13, SELF, v:1, k:ed@mumia, self:1, rate:100, study:10, friend:Nao
+2026-03-23 16:45:16, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-23 16:45:23, SELF, v:1, k:ed@mumia, self:1, rate:100, study:13, friend:Nao
