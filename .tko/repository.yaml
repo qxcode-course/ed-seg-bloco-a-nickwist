@@ -14,8 +14,8 @@ sources:
   tasks: null
 expanded:
 - ed@revisão
-- ed@main-quest
 - ed@árvore
+- ed@main-quest
 tasks:
   ed@pintando: '{self:1, rate:100, study:7, friend:Nao}'
   ed@mumia: '{self:1, rate:100, study:13, friend:Nao}'
