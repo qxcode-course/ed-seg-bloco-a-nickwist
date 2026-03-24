@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_23-18-41",
+            "content": "@@ -41,504 +41,35 @@\n     \n-var NC, i, ganhador, arrem1, arrem2, pontuacao, pontuacaoganhador int%0A%0A%0A    for i = 0; i%3CNC %7B%0A        fmt.Scan(&arrem1, &arrem2)%0A        if arrem1 %3C 10 %7C%7C arrem2 %3C 10 %7B%0A            continue%0A        %7D %0A        %0A        if arrem1 %3C arrem2 %7B%0A            pontuacao = arrem2 - arrem1%0A        %7D else %7B%0A            pontuacao = arrem1 - arrem2%0A        %7D%0A%0A        if ganhador == 0 %7B%0A            ganhador = i%0A        %7D else if pontuacaoganhador %3E pontuacao %7B%0A            ganhador = i%0A        %7D else %7B%7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_23-18-45",
+            "content": "@@ -132,13 +132,8 @@\n i%3CNC\n-; i++\n  %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_23-19-03",
+            "content": "@@ -544,33 +544,6 @@\n   %7D%0A\n-    printf(%22%25d%22, ganhador)%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_23-19-29",
+            "content": "@@ -548,13 +548,9 @@\n     \n-fmt.P\n+p\n rint\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_23-19-35",
+            "content": "@@ -445,50 +445,8 @@\n = i%0A\n-            pontuacaoganhador = pontuacao%0A\n     \n@@ -520,50 +520,8 @@\n = i%0A\n-            pontuacaoganhador = pontuacao%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_23-20-10",
+            "content": "@@ -400,16 +400,117 @@\n      if \n+ganhador == 0 %7B%0A            ganhador = i%0A            pontuacaoganhador = pontuacao%0A        %7D else if \n pontuaca\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-23_23-21-36",
+            "content": "@@ -404,102 +404,8 @@\n  if \n-i == 0 %7B%0A            ganhador = i%0A            pontuacaoganhador = pontuacao%0A        %7D else if \n pont\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_23-22-24",
+            "content": "@@ -400,33 +400,17 @@\n      if \n-pontuacaoganhador\n+i\n  == 0 %7B%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-23_23-28-04",
+            "content": "@@ -121,17 +121,16 @@\n for i = \n-1\n 0; i%3CNC;\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-23_23-31-36",
+            "content": "@@ -121,16 +121,17 @@\n for i = \n+1\n 0; i%3CNC;\n@@ -453,11 +453,9 @@\n r = \n-100\n+i\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-23_23-34-21",
+            "content": "@@ -111,34 +111,8 @@\n int%0A\n-    pontuacaoganhador = 0%0A\n %0A%0A  \n@@ -440,33 +440,35 @@\n      ganhador = \n-i\n+100\n %0A            pon\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-23_23-34-56",
+            "content": "@@ -166,31 +166,8 @@\n + %7B%0A\n-        fmt.Println(A)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-23_23-35-27",
+            "content": "@@ -186,11 +186,9 @@\n tln(\n-%22A%22\n+A\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-23_23-35-32",
+            "content": "@@ -111,26 +111,34 @@\n int%0A\n-%0A\n     \n-fmt.Scan(&NC)\n+pontuacaoganhador = 0%0A\n %0A%0A  \n@@ -162,16 +162,41 @@\n ; i++ %7B%0A\n+        fmt.Println(%22A%22)%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-23_23-36-15",
+            "content": "@@ -673,10 +673,8 @@\n (%22%25d\n-%5Cn\n %22, g\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-23_23-36-21",
+            "content": "@@ -655,75 +655,8 @@\n   %7D%0A\n-    if ganhador == 0 %7B%0A        fmt.Println(%22sem ganhador%5Cn%22)%0A    %7D%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-23_23-36-53",
+            "content": "@@ -716,23 +716,8 @@\n n%22)%0A\n-        return%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-23_23-37-03",
+            "content": "@@ -707,16 +707,18 @@\n ganhador\n+%5Cn\n %22)%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-23_23-37-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var NC, i, ganhador, arrem1, arrem2, pontuacao, pontuacaoganhador int\n\n    fmt.Scan(&NC)\n\n    for i = 0; i<NC; i++ {\n        fmt.Scan(&arrem1, &arrem2)\n        if arrem1 < 10 || arrem2 < 10 {\n            continue\n        } \n        \n        if arrem1 < arrem2 {\n            pontuacao = arrem2 - arrem1\n        } else {\n            pontuacao = arrem1 - arrem2\n        }\n\n        if pontuacaoganhador == 0 {\n            ganhador = i\n            pontuacaoganhador = pontuacao\n        } else if pontuacaoganhador > pontuacao {\n            ganhador = i\n            pontuacaoganhador = pontuacao\n        } else {}\n    }\n    if ganhador == 0 {\n        fmt.Println(\"sem ganhador\")\n        return\n    }\n    fmt.Printf(\"%d\\n\", ganhador)\n}\n",
+            "lines": "33"
+        }
+    ]
+}

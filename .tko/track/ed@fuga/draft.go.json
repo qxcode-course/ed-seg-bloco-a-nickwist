@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_22-50-01",
+            "content": "@@ -47,17 +47,17 @@\n r H, P, \n-f\n+F\n , D int%0A\n@@ -79,17 +79,17 @@\n H, &P, &\n-f\n+F\n , &D)%0A%0A \n@@ -123,17 +123,17 @@\n F != H; \n-f\n+F\n ++ %7B%0A   \n@@ -607,11 +607,45 @@\n  else %7B%7D\n+%0A%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-03-23_22-50-49",
+            "content": "@@ -47,17 +47,17 @@\n r H, P, \n-F\n+f\n , D int%0A\n@@ -79,17 +79,17 @@\n H, &P, &\n-F\n+f\n , &D)%0A%0A \n@@ -125,12 +125,16 @@\n != H\n+; f++\n  %7B%0A\n-%0A\n     \n@@ -239,33 +239,33 @@\n             fmt.\n-P\n+p\n rintln(%22N%5Cn%22)%0A  \n@@ -302,25 +302,8 @@\n    %7D\n-%0A%0A            F++\n %0A   \n@@ -321,17 +321,17 @@\n     fmt.\n-P\n+p\n rintln(%22\n@@ -378,16 +378,21 @@\n r F != H\n+; F--\n  %7B%0A     \n@@ -561,24 +561,8 @@\n   %7D%0A\n-            F--%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-23_22-53-41",
+            "content": "@@ -505,33 +505,33 @@\n             fmt.\n-P\n+p\n rintln(%22N%5Cn%22)%0A  \n@@ -595,33 +595,33 @@\n   %7D%0A        fmt.\n-P\n+p\n rintln(%22S%5Cn%22)%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-53-51",
+            "content": "@@ -344,16 +344,18 @@\n intln(%22S\n+%5Cn\n %22)%0A    %7D\n@@ -604,33 +604,33 @@\n    fmt.Println(%22\n-N\n+S\n %5Cn%22)%0A    %7D else \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-54-21",
+            "content": "@@ -344,18 +344,16 @@\n intln(%22S\n-%5Cn\n %22)%0A    %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-54-49",
+            "content": "@@ -604,33 +604,33 @@\n    fmt.Println(%22\n-S\n+N\n %5Cn%22)%0A    %7D else \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-55-10",
+            "content": "@@ -613,16 +613,18 @@\n intln(%22S\n+%5Cn\n %22)%0A    %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-55-22",
+            "content": "@@ -245,32 +245,34 @@\n   fmt.Println(%22N\n+%5Cn\n %22)%0A             \n@@ -336,32 +336,34 @@\n   fmt.Println(%22S\n+%5Cn\n %22)%0A    %7D else if\n@@ -523,16 +523,18 @@\n intln(%22N\n+%5Cn\n %22)%0A     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-55-32",
+            "content": "@@ -390,16 +390,78 @@\n  != H %7B%0A\n+            if F == -1 %7B%0A                F = 15%0A            %7D%0A\n         \n@@ -562,83 +562,8 @@\n    %7D\n-%0A%0A            if F == 0 %7B%0A                F = 15%0A            %7D%0A            \n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_22-58-34",
+            "content": "@@ -561,20 +561,9 @@\n     \n-    continue\n+%7D\n %0A   \n@@ -563,34 +563,32 @@\n   %7D%0A            \n-%7D%0A\n %0A            F--\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_22-59-17",
+            "content": "@@ -176,33 +176,8 @@\n = 0%0A\n-                continue%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-23_22-59-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n\n    fmt.Scan(&H, &P, &F, &D)\n\n    if D == 1 {\n        for F != H {\n\n            if F == 16 {\n                F = 0\n                continue\n            }\n            \n            if F == P {\n                fmt.Println(\"N\")\n                return\n            }\n\n            F++\n        }\n        fmt.Println(\"S\")\n    } else if D == -1 {\n        for F != H {\n            \n            if F == P {\n                fmt.Println(\"N\")\n                return\n            }\n\n            if F == 0 {\n                F = 15\n                continue\n            }\n\n            F--\n        }\n        fmt.Println(\"S\")\n    } else {}\n}\n",
+            "lines": "41"
+        }
+    ]
+}
