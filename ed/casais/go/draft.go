@@ -1,16 +1,24 @@
 package main
 import "fmt"
 func main() {
-    var quant, x, i int
-    var animal []int
+    var pares, i, quant, x int
+    var animal map[int] bool
+    animal = make(map[int] bool)
 
     fmt.Scan(&quant)
 
-    for fmt.Scan(&x) == 1 {
-        a = append(a, x)
+    for i = 0; i < quant; i++ {
+        fmt.Scan(&x)
+        animal[x] = true
+        if animal[-x] {
+            pares++
+            delete(animal, -x)
+            delete(animal, x)
+        }
+
+        
     }
+    fmt.Println(pares)
 
-    for i=0; i<quant; i++
-        if animal[i]
-
+    
 }

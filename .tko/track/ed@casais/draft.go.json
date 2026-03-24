@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_11-01-21",
+            "content": "@@ -56,16 +56,19 @@\n quant, x\n+, i\n  int%0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_11-01-31",
+            "content": "@@ -84,20 +84,19 @@\n map%5Bint%5D\n-bool\n+int\n %0A    ani\n@@ -118,12 +118,11 @@\n int%5D\n-bool\n+int\n )%0A%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_11-02-39",
+            "content": "@@ -51,11 +51,8 @@\n res,\n- i,\n  qua\n@@ -80,25 +80,24 @@\n mal map%5Bint%5D\n- \n bool%0A    ani\n@@ -115,17 +115,16 @@\n map%5Bint%5D\n- \n bool)%0A%0A \n@@ -131,42 +131,32 @@\n    f\n-or i = 0; i %3C quant; i++ %7B\n+mt.Scan(&quant)%0A\n %0A    \n-   \n+for\n  fmt\n@@ -164,17 +164,48 @@\n Scan(&x)\n-%0A\n+ == 1 %7B%0A        animal%5Bx%5D = true\n %0A       \n@@ -213,18 +213,17 @@\n if anima\n-is\n+l\n %5B-x%5D %7B%0A \n@@ -255,45 +255,12 @@\n   %7D%0A\n-%0A        animais%5Bx%5D = true%0A    %7D%0A%0A\n     \n+%7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_11-16-06",
+            "content": "@@ -197,17 +197,18 @@\n if anima\n-l\n+is\n %5B-x%5D %7B%0A \n@@ -250,17 +250,18 @@\n    anima\n-l\n+is\n %5Bx%5D = tr\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-24_11-16-19",
+            "content": "@@ -270,31 +270,8 @@\n    %7D\n-%0A    fmt.Println(pares)\n %0A%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-24_11-16-41",
+            "content": "@@ -163,34 +163,8 @@\n + %7B%0A\n-        fmt.Println(%22aa%22)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-24_11-17-14",
+            "content": "@@ -131,30 +131,8 @@\n l)%0A%0A\n-    fmt.Scan(&quant)%0A%0A\n     \n@@ -159,16 +159,42 @@\n ; i++ %7B%0A\n+        fmt.Println(%22aa%22)%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-24_11-19-07",
+            "content": "@@ -251,255 +251,8 @@\n s++%0A\n-            for chave, valor := range animal %7B%0A                if valor == x %7B%0A                    delete(animal, chave)%0A                %7D%0A%0A                if valor == -x %7B%0A                    delete(animal, chave)%0A                %7D%0A            %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-24_11-23-03",
+            "content": "@@ -1,270 +1,230 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var pares, i, quant, x int%0A    var animal map%5Bint%5D bool%0A    animal = make(map%5Bint%5D bool)%0A%0A    fmt.Scan(&quant)%0A%0A    for i = 0; i %3C quant; i++ %7B%0A        fmt.Scan(&x)%0A%0A        if animal%5B-x%5D %7B%0A            pares++%0A       \n+@@ -247,16 +247,103 @@%0A pares++%250A%0A+            for chave, valor := range animal %257B%250A                if valor == x %257B%250A        %0A         %0A@@ -361,17 +361,21 @@%0A animal, %0A-x%0A+chave%0A )%250A      %0A@@ -384,26 +384,107 @@%0A\n      \n+%0A-\n dele\n@@ -238,63 +238,75 @@\n al, \n+-\n x)%0A\n++\n     \n-        delete(animal, -x)%0A            %0A\n+%257D%250A%250A                if valor == -x %257B%250A    \n         \n %7D%0A%0A \n@@ -305,19 +305,16 @@\n     \n-%7D%0A%0A\n         \n anim\n@@ -313,58 +313,56 @@\n     \n-animal%5Bx%5D = true%0A\n+delete(animal, chave)%250A      \n     \n-%7D%0A\n+  \n     \n-fmt.Println(pares)%0A%0A \n+%257D%0A %250A\n    %0A\n-%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-24_11-24-00",
+            "content": "@@ -231,37 +231,8 @@\n %5D %7B%0A\n-            fmt.Println(%22a%22)%0A\n     \n@@ -308,16 +308,29 @@\n al, -x)%0A\n+            %0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-25-13",
+            "content": "@@ -251,17 +251,19 @@\n Println(\n-x\n+%22a%22\n )%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-25-40",
+            "content": "@@ -301,17 +301,16 @@\n animal, \n--\n x)%0A     \n@@ -323,32 +323,33 @@\n  delete(animal, \n+-\n x)%0A        %7D%0A%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-27-55",
+            "content": "@@ -206,32 +206,8 @@\n &x)%0A\n-        animal%5Bx%5D = true\n %0A   \n@@ -354,16 +354,32 @@\n         \n+animal%5Bx%5D = true\n %0A    %7D%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-29-01",
+            "content": "@@ -251,16 +251,43 @@\n l%5B-x%5D %7B%0A\n+            fmt.Println(x)%0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-24_11-29-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pares, i, quant, x int\n    var animal map[int] bool\n    animal = make(map[int] bool)\n\n    fmt.Scan(&quant)\n\n    for i = 0; i < quant; i++ {\n        fmt.Scan(&x)\n        animal[x] = true\n        if animal[-x] {\n            pares++\n            delete(animal, -x)\n            delete(animal, x)\n        }\n\n        \n    }\n    fmt.Println(pares)\n\n    \n}\n",
+            "lines": "24"
+        }
+    ]
+}
