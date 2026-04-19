@@ -47,3 +47,17 @@
 2026-04-19 01:06:29, MOVE, v:1, k:ed@gomos, mode:BACK
 2026-04-19 01:06:46, SELF, v:1, k:ed@gomos, self:1, rate:100, study:55
 2026-04-19 01:07:11, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-04-19 12:48:37, MOVE, v:1, k:ed@casais, mode:PICK
+2026-04-19 12:48:39, EXEC, v:1, k:ed@casais, mode:FULL, rate:0
+2026-04-19 12:48:53, EXEC, v:1, k:ed@casais, mode:FREE
+2026-04-19 12:49:02, MOVE, v:1, k:ed@casais, mode:BACK
+2026-04-19 12:49:05, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-04-19 12:49:06, EXEC, v:1, k:ed@pintando, mode:FULL, rate:100
+2026-04-19 12:49:08, MOVE, v:1, k:ed@pintando, mode:BACK
+2026-04-19 12:49:09, MOVE, v:1, k:ed@casais, mode:PICK
+2026-04-19 12:51:26, EXEC, v:1, k:ed@casais, mode:FULL, rate:0
+2026-04-19 12:52:58, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:23
+2026-04-19 12:53:22, MOVE, v:1, k:ed@casais, mode:EDIT
+2026-04-19 12:53:24, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:23
+2026-04-19 12:55:19, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:22
+2026-04-19 12:55:26, MOVE, v:1, k:ed@casais, mode:BACK

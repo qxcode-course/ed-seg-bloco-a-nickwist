@@ -77,8 +77,23 @@
         },
         {
             "label": "2026-04-18_20-41-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pares, i, quant, total, x int\n    var animal map[int] bool\n    animal = make(map[int] bool)\n\n\n    fmt.Scan(&total)\n    fmt.Scan(&quant)\n\n    for i = 0; i < quant; i++ {\n        fmt.Scan(&x)\n        animal[x] = true\n        if animal[-x] {\n            pares++\n            delete(animal, -x)\n            delete(animal, x)\n        }\n\n        \n    }\n    fmt.Println(pares)\n\n    \n}\n",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -47,16 +47,19 @@\n r pares,\n+ i,\n  quant, \n@@ -79,16 +79,44 @@\n     \n+var \n animal \n-:\n+map%5Bint%5D bool%0A    animal \n = ma\n@@ -130,14 +130,17 @@\n int%5D\n-int\n+ bool\n )%0A%0A\n+%0A\n     \n@@ -192,9 +192,8 @@\n r i \n-:\n = 0;\n@@ -231,16 +231,40 @@\n can(&x)%0A\n+        animal%5Bx%5D = true\n %0A       \n@@ -281,12 +281,8 @@\n %5B-x%5D\n- %3E 0\n  %7B%0A \n@@ -316,61 +316,67 @@\n     \n-animal%5B-x%5D--%0A        %7D else %7B%0A            animal%5Bx%5D++\n+delete(animal, -x)%0A            delete(animal, x)%0A        %7D%0A\n %0A   \n@@ -384,17 +384,15 @@\n     \n-%7D\n %0A    %7D%0A\n-%0A\n     \n@@ -409,11 +409,17 @@\n n(pares)\n+%0A%0A    \n %0A%7D%0A\n",
             "lines": "26"
+        },
+        {
+            "label": "2026-04-19_12-52-58",
+            "content": "@@ -356,14 +356,8 @@\n ares\n-, %22aa%22\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-19_12-53-24",
+            "content": "@@ -52,18 +52,22 @@\n res,\n- i,\n  quant,\n+ total,\n  x i\n@@ -100,15 +100,35 @@\n int%5D\n-boo\n+int)%0A%0A    fmt.Scan(&tota\n l)%0A\n-%0A\n     \n@@ -155,16 +155,17 @@\n   for i \n+:\n = 0; i %3C\n@@ -221,16 +221,20 @@\n imal%5B-x%5D\n+ %3E 0\n  %7B%0A     \n@@ -264,26 +264,20 @@\n     \n-delete(animal, -x)\n+animal%5B-x%5D--\n %0A   \n@@ -315,15 +315,10 @@\n l%5Bx%5D\n- = true\n+++\n %0A   \n@@ -352,12 +352,18 @@\n ln(pares\n+, %22aa%22\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-19_12-55-19",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var pares, i, quant, x int\n    animal := make(map[int]bool)\n\n    fmt.Scan(&quant)\n\n    for i = 0; i < quant; i++ {\n        fmt.Scan(&x)\n\n        if animal[-x] {\n            pares++\n            delete(animal, -x)\n        } else {\n            animal[x] = true\n        }\n    }\n\n    fmt.Println(pares)\n}\n",
+            "lines": "22"
         }
     ]
 }
