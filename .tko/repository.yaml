@@ -15,14 +15,14 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@basic
 - ed@map_set
+- ed@basic
 flags:
-  inbox: inbox
+  inbox: all
   panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@map_set
-selected_index: 4
+selected: ed@princesa
+selected_index: 10

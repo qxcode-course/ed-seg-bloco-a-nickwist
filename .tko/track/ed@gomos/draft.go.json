@@ -1,0 +1,169 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_00-41-17",
+            "content": "@@ -41,17 +41,20 @@\n     var \n-i\n+x, y\n , quantG\n@@ -74,231 +74,12 @@\n mov \n-string%0A    var x %5B%5Dint%0A    var y %5B%5Dint%0A%0A    x = make(int%5B%5D, 0)%0A    y = make(int%5B%5D, 0)%0A%0A    for i := 0; i %3C quantG; i++ %7B%0A        var z, w int%0A%0A        fmt.Scan(&z, &w)%0A        x = append(x, z)%0A        y = append(y, w)%0A    %7D\n+char\n %0A%0A  \n@@ -128,35 +128,8 @@\n  &y)\n-%0A%0A    if mov == %22L%22 %7B%0A    %7D\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-19_00-42-59",
+            "content": "@@ -116,29 +116,29 @@\n    x = make(\n-%5B%5D\n int\n+%5B%5D\n , 0)%0A    y =\n@@ -143,21 +143,21 @@\n  = make(\n-%5B%5D\n int\n+%5B%5D\n , 0)%0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-19_00-43-50",
+            "content": "@@ -40,16 +40,19 @@\n %0A    var\n+ i,\n  quantG \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-19_00-44-11",
+            "content": "@@ -386,13 +386,27 @@\n Println(\n-x\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-19_00-44-21",
+            "content": "@@ -155,37 +155,8 @@\n 0)%0A%0A\n-    fmt.Scan(&quantG, &mov)%0A%0A\n     \n@@ -289,16 +289,66 @@\n %0A    %7D%0A%0A\n+    fmt.Scan(&quantG, &mov)%0A    fmt.Scan(&x, &y)%0A%0A\n     if m\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-19_00-45-47",
+            "content": "@@ -342,57 +342,8 @@\n %22 %7B%0A\n-        for i := quantG; i %3E 0; i-- %7B%0A%0A        %7D%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-19_00-47-45",
+            "content": "@@ -1,466 +1,124 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var quantG int%0A    var mov string%0A    var x %5B%5Dint%0A    var y %5B%5Dint%0A%0A    x = make(%5B%5Dint, 0)%0A    y = make(%5B%5Dint, 0)%0A%0A    fmt.Scan(&quantG, &mov)%0A%0A    for i := 0; i %3C quantG; i++ %7B%0A        var z, w int%0A%0A        fmt.Scan(&z, &w)%0A        x = append(x, z)%0A        y = append(y, w)%0A    %7D%0A%0A    if mov == %22L%22 %7B%0A        for i := quantG-1; i %3E 0; i-- %7B%0A            %0A            x%5Bi%5D = x%5Bi-1%5D%0A        %7D%0A    %7D%0A    %0A    fmt.Println(x)%0A%7D\n+@@ -365,16 +365,13 @@%0A antG%0A--1%0A ; i %253E%0A-=%0A  0; %0A@@ -380,33 +380,8 @@%0A - %257B%250A%0A-            x%255Bi%255D = x%255Bi-1%255D%0A %250A   \n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-19_00-52-20",
+            "content": "@@ -391,32 +391,49 @@\n        %0A        \n+    x%5Bi%5D = x%5Bi-1%5D\n %0A        %7D%0A    %7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-19_00-52-35",
+            "content": "@@ -403,25 +403,8 @@\n     \n-    x%5Bi%5D = x%5Bi-1%5D\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-19_00-52-52",
+            "content": "@@ -394,26 +394,9 @@\n     \n-if i-1 != 0 %7B%0A    \n+%0A\n     \n@@ -421,75 +421,8 @@\n -1%5D%0A\n-            %7D else %7B%0A                x%5Bi%5D = x%5Bi%5D - 1%0A            %7D%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-19_00-53-55",
+            "content": "@@ -491,41 +491,8 @@\n - 1%0A\n-                fmt.Println(%22a%22)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-19_00-54-38",
+            "content": "@@ -473,17 +473,17 @@\n       x%5B\n-1\n+i\n %5D = x%5Bi%5D\n@@ -487,16 +487,49 @@\n %5Bi%5D - 1%0A\n+                fmt.Println(%22a%22)%0A\n         \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-04-19_00-54-57",
+            "content": "@@ -477,12 +477,21 @@\n   x%5B\n-i%5D--\n+1%5D = x%5Bi%5D - 1\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-19_00-55-47",
+            "content": "@@ -475,18 +475,18 @@\n     x%5Bi%5D\n-++\n+--\n %0A       \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-19_00-56-41",
+            "content": "@@ -368,17 +368,16 @@\n G-1; i %3E\n-=\n  0; i-- \n@@ -394,16 +394,18 @@\n     if i\n+-1\n  != 0 %7B%0A\n@@ -475,18 +475,18 @@\n     x%5Bi%5D\n---\n+++\n %0A       \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-19_00-57-44",
+            "content": "@@ -510,198 +510,8 @@\n    %7D\n-%0A%0A    if mov == %22D%22 %7B%0A        for i := quantG-1; i %3E= 0; i-- %7B%0A            if i != 0 %7B%0A                x%5Bi%5D = x%5Bi-1%5D%0A            %7D else %7B%0A                x%5Bi%5D++%0A            %7D%0A        %7D%0A    %7D\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-19_00-58-15",
+            "content": "@@ -527,9 +527,9 @@\n == %22\n-R\n+D\n %22 %7B%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-19_00-58-46",
+            "content": "@@ -700,388 +700,8 @@\n    %7D\n-%0A%0A    if mov == %22U%22 %7B%0A        for i := quantG-1; i %3E= 0; i-- %7B%0A            if i != 0 %7B%0A                y%5Bi%5D = y%5Bi-1%5D%0A            %7D else %7B%0A                y%5Bi%5D--%0A            %7D%0A        %7D%0A    %7D%0A%0A    if mov == %22D%22 %7B%0A        for i := quantG-1; i %3E= 0; i-- %7B%0A            if i != 0 %7B%0A                y%5Bi%5D = y%5Bi-1%5D%0A            %7D else %7B%0A                y%5Bi%5D++%0A            %7D%0A        %7D%0A    %7D\n %0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-04-19_00-59-34",
+            "content": "@@ -1098,13 +1098,13 @@\n Println(\n-y\n+x\n )%0A%7D%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-19_00-59-48",
+            "content": "@@ -437,38 +437,8 @@\n -1%5D%0A\n-                y%5Bi%5D = y%5Bi-1%5D%0A\n     \n@@ -446,32 +446,32 @@\n        %7D else %7B%0A\n+\n                 \n@@ -627,38 +627,8 @@\n -1%5D%0A\n-                y%5Bi%5D = y%5Bi-1%5D%0A\n     \n@@ -817,38 +817,8 @@\n -1%5D%0A\n-                x%5Bi%5D = x%5Bi-1%5D%0A\n     \n@@ -965,32 +965,32 @@\n     if i != 0 %7B%0A\n+\n                 \n@@ -1007,38 +1007,8 @@\n -1%5D%0A\n-                x%5Bi%5D = x%5Bi-1%5D%0A\n     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-19_01-01-27",
+            "content": "@@ -1206,27 +1206,8 @@\n    %0A\n-    fmt.Println(x)%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-04-19_01-01-35",
+            "content": "@@ -1201,112 +1201,49 @@\n   %7D%0A\n-%0A\n     \n-for i := 0; i %3C= len(x); i++ %7B%0A        if i != len(x) -1 %7B%0A            fmt.Println(x%5Bi%5D, y%5Bi%5D)%0A    %7D\n+%0A    fmt.Println(x)%0A    fmt.Println(y)\n %0A%7D%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-04-19_01-03-24",
+            "content": "@@ -1297,26 +1297,16 @@\n , y%5Bi%5D)%0A\n-        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-19_01-03-32",
+            "content": "@@ -1217,16 +1217,17 @@\n = 0; i %3C\n+=\n  len(x);\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-03-46",
+            "content": "@@ -1215,15 +1215,14 @@\n  := \n-1\n+0\n ; i %3C\n-=\n  len\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-04-00",
+            "content": "@@ -1217,16 +1217,17 @@\n = 1; i %3C\n+=\n  len(x);\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-04-07",
+            "content": "@@ -1211,37 +1211,34 @@\n or i := \n-quantG-1; i %3E= 0; i--\n+1; i %3C len(x); i++\n  %7B%0A     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-04-57",
+            "content": "@@ -1197,20 +1197,16 @@\n %7D%0A    %7D%0A\n-    \n %0A    for\n@@ -1215,27 +1215,29 @@\n  := \n-0\n+quantG-1\n ; i \n-%3C= len(x); i++\n+%3E= 0; i--\n  %7B%0A \n@@ -1292,12 +1292,28 @@\n ln(x\n-, y)\n+%5Bi%5D, y%5Bi%5D)%0A        %7D\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-05-17",
+            "content": "@@ -1295,26 +1295,16 @@\n n(x, y)%0A\n-        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-19_01-05-23",
+            "content": "@@ -1294,17 +1294,11 @@\n ln(x\n-%5Bi%5D, y%5Bi%5D\n+, y\n )%0A  \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-05-31",
+            "content": "@@ -1221,16 +1221,17 @@\n = 0; i %3C\n+=\n  len(x);\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-05-37",
+            "content": "@@ -1228,32 +1228,60 @@\n %3C len(x); i++ %7B%0A\n+        if i != len(x) -1 %7B%0A\n             fmt.\n@@ -1300,16 +1300,26 @@\n , y%5Bi%5D)%0A\n+        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-04-19_01-06-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var quantG int\n    var mov string\n    var x []int\n    var y []int\n\n    x = make([]int, 0)\n    y = make([]int, 0)\n\n    fmt.Scan(&quantG, &mov)\n\n    for i := 0; i < quantG; i++ {\n        var z, w int\n\n        fmt.Scan(&z, &w)\n        x = append(x, z)\n        y = append(y, w)\n    }\n\n    if mov == \"L\" {\n        for i := quantG-1; i >= 0; i-- {\n            if i != 0 {\n                x[i] = x[i-1]\n                y[i] = y[i-1]\n            } else {\n                x[i]--\n            }\n        }\n    }\n\n    if mov == \"R\" {\n        for i := quantG-1; i >= 0; i-- {\n            if i != 0 {\n                x[i] = x[i-1]\n                y[i] = y[i-1]\n            } else {\n                x[i]++\n            }\n        }\n    }\n\n    if mov == \"U\" {\n        for i := quantG-1; i >= 0; i-- {\n            if i != 0 {\n                y[i] = y[i-1]\n                x[i] = x[i-1]\n            } else {\n                y[i]--\n            }\n        }\n    }\n\n    if mov == \"D\" {\n        for i := quantG-1; i >= 0; i-- {\n            if i != 0 {\n                y[i] = y[i-1]\n                x[i] = x[i-1]\n            } else {\n                y[i]++\n            }\n        }\n    }\n    \n    for i := 0; i < len(x); i++ {\n            fmt.Println(x[i], y[i])\n    }\n}\n",
+            "lines": "69"
+        }
+    ]
+}
