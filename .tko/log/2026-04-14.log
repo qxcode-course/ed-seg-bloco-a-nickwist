@@ -1,0 +1,8 @@
+2026-04-14 16:49:55, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-04-14 16:49:57, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0
+2026-04-14 16:50:26, EXEC, v:1, k:ed@baruel, mode:FULL, size:26, fail:COMP
+2026-04-14 16:50:31, EXEC, v:1, k:ed@baruel, mode:FULL, fail:COMP
+2026-04-14 16:50:55, EXEC, v:1, k:ed@baruel, mode:FULL, size:27, fail:COMP
+2026-04-14 16:50:54, MOVE, v:1, k:ed@baruel, mode:EDIT
+2026-04-14 16:58:52, EXEC, v:1, k:ed@baruel, mode:FULL, size:27, fail:COMP
+2026-04-14 16:58:50, MOVE, v:1, k:ed@baruel, mode:EDIT

@@ -1,0 +1,264 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_15-59-42",
+            "content": "@@ -41,410 +41,35 @@\n     \n-var x, quant, quantgab, repetidos, i%0A    var gabarito %5B%5Dint%0A    var deck map%5Bint%5D bool%0A    deck = make(map%5Bint%5D bool)%0A%0A    fmt.Scan(&quantgab)%0A    fmt.Scan(&quant)%0A    gabarito = make(%5B%5Dint, quantgab)%0A%0A    for i = 1; i %3C=  quantgab; i++ %7B%0A        a%5Bi%5D = i%0A    %7D%0A%0A    for i = 0; i %3C quant; i++ %7B%0A        fmt.Scan(&x)%0A        deck%5Bx%5D = true%0A%0A        if animal%5Bx%5D %7B%0A            repetidos++%0A        %7D%0A%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-50-26",
+            "content": "@@ -77,12 +77,8 @@\n s, i\n- int\n %0A   \n@@ -404,14 +404,8 @@\n %5D %7B%0A\n-     %0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_16-50-55",
+            "content": "@@ -77,19 +77,8 @@\n s, i\n-, a, animal\n  int\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_16-58-52",
+            "content": "@@ -266,22 +266,23 @@\n for i = \n-0\n+1\n ; i %3C\n+=\n   quantg\n@@ -304,35 +304,15 @@\n    a\n- := make(%5B%5Dint, quantgab+1)\n+%5Bi%5D = i\n %0A   \n@@ -407,17 +407,25 @@\n  if \n-deck%5Bx%5D %7B\n+animal%5Bx%5D %7B%0A     \n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-18_20-37-25",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -70,16 +70,30 @@\n epetidos\n+, i, a, animal\n  int%0A   \n@@ -120,14 +120,40 @@\n     \n+var \n deck \n-:\n+map%5Bint%5D bool%0A    deck \n = ma\n@@ -163,16 +163,17 @@\n map%5Bint%5D\n+ \n bool)%0A%0A \n@@ -216,17 +216,16 @@\n &quant)%0A\n-%0A\n     gaba\n@@ -268,17 +268,16 @@\n r i \n-:\n = 0; i %3C\n  qua\n@@ -272,22 +272,26 @@\n = 0; i %3C\n+ \n  quant\n+gab\n ; i++ %7B%0A\n@@ -302,88 +302,97 @@\n     \n-fmt.Scan(&x)%0A\n+a := make(%5B%5Dint, quantgab+1)\n %0A    \n+%7D%0A%0A\n     \n-if deck%5Bx%5D %7B%0A            repetidos++%0A        %7D else %7B%0A    \n+for i = 0; i %3C quant; i++ %7B%0A        fmt.Scan(&x)%0A\n     \n@@ -410,24 +410,25 @@\n  = true%0A\n+%0A\n         \n %7D%0A    %7D%0A\n@@ -423,42 +423,60 @@\n     \n-%7D\n+if deck%5Bx%5D %7B\n %0A    \n-%7D%0A%0A\n     \n-fmt.Println(repetidos)\n+    repetidos++%0A        %7D%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-18_20-37-45",
+            "content": "@@ -190,17 +190,16 @@\n abarito \n-:\n = make(%5B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-18_20-38-02",
+            "content": "@@ -190,16 +190,17 @@\n abarito \n+:\n = make(%5B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-18_20-38-05",
+            "content": "@@ -76,16 +76,39 @@\n dos int%0A\n+    var gabarito %5B%5Dint%0A\n     deck\n@@ -177,16 +177,53 @@\n quant)%0A%0A\n+    gabarito = make(%5B%5Dint, quantgab)%0A\n %0A    for\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-18_20-57-31",
+            "content": "@@ -80,31 +80,8 @@\n int%0A\n-    var gabarito %5B%5Dint%0A\n     \n@@ -107,16 +107,16 @@\n t%5Dbool)%0A\n+\n %0A    fmt\n@@ -158,45 +158,8 @@\n t)%0A%0A\n-    gabarito = make(%5B%5Dint, quantgab)%0A\n %0A   \n@@ -259,51 +259,8 @@\n s++%0A\n-            gabarito = append(gabarito, x)%0A\n     \n@@ -319,33 +319,8 @@\n   %7D%0A\n-    fmt.Println(gabarito)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-18_21-00-35",
+            "content": "@@ -208,9 +208,16 @@\n nt, \n-1\n+quantgab\n )%0A%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-18_21-01-44",
+            "content": "@@ -204,17 +204,17 @@\n (%5B%5Dint, \n-0\n+1\n )%0A%0A    f\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-18_21-01-51",
+            "content": "@@ -439,11 +439,8 @@\n rito\n-...\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-18_21-02-26",
+            "content": "@@ -415,54 +415,8 @@\n   %7D%0A\n-%0A    for i := 0; i %3C len(gabarito); i++ %7B%0A    \n     \n@@ -439,18 +439,12 @@\n rito\n-%5Bi%5D)%0A    %7D\n+...)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-18_21-03-43",
+            "content": "@@ -470,16 +470,18 @@\n mt.Print\n+ln\n (gabarit\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-18_21-04-02",
+            "content": "@@ -474,17 +474,9 @@\n rint\n-f(%22%25d %22, \n+(\n gaba\n@@ -510,14 +510,8 @@\n tln(\n-%22%5Cn%22, \n repe\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-18_21-05-09",
+            "content": "@@ -457,46 +457,8 @@\n + %7B%0A\n-        if (i != len(gabarito)) %7B%0A    \n     \n@@ -484,36 +484,32 @@\n %22, gabarito%5Bi%5D)%0A\n-    \n     %7D%0A        el\n@@ -506,76 +506,8 @@\n     \n-    else %7B%0A            fmt.Println(gabarito%5Bi%5D)%0A        %7D%0A    %7D%0A    \n fmt.\n@@ -514,16 +514,22 @@\n Println(\n+%22%5Cn%22, \n repetido\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-04-18_21-07-01",
+            "content": "@@ -464,16 +464,17 @@\n      if \n+(\n i != len\n@@ -483,16 +483,17 @@\n abarito)\n+)\n  %7B%0A     \n@@ -531,32 +531,40 @@\n to%5Bi%5D)%0A        %7D\n+%0A       \n  else %7B%0A        \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-04-18_21-07-26",
+            "content": "@@ -584,14 +584,8 @@\n o%5Bi%5D\n-, %22%5Cn%22\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-07-47",
+            "content": "@@ -589,12 +589,8 @@\n  %22%5Cn\n- aaa\n %22)%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-08-03",
+            "content": "@@ -486,10 +486,8 @@\n ito)\n--1\n  %7B%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-09-16",
+            "content": "@@ -587,16 +587,20 @@\n %5Bi%5D, %22%5Cn\n+ aaa\n %22)%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-09-21",
+            "content": "@@ -574,32 +574,38 @@\n ntln(gabarito%5Bi%5D\n+, %22%5Cn%22\n )%0A        %7D%0A    \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-09-25",
+            "content": "@@ -62,22 +62,25 @@\n antgab, \n-faltam\n+repetidos\n  int%0A   \n@@ -84,23 +84,23 @@\n     var \n-repetid\n+gabarit\n o %5B%5Dint%0A\n@@ -177,31 +177,31 @@\n quant)%0A%0A    \n-repetid\n+gabarit\n o = make(%5B%5Di\n@@ -304,16 +304,40 @@\n repetido\n+s++%0A            gabarito\n  = appen\n@@ -416,135 +416,8 @@\n  %7D%0A%0A\n-    for i := 1; i %3C= len(deck); i++ %7B%0A        if i != deck%5Bi%5D %7B%0A            faltam++%0A            i = deck%5Bi%5D%0A        %7D%0A    %7D %0A%0A\n     \n@@ -620,14 +620,17 @@\n tln(\n-faltam\n+repetidos\n )%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-34-01",
+            "content": "@@ -62,25 +62,22 @@\n antgab, \n-repetidos\n+faltam\n  int%0A   \n@@ -89,17 +89,16 @@\n repetido\n-s\n  %5B%5Dint%0A \n@@ -186,17 +186,16 @@\n repetido\n-s\n  = make(\n@@ -301,17 +301,16 @@\n repetido\n-s\n  = appen\n@@ -406,16 +406,120 @@\n 1; i %3C= \n+len(deck); i++ %7B%0A        if i != deck%5Bi%5D %7B%0A            faltam++%0A            i = deck%5Bi%5D%0A        %7D%0A    %7D \n %0A%0A    fo\n@@ -720,17 +720,14 @@\n tln(\n-repetidos\n+faltam\n )%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-18_21-35-03",
+            "content": "@@ -70,16 +70,17 @@\n repetido\n+s\n  int%0A   \n@@ -416,31 +416,8 @@\n  %3C= \n-len(deck); i++ %7B%0A%0A    %7D\n %0A%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-04-18_21-35-30",
+            "content": "@@ -70,17 +70,16 @@\n repetido\n-s\n  int%0A   \n@@ -428,24 +428,16 @@\n ; i++ %7B%0A\n-        \n %0A    %7D%0A%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-18_21-35-39",
+            "content": "@@ -70,16 +70,17 @@\n repetido\n+s\n  int%0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-18_21-36-03",
+            "content": "@@ -70,17 +70,16 @@\n repetido\n-s\n  int%0A   \n@@ -333,35 +333,8 @@\n  x)%0A\n-            deck%5Bx%5D = true%0A\n     \n@@ -397,16 +397,61 @@\n %0A    for\n+ i := 1; i %3C= len(deck); i++ %7B%0A        %0A    %7D\n %0A%0A    fo\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-18_21-36-27",
+            "content": "@@ -418,16 +418,25 @@\n %0A    %7D%0A%0A\n+    for%0A%0A\n     for \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-04-18_21-36-32",
+            "content": "@@ -330,16 +330,43 @@\n ito, x)%0A\n+            deck%5Bx%5D = true%0A\n         \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-36-40",
+            "content": "@@ -311,31 +311,8 @@\n idos\n-++%0A            gabarito\n  = a\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-18_21-36-43",
+            "content": "@@ -84,24 +84,25 @@\n     var \n-gabarito\n+repetidos\n  %5B%5Dint%0A \n@@ -182,24 +182,25 @@\n t)%0A%0A    \n-gabarito\n+repetidos\n  = make(\n@@ -484,17 +484,16 @@\n abarito)\n- \n -1 %7B%0A   \n@@ -588,18 +588,8 @@\n o%5Bi%5D\n-, %22%5Cn aaa%22\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-36-49",
+            "content": "@@ -575,32 +575,42 @@\n ntln(gabarito%5Bi%5D\n+, %22%5Cn aaa%22\n )%0A        %7D%0A    \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-36-56",
+            "content": "@@ -66,14 +66,17 @@\n ab, \n-faltam\n+repetidos\n  int\n@@ -284,16 +284,40 @@\n ck%5Bx%5D %7B%0A\n+            repetidos++%0A\n         \n@@ -355,35 +355,8 @@\n  x)%0A\n-            deck%5Bx%5D = true%0A\n     \n@@ -416,53 +416,8 @@\n  %7D%0A%0A\n-    for i := 1; i %3C len(deck); i++ %7B%0A%0A    %7D%0A%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-18_21-38-38",
+            "content": "@@ -60,16 +60,24 @@\n quantgab\n+, faltam\n  int%0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-04-18_21-38-46",
+            "content": "@@ -638,10 +638,37 @@\n %7D%0A    %7D%0A\n+    fmt.Println(repetidos)%0A\n %7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-04-18_21-38-53",
+            "content": "@@ -64,16 +64,8 @@\n tgab\n-, faltam\n  int\n@@ -428,76 +428,25 @@\n i %3C \n-quantgab; i++ %7B%0A        if !deck%5Bi%5D %7B%0A            faltam++%0A        %7D\n+len(deck); i++ %7B%0A\n %0A   \n@@ -642,30 +642,6 @@\n   %7D%0A\n-    fmt.Println(faltam)%0A\n %7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-18_21-40-47",
+            "content": "@@ -64,28 +64,17 @@\n tgab\n- int%0A    var\n+,\n  faltam \n %5B%5Din\n@@ -69,18 +69,16 @@\n  faltam \n-%5B%5D\n int%0A    \n@@ -207,36 +207,8 @@\n , 0)\n-%0A    faltam = make(%5B%5Dint, 0)\n %0A%0A  \n@@ -492,28 +492,10 @@\n ltam\n- = append(faltam, i)\n+++\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-18_21-43-04",
+            "content": "@@ -752,25 +752,24 @@\n     %7D%0A    %7D%0A\n-%0A\n     fmt.Prin\n@@ -782,11 +782,8 @@\n ltam\n-...\n )%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-18_21-43-09",
+            "content": "@@ -766,182 +766,28 @@\n    f\n-or i := 0; i %3C len(faltam); i++ %7B%0A        if i != len(faltam) -1 %7B%0A            fmt.Printf(%22%25d %22, faltam%5Bi%5D)%0A        %7D else %7B%0A            fmt.Println(faltam%5Bi%5D)%0A        %7D%0A    %7D\n+mt.Println(faltam...)\n %0A%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-18_21-43-53",
+            "content": "@@ -774,15 +774,14 @@\n  := \n-1\n+0\n ; i %3C\n-=\n  len\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-18_21-44-23",
+            "content": "@@ -766,30 +766,31 @@\n    for i := \n-0\n+1\n ; i %3C\n+=\n  len(faltam)\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-18_21-44-32",
+            "content": "@@ -472,17 +472,16 @@\n = 1; i %3C\n-=\n  quantga\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-18_21-48-57",
+            "content": "@@ -613,98 +613,8 @@\n + %7B%0A\n-        if len(gabarito) == 0 %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D%0A%0A\n     \n@@ -801,96 +801,8 @@\n + %7B%0A\n-        if len(faltam) == 0 %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D%0A%0A\n     \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-18_21-50-14",
+            "content": "@@ -583,25 +583,24 @@\n  i := 0; i %3C\n-=\n  len(gabarit\n@@ -867,17 +867,16 @@\n = 0; i %3C\n-=\n  len(fal\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-18_21-50-33",
+            "content": "@@ -457,94 +457,8 @@\n  %7D%0A%0A\n-    if len(gabarito) == 0 %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D%0A%0A\n     \n@@ -482,32 +482,32 @@\n quantgab; i++ %7B%0A\n+\n         if !deck\n@@ -576,21 +576,69 @@\n     \n-if len(faltam\n+for i := 0; i %3C= len(gabarito); i++ %7B%0A        if len(gabarito\n ) ==\n@@ -704,50 +704,8 @@\n  %7D%0A%0A\n-    for i := 0; i %3C len(gabarito); i++ %7B%0A%0A\n     \n@@ -868,16 +868,17 @@\n = 0; i %3C\n+=\n  len(fal\n@@ -889,16 +889,102 @@\n ; i++ %7B%0A\n+        if len(faltam) == 0 %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D\n %0A%0A      \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-18_21-51-15",
+            "content": "@@ -502,32 +502,50 @@\n mt.Println(%22N%22)%0A\n+            break%0A\n         %7D%0A%0A    f\n@@ -701,32 +701,50 @@\n mt.Println(%22N%22)%0A\n+            break%0A\n         %7D%0A%0A    f\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-18_21-51-23",
+            "content": "@@ -445,32 +445,100 @@\n        %7D%0A    %7D%0A%0A\n+    if len(gabarito) == 0 %7B%0A            fmt.Println(%22N%22)%0A        %7D%0A%0A\n     for i := 1; \n@@ -644,68 +644,21 @@\n     \n-for i := 0; i %3C len(gabarito); i++ %7B%0A        if len(gabarito\n+if len(faltam\n ) ==\n@@ -699,35 +699,59 @@\n         \n+%7D%0A%0A\n     \n-break%0A        %7D\n+for i := 0; i %3C len(gabarito); i++ %7B\n %0A%0A      \n@@ -936,94 +936,8 @@\n + %7B%0A\n-        if len(faltam) == 0 %7B%0A            fmt.Println(%22N%22)%0A            break%0A        %7D\n %0A%0A  \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-04-18_21-52-07",
+            "content": "@@ -587,17 +587,16 @@\n = 0; i %3C\n-=\n  len(gab\n@@ -601,18 +601,16 @@\n abarito)\n--1\n ; i++ %7B%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-18_21-54-40",
+            "content": "@@ -564,24 +564,72 @@\n    %7D%0A    %7D%0A%0A\n+    for i := 0; i %3C= len(gabarito)-1; i++ %7B%0A    \n     if len(g\n@@ -699,66 +699,15 @@\n     \n-%7D else %7B%0A        for i := 0; i %3C len(gabarito); i++ %7B%0A\n     \n+%7D%0A%0A\n     \n@@ -741,36 +741,32 @@\n 1 %7B%0A            \n-    \n fmt.Printf(%22%25d %22\n@@ -780,36 +780,32 @@\n ito%5Bi%5D)%0A        \n-   \n- \n %7D else %7B%0A       \n@@ -789,36 +789,32 @@\n        %7D else %7B%0A\n-    \n             fmt.\n@@ -846,35 +846,60 @@\n     \n+%7D%0A\n     %7D%0A\n+%0A\n     \n-    %7D%0A    %7D\n+for i := 0; i %3C len(faltam); i++ %7B\n %0A    \n-%0A\n     \n@@ -957,65 +957,33 @@\n     \n-%7D else %7B%0A        for i := 0; i %3C len(faltam); i++ %7B%0A%0A    \n+        break%0A        %7D%0A%0A\n     \n@@ -1015,36 +1015,32 @@\n 1 %7B%0A            \n-    \n fmt.Printf(%22%25d %22\n@@ -1056,28 +1056,24 @@\n i%5D)%0A        \n-   \n- \n %7D else %7B%0A   \n@@ -1061,36 +1061,32 @@\n        %7D else %7B%0A\n-    \n             fmt.\n@@ -1116,24 +1116,9 @@\n     \n-  \n-  %7D%0A        %7D \n+%7D\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-18_21-56-58",
+            "content": "@@ -617,32 +617,50 @@\n mt.Println(%22N%22)%0A\n+            break%0A\n     %7D else %7B%0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-04-18_21-57-05",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var x, quant, quantgab int\n    var faltam []int\n    var gabarito []int\n    deck := make(map[int]bool)\n\n    fmt.Scan(&quantgab)\n    fmt.Scan(&quant)\n\n    gabarito = make([]int, 0)\n    faltam = make([]int, 0)\n\n    for i := 0; i < quant; i++ {\n        fmt.Scan(&x)\n\n        if deck[x] {\n            gabarito = append(gabarito, x)\n            deck[x] = true\n        } else {\n            deck[x] = true\n        }\n    }\n\n    for i := 1; i <= quantgab; i++ {\n        if !deck[i] {\n            faltam = append(faltam, i)\n        }\n    }\n\n    if len(gabarito) == 0 {\n            fmt.Println(\"N\")\n    } else {\n        for i := 0; i < len(gabarito); i++ {\n            if i != len(gabarito) -1 {\n                fmt.Printf(\"%d \", gabarito[i])\n            } else {\n                fmt.Println(gabarito[i])\n            }\n        }\n    }\n    \n    if len(faltam) == 0 {\n            fmt.Println(\"N\")\n    } else {\n        for i := 0; i < len(faltam); i++ {\n\n            if i != len(faltam) -1 {\n                fmt.Printf(\"%d \", faltam[i])\n            } else {\n                fmt.Println(faltam[i])\n            }\n        } \n    }\n}\n",
+            "lines": "57"
+        }
+    ]
+}

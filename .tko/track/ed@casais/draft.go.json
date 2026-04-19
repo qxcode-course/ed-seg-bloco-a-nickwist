@@ -72,8 +72,13 @@
         },
         {
             "label": "2026-03-24_11-29-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pares, i, quant, x int\n    var animal map[int] bool\n    animal = make(map[int] bool)\n\n    fmt.Scan(&quant)\n\n    for i = 0; i < quant; i++ {\n        fmt.Scan(&x)\n        animal[x] = true\n        if animal[-x] {\n            pares++\n            delete(animal, -x)\n            delete(animal, x)\n        }\n\n        \n    }\n    fmt.Println(pares)\n\n    \n}\n",
+            "content": "@@ -61,15 +61,8 @@\n ant,\n- total,\n  x i\n@@ -131,30 +131,8 @@\n l)%0A%0A\n-%0A    fmt.Scan(&total)%0A\n     \n",
             "lines": "24"
+        },
+        {
+            "label": "2026-04-18_20-41-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var pares, i, quant, total, x int\n    var animal map[int] bool\n    animal = make(map[int] bool)\n\n\n    fmt.Scan(&total)\n    fmt.Scan(&quant)\n\n    for i = 0; i < quant; i++ {\n        fmt.Scan(&x)\n        animal[x] = true\n        if animal[-x] {\n            pares++\n            delete(animal, -x)\n            delete(animal, x)\n        }\n\n        \n    }\n    fmt.Println(pares)\n\n    \n}\n",
+            "lines": "26"
         }
     ]
 }
