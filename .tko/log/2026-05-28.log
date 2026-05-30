@@ -1,0 +1,10 @@
+2026-05-28 22:51:18, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-05-28 22:51:33, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-28 23:00:28, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-28 23:47:14, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-28 23:55:23, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-05-28 23:55:31, EXEC, v:1, k:ed@princesa, mode:FULL, size:39, fail:COMP
+2026-05-28 23:55:46, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-05-28 23:55:48, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-05-28 23:55:48, EXEC, v:1, k:ed@princesa, mode:FULL, fail:COMP
+2026-05-28 23:55:49, EXEC, v:1, k:ed@princesa, mode:FULL, fail:COMP

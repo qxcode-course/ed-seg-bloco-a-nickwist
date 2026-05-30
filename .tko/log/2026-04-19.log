@@ -61,3 +61,12 @@
 2026-04-19 12:53:24, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:23
 2026-04-19 12:55:19, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:22
 2026-04-19 12:55:26, MOVE, v:1, k:ed@casais, mode:BACK
+2026-04-19 13:12:49, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-04-19 13:16:12, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:5
+2026-04-19 13:35:10, EXEC, v:1, k:ed@princesa, mode:FULL, size:21, fail:COMP
+2026-04-19 13:35:24, EXEC, v:1, k:ed@princesa, mode:FULL, size:21, fail:COMP
+2026-04-19 13:35:22, MOVE, v:1, k:ed@princesa, mode:EDIT
+2026-04-19 13:38:24, EXEC, v:1, k:ed@princesa, mode:FULL, size:21, fail:COMP
+2026-04-19 13:38:32, EXEC, v:1, k:ed@princesa, mode:FULL, size:21, fail:COMP
+2026-04-19 13:39:06, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:21
+2026-04-19 13:39:06, MOVE, v:1, k:ed@princesa, mode:EDIT
