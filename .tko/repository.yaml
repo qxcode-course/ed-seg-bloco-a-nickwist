@@ -13,14 +13,22 @@ sources:
   writeable: false
   quests: null
 expanded:
+- ed@dfs
+- ed@bfs
+- ed@list
+- ed@backtrack
+- ed@tree
+- ed@linear
 - ed@map_set
 - ed@basic
+- ed@vector
+- ed@rec
 flags:
   inbox: all
   panel: graph
-  show_panel: 'false'
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@princesa
-selected_index: 10
+selected: ed@mumia
+selected_index: 2

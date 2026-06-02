@@ -9,38 +9,117 @@ import (
 )
 
 func getMen(vet []int) []int {
-	_ = vet
-	return nil
+	homens := []int{}
+	for i := 0; i < len(vet); i++ {
+		if vet[i] > 0 {
+			homens = append(homens, vet[i])
+		}
+	}
+	return homens
 }
 
 func getCalmWomen(vet []int) []int {
-	_ = vet
-	return nil
+	mulhercalma := []int{}
+	for i := 0; i < len(vet); i++ {
+		if vet[i] < 0 {
+			c := -vet[i]
+			if c < 10 {
+				mulhercalma = append(mulhercalma, vet[i])
+			}
+		}
+	}
+	return mulhercalma
 }
 
 func sortVet(vet []int) []int {
-	_ = vet
-	return nil
+
+	for i := 0; i < len(vet); i++ {
+		menor := i
+		for j := i + 1; j < len(vet); j++ {
+			if vet[j] < vet[menor] {
+				menor = j
+			}
+		}
+		vet[i], vet[menor] = vet[menor], vet[i]
+	}
+
+	return vet
 }
 
 func sortStress(vet []int) []int {
-	_ = vet
-	return nil
+	for i := 0; i < len(vet); i++ {
+		menor := i
+
+		for j := i + 1; j < len(vet); j++ {
+			x := vet[j]
+			if x < 0 {
+				x = -x
+			}
+
+			z := vet[menor]
+			if z < 0 {
+				z = -z
+			} 
+			if x < z {
+				menor = j
+			}
+		}
+		vet[i], vet[menor] = vet[menor], vet[i]
+	}
+
+	return vet
 }
 
 func reverse(vet []int) []int {
-	_ = vet
-	return nil
+	reverso := []int{}
+
+	for i := len(vet) - 1; i >= 0; i-- {
+		reverso = append(reverso, vet[i])
+	}
+	return reverso
 }
 
 func unique(vet []int) []int {
-	_ = vet
-	return nil
+	unico := []int{}
+
+	for i := 0; i < len(vet); i++ {
+		existe := false
+		for j := 0; j < len(unico); j++ {
+			 if vet[i] == unico[j] {
+				existe = true
+				break
+			 }
+			 
+		}
+		if !existe {
+			unico = append(unico, vet[i])
+		}
+		
+	}	
+	return unico
+
 }
 
 func repeated(vet []int) []int {
-	_ = vet
-	return nil
+	repetido := []int{}
+	j := 0
+
+	for i := 0; i < len(vet); i++ {
+		repete := false
+		for j = i; j >= 0; j-- {
+			 if i != j && vet[i] == vet[j] {
+				repete = true
+				break
+			 }
+			 
+		}
+		if repete {
+			repetido = append(repetido, vet[j])
+		}
+		
+	}	
+	return repetido
+
 }
 
 func main() {

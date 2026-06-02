@@ -83,3 +83,34 @@
 2026-05-29 22:46:15, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100, size:44
 2026-05-29 22:46:21, MOVE, v:1, k:ed@princesa, mode:BACK
 2026-05-29 22:47:24, SELF, v:1, k:ed@princesa, self:1, rate:100, friend:300, concept:1
+2026-05-29 22:58:03, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-05-29 22:58:30, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-05-29 23:00:16, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-05-29 23:17:40, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:0
+2026-05-29 23:19:37, MOVE, v:1, k:ed@especiais, mode:PICK
+2026-05-29 23:19:38, EXEC, v:1, k:ed@especiais, mode:FULL, rate:0
+2026-05-29 23:25:11, EXEC, v:1, k:ed@especiais, mode:FREE
+2026-05-29 23:25:56, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-05-29 23:25:57, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:0
+2026-05-29 23:25:58, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:0
+2026-05-29 23:34:59, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:112, fail:COMP
+2026-05-29 23:35:11, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:113, fail:COMP
+2026-05-29 23:35:26, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:113, fail:COMP
+2026-05-29 23:35:25, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-05-29 23:36:11, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:112, fail:COMP
+2026-05-29 23:38:54, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:111, fail:COMP
+2026-05-29 23:39:40, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:111, fail:COMP
+2026-05-29 23:39:59, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:14, size:111
+2026-05-29 23:39:54, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-05-29 23:43:35, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:119, fail:COMP
+2026-05-29 23:44:41, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:28, size:119
+2026-05-29 23:44:35, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-05-29 23:54:08, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:129, fail:COMP
+2026-05-29 23:54:33, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:129, fail:COMP
+2026-05-29 23:54:36, EXEC, v:1, k:ed@manipulacao, mode:FULL, fail:COMP
+2026-05-29 23:54:35, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-05-29 23:56:07, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:116, fail:COMP
+2026-05-29 23:56:11, EXEC, v:1, k:ed@manipulacao, mode:FULL, fail:COMP
+2026-05-29 23:56:59, MOVE, v:1, k:ed@manipulacao, mode:PICK
+2026-05-29 23:57:00, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:42, size:129
+2026-05-29 23:56:56, MOVE, v:1, k:ed@manipulacao, mode:EDIT

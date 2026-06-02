@@ -1,0 +1,8 @@
+2026-05-30 00:03:24, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:147, fail:COMP
+2026-05-30 00:03:28, EXEC, v:1, k:ed@manipulacao, mode:FULL, fail:COMP
+2026-05-30 00:03:27, MOVE, v:1, k:ed@manipulacao, mode:EDIT
+2026-05-30 00:07:43, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:148, fail:COMP
+2026-05-30 00:07:54, EXEC, v:1, k:ed@manipulacao, mode:FULL, size:148, fail:COMP
+2026-05-30 00:08:22, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:42, size:148
+2026-05-30 00:11:15, EXEC, v:1, k:ed@manipulacao, mode:FULL, rate:57, size:148
+2026-05-30 00:11:13, MOVE, v:1, k:ed@manipulacao, mode:EDIT
