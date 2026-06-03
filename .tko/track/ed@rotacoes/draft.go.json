@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_02-12-04",
+            "content": "@@ -41,316 +41,35 @@\n     \n-var tamanho, qntdRotacoes int%0A    var vetor, res %5B%5Dint%7B%7D%0A%0A    fmt.Scan(&tamanho, &qntdRotacoes)%0A%0A    for i := 0; i %3C tamanho; i++ %7B%0A        vetor = append(vetor, i + 1)%0A    %7D%0A%0A    qntdRotacoes = qntdRotacoes %25 tamanho%0A%0A    for i := 0; i %3C tamanho; i++ %7B%0A        res = append(res, vetor%5Bi+qntdRotacoes%5D)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_02-27-00",
+            "content": "@@ -323,17 +323,16 @@\n , vetor%5B\n-(\n i+qntdRo\n@@ -341,20 +341,8 @@\n coes\n-)%25len(vetor)\n %5D)%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_02-28-05",
+            "content": "@@ -91,16 +91,18 @@\n es %5B%5Dint\n+%7B%7D\n %0A%0A    fm\n@@ -216,39 +216,9 @@\n   %7D%0A\n-    \n %0A\n-    if tamanho != 0 %7B%0A    \n     \n@@ -259,26 +259,8 @@\n nho%0A\n-        %7D%0A        \n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_02-29-35",
+            "content": "@@ -289,24 +289,32 @@\n o%0A        %7D%0A\n+        \n %0A    for i :\n@@ -410,27 +410,6 @@\n  %7D%0A%0A\n-    fmt.Println(res)%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_02-29-53",
+            "content": "@@ -378,23 +378,26 @@\n tacoes)%25\n-tamanho\n+len(vetor)\n %5D)%0A    %7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-03_02-31-58",
+            "content": "@@ -171,48 +171,8 @@\n + %7B%0A\n-        var v int%0A        fmt.Scan(&v)%0A%0A\n     \n@@ -197,17 +197,21 @@\n (vetor, \n-v\n+i + 1\n )%0A    %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-03_02-35-02",
+            "content": "@@ -347,9 +347,9 @@\n  := \n-1\n+0\n ; i \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_02-35-11",
+            "content": "@@ -335,33 +335,33 @@\n %7D%0A%0A    for i := \n-0\n+1\n ; i %3C tamanho; i\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_02-35-17",
+            "content": "@@ -296,17 +296,16 @@\n acoes = \n-(\n qntdRota\n@@ -314,19 +314,8 @@\n es %25\n- tamanho) -\n  tam\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_02-38-10",
+            "content": "@@ -299,18 +299,8 @@\n es =\n- tamanho -\n  (qn\n@@ -320,16 +320,26 @@\n tamanho)\n+ - tamanho\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_02-38-30",
+            "content": "@@ -460,109 +460,14 @@\n rint\n-(%22%5B%22)%0A    for i := 0; i %3C tamanho; i++ %7B%0A        fmt.Printf(%22 %25d %22, res%5Bi%5D)%0A    %7D%0A    fmt.Println(%22%5D%22\n+ln(res\n )%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-03_02-39-53",
+            "content": "@@ -459,17 +459,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n@@ -517,16 +517,17 @@\n Printf(%22\n+ \n %25d %22, re\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-03_02-40-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tamanho, qntdRotacoes int\n    var vetor, res []int\n\n    fmt.Scan(&tamanho, &qntdRotacoes)\n\n    for i := 0; i < tamanho; i++ {\n        var v int\n        fmt.Scan(&v)\n\n        vetor = append(vetor, v)\n    }\n    \n    if tamanho != 0 {\n        qntdRotacoes = tamanho - (qntdRotacoes % tamanho)\n        }\n\n    for i := 0; i < tamanho; i++ {\n        res = append(res, vetor[(i+qntdRotacoes)%tamanho])\n    }\n\n    fmt.Print(\"[ \")\n    for i := 0; i < tamanho; i++ {\n        fmt.Printf(\"%d \", res[i])\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "29"
+        }
+    ]
+}

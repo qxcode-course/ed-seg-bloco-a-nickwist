@@ -13,22 +13,22 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@tree
-- ed@map_set
-- ed@dfs
-- ed@bfs
-- ed@linear
-- ed@vector
 - ed@list
-- ed@basic
+- ed@linear
+- ed@map_set
+- ed@tree
 - ed@rec
+- ed@dfs
+- ed@basic
+- ed@bfs
+- ed@vector
 - ed@backtrack
 flags:
   inbox: all
   panel: skills
-  show_panel: 'false'
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@especiais
-selected_index: 13
+selected: ed@alternando
+selected_index: 16
