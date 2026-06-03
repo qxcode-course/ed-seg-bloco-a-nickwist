@@ -67,43 +67,155 @@ func teams(vet []int) []Pair {
 }
 
 func mnext(vet []int) []int {
-	_ = vet
-	return nil
+	mulherprox := []int{}
+
+	if len(vet) == 1 {
+			return []int{0}
+		} 
+
+	for i := 0; i < len(vet); i++ {
+		if vet[i] > 0 {
+			if i == 0 {
+				if vet[i+1] < 0 {
+					mulherprox = append(mulherprox, 1)
+				} else {
+					mulherprox = append(mulherprox, 0)
+				} 
+			} else if i == (len(vet)-1) {
+				if vet[i-1] < 0 {
+					mulherprox = append(mulherprox, 1)
+				} else {
+					mulherprox = append(mulherprox, 0)
+				}
+			} else {
+				if vet[i+1] < 0 || vet[i-1] < 0 {
+					mulherprox = append(mulherprox, 1)
+				} else {
+					mulherprox = append(mulherprox, 0)
+				}
+			}
+		} else {
+			mulherprox = append(mulherprox, 0)
+		}
+	}
+		return mulherprox
+	
 }
 
 func alone(vet []int) []int {
-	_ = vet
-	return nil
+		semMulherProx := []int{}
+
+	if len(vet) == 1 && vet[0] > 0 {
+			return []int{1}
+	} 
+
+	for i := 0; i < len(vet); i++ {
+		if vet[i] > 0 {
+			if i == 0 {
+				if vet[i+1] < 0 {
+					semMulherProx = append(semMulherProx, 0)
+				} else {
+					semMulherProx = append(semMulherProx, 1)
+				} 
+			} else if i == (len(vet)-1) {
+				if vet[i-1] < 0 {
+					semMulherProx = append(semMulherProx, 0)
+				} else {
+					semMulherProx = append(semMulherProx, 1)
+				}
+			} else {
+				if vet[i+1] < 0 || vet[i-1] < 0 {
+					semMulherProx = append(semMulherProx, 0)
+				} else {
+					semMulherProx = append(semMulherProx, 1)
+				}
+			}
+		} else {
+			semMulherProx = append(semMulherProx, 0)
+		}
+	}
+		return semMulherProx
+	
 }
 
 func couple(vet []int) int {
-	_ = vet
-	return 0
+	casais := 0;
+
+	if len(vet) == 1 {
+		return 0
+	}
+
+	for i := 0; i < len(vet); i++ {
+		for j := i + 1; j < len(vet); j++ {
+			if vet[i] == -(vet[j]) || vet[j] == -(vet[i]) {
+				casais++
+				i+=2
+			}
+		}
+	}
+
+	return casais
 }
 
-func hasSubseq(vet []int, seq []int, pos int) bool {
-	_ = vet
-	_ = seq
-	_ = pos
-	return false
-}
+	func hasSubseq(vet []int, seq []int, pos int) bool {
+		
+		if pos+len(seq) > len(vet) {
+        return false
+    }
 
-func subseq(vet []int, seq []int) int {
-	_ = vet
-	_ = seq
-	return -1
-}
+    for j := 0; j < len(seq); j++ {
+        if vet[pos+j] != seq[j] {
+            return false
+        }
+    }
+
+    return true
+
+	}
+
+	func subseq(vet []int, seq []int) int {
+		pos := -1
+
+		for i := 0; i < len(vet); i++ {
+			if hasSubseq(vet, seq, i) {
+				pos = i
+				break
+			}
+		}
+
+		return pos
+	}
 
 func erase(vet []int, posList []int) []int {
-	_ = vet
-	_ = posList
-	return nil
+	listaNova := []int{}
+	
+	for i := 0; i < len(vet); i++ {
+		achou := false
+
+		for j:= 0; j < len(posList); j++ {
+			if i == posList[j]{
+				achou = true
+				break
+			} 
+		}
+
+		if !achou {
+			listaNova = append(listaNova, vet[i])
+		} 
+	} 
+
+	return listaNova
 }
 
 func clear(vet []int, value int) []int {
-	_ = vet
-	_ = value
-	return nil
+	listaNova := []int{}
+
+	for _, v := range vet {
+		if v != value {
+			listaNova = append(listaNova, v)
+		}
+	}
+	return listaNova
 }
 
 func main() {
