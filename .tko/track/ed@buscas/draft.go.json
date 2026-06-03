@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_00-34-58",
+            "content": "@@ -56,16 +56,21 @@\n consulta\n+, res\n  %5B%5Dstrin\n@@ -75,26 +75,8 @@\n ing%0A\n-    var res %5B%5Dint%0A\n     \n@@ -108,12 +108,8 @@\n ulta\n- int\n %0A%0A  \n@@ -472,24 +472,33 @@\n  0; i %3C \n+len(quant\n consulta\n ; i++ %7B%0A\n@@ -481,32 +481,33 @@\n en(quantconsulta\n+)\n ; i++ %7B%0A        \n@@ -550,16 +550,21 @@\n j %3C len(\n+quant\n busca); \n@@ -584,16 +584,21 @@\n      if \n+quant\n consulta\n@@ -604,16 +604,21 @@\n a%5Bi%5D == \n+quant\n busca%5Bj%5D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-03_00-37-25",
+            "content": "@@ -493,20 +493,16 @@\n i %3C \n-len(\n consulta\n ); i\n@@ -497,17 +497,16 @@\n consulta\n-)\n ; i++ %7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-03_00-38-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var busca, consulta []string\n    var res []int\n    var quantbusca, quantconsulta int\n\n    fmt.Scan(&quantbusca)\n\n    for i := 0; i < quantbusca; i++ {\n        var buscas string\n        fmt.Scan(&buscas)\n        busca = append(busca, buscas)\n    }\n\n    fmt.Scan(&quantconsulta) \n\n    for i := 0; i < quantconsulta; i++ {\n        var consultas string\n        fmt.Scan(&consultas)\n        consulta = append(consulta, consultas)\n    }\n\n    for i := 0; i < len(consulta); i++ {\n        quantidade := 0\n        for j := 0; j < len(busca); j++ {\n            if consulta[i] == busca[j] {\n                quantidade++\n            }\n        }\n        res = append(res, quantidade)\n    }\n\n    for i := 0; i < len(res); i++ {\n        if i != len(res)- 1 {\n            fmt.Printf(\"%d \", res[i])\n        } else {\n            fmt.Println(res[i])\n        }\n    }\n}\n",
+            "lines": "41"
+        }
+    ]
+}

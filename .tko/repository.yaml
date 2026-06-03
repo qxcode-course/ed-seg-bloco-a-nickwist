@@ -13,16 +13,16 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@bfs
-- ed@basic
-- ed@list
 - ed@tree
 - ed@map_set
-- ed@backtrack
 - ed@dfs
+- ed@bfs
 - ed@linear
+- ed@vector
+- ed@list
+- ed@basic
 - ed@rec
+- ed@backtrack
 flags:
   inbox: all
   panel: skills
@@ -30,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@recursao
-selected_index: 18
+selected: ed@especiais
+selected_index: 13
