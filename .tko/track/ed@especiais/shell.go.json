@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2026-05-29_00-05-31",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Pair struct {\n\tOne int\n\tTwo int\n}\n\nfunc occurr(vet []int) []Pair {\n\t_ = vet\n\treturn nil\n}\n\nfunc teams(vet []int) []Pair {\n\t_ = vet\n\treturn nil\n}\n\nfunc mnext(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc alone(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc couple(vet []int) int {\n\t_ = vet\n\treturn 0\n}\n\nfunc hasSubseq(vet []int, seq []int, pos int) bool {\n\t_ = vet\n\t_ = seq\n\t_ = pos\n\treturn false\n}\n\nfunc subseq(vet []int, seq []int) int {\n\t_ = vet\n\t_ = seq\n\treturn -1\n}\n\nfunc erase(vet []int, posList []int) []int {\n\t_ = vet\n\t_ = posList\n\treturn nil\n}\n\nfunc clear(vet []int, value int) []int {\n\t_ = vet\n\t_ = value\n\treturn nil\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tfor {\n\t\tfmt.Print(\"$\")\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline := scanner.Text()\n\t\targs := strings.Split(line, \" \")\n\t\tfmt.Println(line)\n\n\t\tswitch args[0] {\n\t\tcase \"occurr\":\n\t\t\tprintSlice(occurr(str2vet(args[1])))\n\t\tcase \"teams\":\n\t\t\tprintSlice(teams(str2vet(args[1])))\n\t\tcase \"mnext\":\n\t\t\tprintSlice(mnext(str2vet(args[1])))\n\t\tcase \"alone\":\n\t\t\tprintSlice(alone(str2vet(args[1])))\n\t\tcase \"erase\":\n\t\t\tprintSlice(erase(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"clear\":\n\t\t\tval, _ := strconv.Atoi(args[2])\n\t\t\tprintSlice(clear(str2vet(args[1]), val))\n\t\tcase \"subseq\":\n\t\t\tfmt.Println(subseq(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"couple\":\n\t\t\tfmt.Println(couple(str2vet(args[1])))\n\t\tcase \"end\":\n\t\t\treturn\n\t\tdefault:\n\t\t\tfmt.Println(\"Invalid command\")\n\t\t}\n\t}\n}\n\n// Fun\u00e7\u00f5es auxiliares\n\nfunc str2vet(str string) []int {\n\tif str == \"[]\" {\n\t\treturn nil\n\t}\n\tstr = str[1 : len(str)-1]\n\tparts := strings.Split(str, \",\")\n\tvar vet []int\n\tfor _, part := range parts {\n\t\tnum, _ := strconv.Atoi(strings.TrimSpace(part))\n\t\tvet = append(vet, num)\n\t}\n\treturn vet\n}\n\nfunc printSlice[T any](vet []T) {\n\tfmt.Print(\"[\")\n\tfor i, x := range vet {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(x)\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc (p Pair) String() string {\n\treturn fmt.Sprintf(\"(%v, %v)\", p.One, p.Two)\n}\n",
+            "content": "@@ -140,251 +140,27 @@\n  %7B%0A%09\n-repetidos := make(map%5Bint%5Dint)%0A%0A%09for _, v := range vet %7B%0A%09%09repetidos%5Bv%5D++%0A%09%7D%0A%0A%09pares := make(%5B%5DPair, 0, len(repetidos))%0A%0A%09for numero, qntd := range repetidos %7B%0A%09%09pares = append(pares, Pair%7B%0A%09%09%09One: numero,%0A%09%09%09Two: qntd,%0A%09%09%7D)%0A%09%7D%0A%0A%09return pares%0A\n+_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
             "lines": "132"
+        },
+        {
+            "label": "2026-06-02_17-29-59",
+            "content": "@@ -197,35 +197,8 @@\n t %7B%0A\n-%09%09if v %3C 0 %7B%0A%09%09%09v = -v%0A%09%09%7D%0A\n %09%09re\n",
+            "lines": "147"
+        },
+        {
+            "label": "2026-06-02_17-31-15",
+            "content": "@@ -170,26 +170,8 @@\n int)\n-%0A%09ordem := %5B%5Dint%7B%7D\n %0A%0A%09f\n@@ -224,67 +224,8 @@\n %09%09%7D%0A\n-%0A%09%09if repetidos%5Bv%5D == 0 %7B%0A%09%09%09ordem = append(ordem, v)%0A%09%09%7D%0A%0A\n %09%09re\n",
+            "lines": "150"
+        },
+        {
+            "label": "2026-06-02_17-36-16",
+            "content": "@@ -36,16 +36,8 @@\n mt%22%0A\n-%09%22math%22%0A\n %09%22os\n@@ -217,37 +217,32 @@\n %7B%0A%09%09\n-v = int(math.Abs(float64(v)))\n+if v %3C 0 %7B%0A%09%09%09v = -v%0A%09%09%7D\n %0A%0A%09%09\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-06-02_17-37-23",
+            "content": "@@ -32,16 +32,24 @@\n %0A%09%22fmt%22%0A\n+%09%22math%22%0A\n %09%22os%22%0A%09%22\n@@ -225,32 +225,37 @@\n %7B%0A%09%09\n-if v %3C 0 %7B%0A%09%09%09v = -v%0A%09%09%7D\n+v = int(math.Abs(float64(v)))\n %0A%0A%09%09\n@@ -375,28 +375,36 @@\n dos))%0A%0A%09for \n-_, v\n+numero, qntd\n  := range re\n@@ -451,17 +451,22 @@\n %09%09%09One: \n-v\n+numero\n ,%0A%09%09%09Two\n@@ -467,28 +467,20 @@\n %09%09%09Two: \n-repetidos%5Bv%5D\n+qntd\n ,%0A%09%09%7D)%0A%09\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-06-02_17-44-00",
+            "content": "@@ -380,21 +380,25 @@\n = range \n-ordem\n+repetidos\n  %7B%0A%09%09par\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-06-02_17-46-08",
+            "content": "@@ -42,16 +42,8 @@\n os%22%0A\n-%09%22sort%22%0A\n %09%22st\n@@ -166,16 +166,34 @@\n int%5Dint)\n+%0A%09ordem := %5B%5Dint%7B%7D\n %0A%0A%09for _\n@@ -239,16 +239,74 @@\n -v%0A%09%09%7D%0A%0A\n+%09%09if repetidos%5Bv%5D == 0 %7B%0A%09%09%09ordem = append(ordem, v)%0A%09%09%7D%0A%0A\n %09%09repeti\n@@ -366,23 +366,20 @@\n )%0A%0A%09for \n-v, qntd\n+_, v\n  := rang\n@@ -380,25 +380,21 @@\n = range \n-repetidos\n+ordem\n  %7B%0A%09%09par\n@@ -441,110 +441,29 @@\n wo: \n-qntd,%0A%09%09%7D)%0A%09%7D%0A%0A%09sort.Slice(pares, func(v, qntd int) bool %7B%0A%09%09return pares%5Bv%5D.One %3C pares%5Bqntd%5D.One%0A%09%7D)\n+repetidos%5Bv%5D,%0A%09%09%7D)%0A%09%7D\n %0A%0A%09r\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-06-02_17-49-36",
+            "content": "@@ -534,47 +534,16 @@\n  %7B%0A%09\n-times := %5B%5DPair%7B%7D%0A%09if len(vet) == 0 %7B%0A%09\n+_ = vet%0A\n %09ret\n@@ -554,228 +554,8 @@\n nil%0A\n-%09%7D%0A%0A%09atual := vet%5B0%5D%0A%09count := 1%0A%0A%09for i := 1; i %3C len(vet); i++ %7B%0A%09%09if vet%5Bi%5D == atual %7B%0A%09%09%09count++%0A%09%09%7D else %7B%0A%09%09%09times = append(times, Pair%7BOne: atual, Two: count%7D)%0A%09%09%09atual = vet%5Bi%5D%0A%09%09%09count = 1%0A%09%09%7D%0A%0A%09%7D%0A%09return times%0A\n %7D%0A%0Af\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-06-02_18-14-14",
+            "content": "@@ -791,62 +791,8 @@\n %0A%09%7D%0A\n-%09times = append(times, Pair%7BOne: atual, Two: count%7D)%0A%0A\n %09ret\n",
+            "lines": "173"
+        },
+        {
+            "label": "2026-06-02_18-20-32",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Pair struct {\n\tOne int\n\tTwo int\n}\n\nfunc occurr(vet []int) []Pair {\n\trepetidos := make(map[int]int)\n\n\tfor _, v := range vet {\n\t\tif v < 0 {\n\t\t\tv = -v\n\t\t}\n\n\t\trepetidos[v]++\n\t}\n\n\tpares := make([]Pair, 0, len(repetidos))\n\n\tfor v, qntd := range repetidos {\n\t\tpares = append(pares, Pair{\n\t\t\tOne: v,\n\t\t\tTwo: qntd,\n\t\t})\n\t}\n\n\tsort.Slice(pares, func(v, qntd int) bool {\n\t\treturn pares[v].One < pares[qntd].One\n\t})\n\n\treturn pares\n\n}\n\nfunc teams(vet []int) []Pair {\n\ttimes := []Pair{}\n\tif len(vet) == 0 {\n\t\treturn nil\n\t}\n\n\tatual := vet[0]\n\tcount := 1\n\n\tfor i := 1; i < len(vet); i++ {\n\t\tif vet[i] == atual {\n\t\t\tcount++\n\t\t} else {\n\t\t\ttimes = append(times, Pair{One: atual, Two: count})\n\t\t\tatual = vet[i]\n\t\t\tcount = 1\n\t\t}\n\n\t}\n\ttimes = append(times, Pair{One: atual, Two: count})\n\n\treturn times\n}\n\nfunc mnext(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc alone(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc couple(vet []int) int {\n\t_ = vet\n\treturn 0\n}\n\nfunc hasSubseq(vet []int, seq []int, pos int) bool {\n\t_ = vet\n\t_ = seq\n\t_ = pos\n\treturn false\n}\n\nfunc subseq(vet []int, seq []int) int {\n\t_ = vet\n\t_ = seq\n\treturn -1\n}\n\nfunc erase(vet []int, posList []int) []int {\n\t_ = vet\n\t_ = posList\n\treturn nil\n}\n\nfunc clear(vet []int, value int) []int {\n\t_ = vet\n\t_ = value\n\treturn nil\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tfor {\n\t\tfmt.Print(\"$\")\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline := scanner.Text()\n\t\targs := strings.Split(line, \" \")\n\t\tfmt.Println(line)\n\n\t\tswitch args[0] {\n\t\tcase \"occurr\":\n\t\t\tprintSlice(occurr(str2vet(args[1])))\n\t\tcase \"teams\":\n\t\t\tprintSlice(teams(str2vet(args[1])))\n\t\tcase \"mnext\":\n\t\t\tprintSlice(mnext(str2vet(args[1])))\n\t\tcase \"alone\":\n\t\t\tprintSlice(alone(str2vet(args[1])))\n\t\tcase \"erase\":\n\t\t\tprintSlice(erase(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"clear\":\n\t\t\tval, _ := strconv.Atoi(args[2])\n\t\t\tprintSlice(clear(str2vet(args[1]), val))\n\t\tcase \"subseq\":\n\t\t\tfmt.Println(subseq(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"couple\":\n\t\t\tfmt.Println(couple(str2vet(args[1])))\n\t\tcase \"end\":\n\t\t\treturn\n\t\tdefault:\n\t\t\tfmt.Println(\"Invalid command\")\n\t\t}\n\t}\n}\n\n// Fun\u00e7\u00f5es auxiliares\n\nfunc str2vet(str string) []int {\n\tif str == \"[]\" {\n\t\treturn nil\n\t}\n\tstr = str[1 : len(str)-1]\n\tparts := strings.Split(str, \",\")\n\tvar vet []int\n\tfor _, part := range parts {\n\t\tnum, _ := strconv.Atoi(strings.TrimSpace(part))\n\t\tvet = append(vet, num)\n\t}\n\treturn vet\n}\n\nfunc printSlice[T any](vet []T) {\n\tfmt.Print(\"[\")\n\tfor i, x := range vet {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(x)\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc (p Pair) String() string {\n\treturn fmt.Sprintf(\"(%v, %v)\", p.One, p.Two)\n}\n",
+            "lines": "175"
         }
     ]
 }

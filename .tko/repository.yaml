@@ -13,16 +13,16 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@dfs
-- ed@bfs
-- ed@list
-- ed@backtrack
-- ed@tree
 - ed@linear
+- ed@tree
+- ed@list
 - ed@map_set
-- ed@basic
-- ed@vector
+- ed@dfs
 - ed@rec
+- ed@backtrack
+- ed@vector
+- ed@basic
+- ed@bfs
 flags:
   inbox: all
   panel: graph
@@ -30,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@mumia
-selected_index: 2
+selected: ed@especiais
+selected_index: 13

@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -14,13 +15,55 @@ type Pair struct {
 }
 
 func occurr(vet []int) []Pair {
-	_ = vet
-	return nil
+	repetidos := make(map[int]int)
+
+	for _, v := range vet {
+		if v < 0 {
+			v = -v
+		}
+
+		repetidos[v]++
+	}
+
+	pares := make([]Pair, 0, len(repetidos))
+
+	for v, qntd := range repetidos {
+		pares = append(pares, Pair{
+			One: v,
+			Two: qntd,
+		})
+	}
+
+	sort.Slice(pares, func(v, qntd int) bool {
+		return pares[v].One < pares[qntd].One
+	})
+
+	return pares
+
 }
 
 func teams(vet []int) []Pair {
-	_ = vet
-	return nil
+	times := []Pair{}
+	if len(vet) == 0 {
+		return nil
+	}
+
+	atual := vet[0]
+	count := 1
+
+	for i := 1; i < len(vet); i++ {
+		if vet[i] == atual {
+			count++
+		} else {
+			times = append(times, Pair{One: atual, Two: count})
+			atual = vet[i]
+			count = 1
+		}
+
+	}
+	times = append(times, Pair{One: atual, Two: count})
+
+	return times
 }
 
 func mnext(vet []int) []int {
