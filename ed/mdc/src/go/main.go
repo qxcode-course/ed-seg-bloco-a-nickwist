@@ -5,7 +5,17 @@ import (
 )
 
 func mdc(a, b int) int {
-	return 0
+	if a == 0 {
+		return b
+	}
+
+	if b == 0 {
+		return a
+	}
+
+	resto := a % b
+
+	return mdc(b, resto)
 }
 
 func main() {

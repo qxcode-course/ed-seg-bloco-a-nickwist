@@ -199,3 +199,12 @@
 2026-06-04 17:16:46, MOVE, v:1, k:ed@mdc, mode:EDIT
 2026-06-04 17:16:46, MOVE, v:1, k:ed@mdc, mode:EDIT
 2026-06-04 17:16:46, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-06-04 17:22:57, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-06-04 17:23:00, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:15
+2026-06-04 17:23:06, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0
+2026-06-04 17:23:06, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-06-04 17:26:57, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-06-04 17:28:33, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:27
+2026-06-04 17:29:08, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:25
+2026-06-04 17:29:09, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-06-04 17:29:23, SELF, v:1, k:ed@mdc, self:1, rate:100, study:10
