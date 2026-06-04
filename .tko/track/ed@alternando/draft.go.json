@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_02-47-46",
+            "content": "@@ -143,11 +143,8 @@\n  pos\n-, f\n  int\n@@ -172,12 +172,8 @@\n &pos\n-, &f\n )%0A  \n@@ -221,53 +221,8 @@\n e)%0A%0A\n-    if f == 1 %7B%0A        elementos%5B0%5D = 1%0A    \n     \n@@ -230,17 +230,17 @@\n or i := \n-1\n+0\n ; i %3C si\n@@ -261,149 +261,28 @@\n     \n-    if i %25 2 == 0 %7B%0A                elementos%5Bi%5D = i + 1%0A            %7D else %7B%0A                elementos%5Bi%5D = -(i + 1)%0A            %7D%0A        %7D\n+elementos%5Bi%5D = i + 1\n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-03_02-51-53",
+            "content": "@@ -631,28 +631,8 @@\n pos \n-&& elementos%5Bi%5D %3E 0 \n %7B%0A  \n@@ -679,108 +679,8 @@\n  %22)%0A\n-            %7D else if i == pos && elementos %5Bi%5D %3C 0 %7B%0A                fmt.Print(%22%3C %22, elementos%5Bi%5D)%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-03_02-55-08",
+            "content": "@@ -785,37 +785,32 @@\n  %22, elementos%5Bi%5D\n-, %22 %22\n )%0A            %7D \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-03_02-55-24",
+            "content": "@@ -777,16 +777,17 @@\n Print(%22%3C\n+ \n %22, eleme\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-03_02-55-31",
+            "content": "@@ -927,151 +927,42 @@\n     \n-if elementos%5Bi%5D %3E 0 %7B%0A            prox := (pos + 1) %25 len(elementos)%0A        %7D else %7B%0A            prox := (pos - 1) %25 len(elementos)%0A        %7D%0A\n+prox := (pos + 1) %25 len(elementos)\n %0A%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-03_02-59-28",
+            "content": "@@ -1011,37 +1011,8 @@\n lse \n-if elementos%5Bi%5D %3E 0 && i != 0\n %7B%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-03_02-59-57",
+            "content": "@@ -1019,28 +1019,37 @@\n lementos%5Bi%5D \n-%3C\n+%3E\n  0 \n+&& i != 0\n %7B%0A          \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-03_03-00-36",
+            "content": "@@ -1046,33 +1046,33 @@\n    prox := (pos \n-+\n+-\n  1) %25 len(elemen\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-03_03-00-57",
+            "content": "@@ -1002,16 +1002,99 @@\n       %7D \n+else if elementos%5Bi%5D %3C 0 %7B%0A            prox := (pos + 1) %25 len(elementos)%0A        %7D\n %0A%0A%0A     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-03_03-01-04",
+            "content": "@@ -915,16 +915,46 @@\n n(%22%5D%22)%0A%0A\n+        if elementos%5Bi%5D %3E 0 %7B%0A\n         \n@@ -1000,16 +1000,18 @@\n         \n+%7D \n %0A%0A%0A     \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-06-03_03-01-16",
+            "content": "@@ -919,40 +919,8 @@\n %22)%0A%0A\n-        if elementos%5Bpos%5D %3E 0 %7B%0A\n     \n@@ -970,18 +970,16 @@\n         \n-%7D \n %0A%0A%0A     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-03_03-04-16",
+            "content": "@@ -915,16 +915,48 @@\n n(%22%5D%22)%0A%0A\n+        if elementos%5Bpos%5D %3E 0 %7B%0A\n         \n@@ -1002,16 +1002,18 @@\n         \n+%7D \n %0A%0A%0A     \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-06-03_03-04-45",
+            "content": "@@ -919,40 +919,8 @@\n %22)%0A%0A\n-        if elementos%5Bpos%5D %3E 0 %7B%0A\n     \n@@ -974,73 +974,8 @@\n     \n-%7D else %7B%0A            prox := (pos - 1) %25 len(elementos)%0A        %7D\n %0A%0A%0A \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-06-03_03-05-17",
+            "content": "@@ -919,30 +919,8 @@\n %22)%0A%0A\n-        var prox int%0A%0A\n     \n@@ -960,24 +960,25 @@\n        prox \n+:\n = (pos + 1) \n@@ -1028,16 +1028,17 @@\n    prox \n+:\n = (pos -\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-03_03-06-18",
+            "content": "@@ -1063,25 +1063,8 @@\n  - 1\n- + len(elementos)\n ) %25 \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-03_03-07-01",
+            "content": "@@ -1110,43 +1110,9 @@\n  %7D%0A%0A\n-        if elemento%5Bpos%5D %3E 0 %7B%0A    \n+%0A\n     \n@@ -1179,108 +1179,8 @@\n ..)%0A\n-        %7D else %7B%0A            elementos = append(elementos%5B:prox%5D, elementos%5Bprox-1:%5D...)%0A        %7D%0A%0A\n %0A   \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-03_03-08-19",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc procurar_vivo(elementos []int, pos int) int {\n    return pos % len(elementos)\n}\n\nfunc main() {\n\n    var size, pos, f int\n    fmt.Scan(&size, &pos, &f)\n    pos--\n\n    elementos := make([]int, size)\n\n    if f == 1 {\n        elementos[0] = 1\n        for i := 1; i < size; i++ {\n            if i % 2 == 0 {\n                elementos[i] = i + 1\n            } else {\n                elementos[i] = -(i + 1)\n            }\n        }\n    }\n\n    for len(elementos) > 1 {\n\n        pos = procurar_vivo(elementos, pos)\n\n        fmt.Print(\"[ \")\n        for i := 0; i < len(elementos); i++ {\n            if i == pos && elementos[i] > 0 {\n                fmt.Print(elementos[i], \"> \")\n            } else if i == pos && elementos [i] < 0 {\n                fmt.Print(\"<\", elementos[i], \" \")\n            } else {\n                fmt.Print(elementos[i], \" \")\n            }\n        }\n        fmt.Println(\"]\")\n\n        var prox int\n\n        if elementos[pos] > 0 {\n            prox = (pos + 1) % len(elementos)\n        } else {\n            prox = (pos - 1 + len(elementos)) % len(elementos)\n        }\n\n        if elemento[pos] > 0 {\n            elementos = append(elementos[:prox], elementos[prox+1:]...)\n        } else {\n            elementos = append(elementos[:prox], elementos[prox-1:]...)\n        }\n\n\n        pos = procurar_vivo(elementos, prox)\n    }\n    \n    fmt.Printf(\"[ %d> ]\\n\", elementos[0])\n\n}\n",
+            "lines": "64"
+        }
+    ]
+}

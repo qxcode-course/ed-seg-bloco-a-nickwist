@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -8,13 +9,23 @@ import (
 	"strings"
 )
 
-func processa(vet []int) {
-	fmt.Println("[ " + Join(vet, " ") + " ]")
-	_ = vet;
-	// 1. defina o ponto de parada
-	// 2. monte o vetor auxiliar com os resultados das somas
-	// 3. chame recursivamente a função processa para o vetor auxiliar
-	// 4. imprima o vetor original
+func processa(vet []int, vetInicial []int) {
+    if len(vet) == 1 {
+		return
+    }
+
+    for i := 0; i < len(vet)-1; i++ {
+        vet[i] += vet[i+1]
+    }
+
+    vet = vet[:len(vet)-1]
+
+    copia := make([]int, len(vet))
+    copy(copia, vet)
+
+    processa(vet, vetInicial)
+
+    fmt.Println("[ " + Join(copia, " ") + " ]")
 }
 
 func main() {
@@ -30,7 +41,11 @@ func main() {
 			vet = append(vet, value)
 		}
 	}
-	processa(vet)
+	vetInicial := make([]int, len(vet))
+	copy(vetInicial, vet)
+
+	processa(vet, vetInicial)
+	fmt.Println("[ " + Join(vetInicial, " ") + " ]")
 }
 
 func Join[T any](v []T, sep string) string {

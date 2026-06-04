@@ -2,8 +2,258 @@
     "patches": [
         {
             "label": "2026-06-03_01-24-41",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\tfmt.Println(\"[ \" + Join(vet, \" \") + \" ]\")\n\t_ = vet;\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n@@ -125,11 +125,8 @@\n t, %22\n-aaa\n  %22) \n@@ -134,18 +134,24 @@\n  %22 %5D%22)%0A%09\n-%0A%0A\n+_ = vet;\n %0A%09// 1. \n",
             "lines": "48"
+        },
+        {
+            "label": "2026-06-04_01-18-36",
+            "content": "@@ -122,16 +122,19 @@\n n(vet, %22\n+aaa\n  %22) + %22 \n@@ -140,17 +140,16 @@\n  %5D%22)%0A%09%0A%0A\n-%09\n %0A%09// 1. \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-04_01-18-53",
+            "content": "@@ -94,130 +94,8 @@\n t) %7B\n-%0A%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if i %3C len(vet) %7B%0A%09%09%09vet%5Bi%5D += vet%5Bi+2%5D%0A%09%09%7D else %7B%0A%09%09%09vet = vet%5B:len(vet)-1%5D%0A%09%09%7D%0A%09%7D%0A%0A\n %0A%09fm\n@@ -139,24 +139,8 @@\n %22)%0A%09\n- %0A%09processa(vet)\n %0A%0A%09%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-04_01-32-43",
+            "content": "@@ -142,18 +142,16 @@\n len(vet)\n--1\n  %7B%0A%09%09%09ve\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-04_01-33-07",
+            "content": "@@ -166,17 +166,17 @@\n = vet%5Bi+\n-1\n+2\n %5D%0A%09%09%7D el\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-04_01-35-09",
+            "content": "@@ -265,31 +265,8 @@\n %0A%09 %0A\n-%09while len(vet) %3E 1 %7B%0A%09\n %09pro\n@@ -276,18 +276,16 @@\n sa(vet)%0A\n-%09%7D\n %0A%09%0A%09// 1\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-04_01-35-43",
+            "content": "@@ -262,18 +262,21 @@\n %5D%22)%0A%09 %0A%09\n-if\n+while\n  len(vet\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_01-37-40",
+            "content": "@@ -218,46 +218,8 @@\n %09%7D%0A%0A\n-%09if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D%0A\n %0A%09fm\n@@ -262,16 +262,52 @@\n %5D%22)%0A%09 %0A%09\n+if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D\n %0A%09%0A%09// 1\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_01-38-09",
+            "content": "@@ -96,100 +96,8 @@\n  %7B%0A%0A\n-%09if len(vet) %3C= 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A        return%0A    %7D%0A%0A\n %09for\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-06-04_01-41-21",
+            "content": "@@ -345,16 +345,62 @@\n et)%0A%09%7D%0A%0A\n+%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09 %0A\n %09%0A%09%0A%09// \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-04_01-43-06",
+            "content": "@@ -310,57 +310,8 @@\n %09%7D%0A%0A\n-%09%0A%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09 %0A%0A\n %09if \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-04_01-43-37",
+            "content": "@@ -209,18 +209,16 @@\n len(vet)\n--1\n ; i++ %7B%0A\n@@ -223,39 +223,63 @@\n %7B%0A%09%09\n-vet%5Bi%5D = \n+if i %3C len(vet)-1 %7B%0A%09%09%09\n vet%5Bi\n-+1\n %5D +\n+=\n  vet%5Bi\n++1\n %5D%0A\n+%09\n %09%7D\n-%0A%0A\n+ else %7B%0A%09%09\n %09vet\n@@ -298,16 +298,24 @@\n vet)-1%5D%0A\n+%09%09%7D%0A%09%7D%0A%0A\n %09%0A%09fmt.P\n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-06-04_01-46-13",
+            "content": "@@ -282,50 +282,8 @@\n %5D%0A%09%0A\n-%09%0A%0A%09if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A\n %09fmt\n@@ -323,16 +323,58 @@\n %22 %5D%22)%0A%09 \n+%0A%0A%09if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A%09\n %0A%09%0A%09// 1\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-46-42",
+            "content": "@@ -278,16 +278,58 @@\n t)-1%5D%0A%09%0A\n+%09%0A%0A%09if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A\n %09fmt.Pri\n@@ -369,50 +369,8 @@\n )%0A%09 \n-%0A%0A%09if len(vet) %3E 1 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A%09\n %0A%09%0A%09\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-47-49",
+            "content": "@@ -340,17 +340,17 @@\n (vet) %3E \n-0\n+1\n  %7B%0A%09%09pro\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-49-43",
+            "content": "@@ -281,144 +281,96 @@\n 1%5D%0A%09\n- \n %0A%09\n-copia := make(%5B%5Dint, len(vet))%0A%09copy(copia, vet)%0A%0A%09if len(vet) %3E 0 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A%09fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)\n+fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09 %0A%0A%09if len(vet) %3E 0 %7B%0A%09%09processa(vet)%0A%09%7D%0A%0A%09\n %0A%09%0A%09\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-54-30",
+            "content": "@@ -345,17 +345,17 @@\n (vet) %3E \n-1\n+0\n  %7B%0A%09%09pro\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-54-42",
+            "content": "@@ -105,17 +105,17 @@\n en(vet) \n-=\n+%3C\n = 1 %7B%0A  \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_01-58-48",
+            "content": "@@ -344,17 +344,16 @@\n n(vet) %3E\n-=\n  1 %7B%0A%09%09p\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_02-10-11",
+            "content": "@@ -162,10 +162,8 @@\n + %22 \n-aa\n %5D%22)%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_02-10-20",
+            "content": "@@ -92,16 +92,109 @@\n int) %7B%0A%0A\n+%09if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 aa%5D%22)%0A        return%0A    %7D%0A\n %0A%09for i \n@@ -376,100 +376,8 @@\n %09%7D%0A%0A\n-%09if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A        return%0A    %7D%0A%0A\n %09fmt\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-04_02-10-50",
+            "content": "@@ -283,56 +283,8 @@\n %09%7D%0A%0A\n-%09fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)%0A%0A%09%0A\n %09if \n@@ -369,16 +369,62 @@\n rn%0A    %7D\n+%0A%0A%09fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)\n %0A%09%0A%09// 1\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-04_02-11-04",
+            "content": "@@ -327,16 +327,107 @@\n  %5D%22)%0A%0A%09%0A\n+%09if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A        return%0A    %7D%0A\n %09%0A%09// 1.\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-06-04_02-11-10",
+            "content": "@@ -253,16 +253,17 @@\n n(vet) %3E\n+=\n  1 %7B%0A%09%09p\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-04_02-11-25",
+            "content": "@@ -96,160 +96,8 @@\n  %7B%0A%0A\n-%09vetInicial := make(%5B%5Dint, len(vet))%0A%09copy(vetInicial, vet)%0A%0A%09if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A        return%0A    %7D%0A\n %0A%09fo\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-04_02-12-17",
+            "content": "@@ -200,26 +200,20 @@\n (%22%5B %22 + \n-vetInicial\n+Join\n (vet, %22 \n@@ -405,17 +405,16 @@\n n(vet) %3E\n-=\n  1 %7B%0A%09%09p\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-06-04_02-12-35",
+            "content": "@@ -200,21 +200,16 @@\n (%22%5B %22 + \n-Join(\n vetInici\n@@ -210,16 +210,20 @@\n tInicial\n+(vet\n , %22 %22) +\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-06-04_02-13-22",
+            "content": "@@ -91,43 +91,13 @@\n %5Dint\n-, primeira bool) %7B%0A%09if primeira %7B%0A%09\n+) %7B%0A%0A\n %09vet\n@@ -129,17 +129,16 @@\n n(vet))%0A\n-%09\n %09copy(ve\n@@ -151,19 +151,16 @@\n al, vet)\n-%0A%09%7D\n %0A%0A%09if le\n@@ -436,15 +436,8 @@\n (vet\n-, false\n )%0A%09%7D\n@@ -973,14 +973,8 @@\n (vet\n-, true\n )%0A%7D%0A\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-06-04_02-22-21",
+            "content": "@@ -64,17 +64,16 @@\n ngs%22%0A)%0A%0A\n-%0A\n func pro\n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-06-04_02-23-47",
+            "content": "@@ -88,16 +88,31 @@\n et %5B%5Dint\n+, primeira bool\n ) %7B%0A%09if \n@@ -467,16 +467,23 @@\n essa(vet\n+, false\n )%0A%09%7D%0A%0A%09f\n@@ -1011,16 +1011,22 @@\n essa(vet\n+, true\n )%0A%7D%0A%0Afun\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-06-04_02-24-16",
+            "content": "@@ -93,16 +93,29 @@\n int) %7B%0A%09\n+if primeira %7B\n %0A%09%09vetIn\n@@ -164,24 +164,27 @@\n nicial, vet)\n+%0A%09%7D\n %0A%0A%09if len(ve\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-06-04_02-24-28",
+            "content": "@@ -68,29 +68,8 @@\n %0A)%0A%0A\n-var primeira = true %0A\n %0Afun\n@@ -96,23 +96,9 @@\n ) %7B%0A\n-%0A%09if primeira %7B\n+%09\n %0A%09%09v\n@@ -159,30 +159,8 @@\n vet)\n-%0A%09%09primeira = false%0A%09%7D\n %0A%0A%09i\n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-06-04_02-24-55",
+            "content": "@@ -64,16 +64,38 @@\n ngs%22%0A)%0A%0A\n+var primeira = true %0A%0A\n func pro\n@@ -113,23 +113,8 @@\n %5Dint\n-, primeira bool\n ) %7B%0A\n@@ -191,16 +191,35 @@\n l, vet)%0A\n+%09%09primeira = false%0A\n %09%7D%0A%0A%09if \n@@ -497,15 +497,8 @@\n (vet\n-, false\n )%0A%09%7D\n@@ -1034,14 +1034,8 @@\n (vet\n-, true\n )%0A%7D%0A\n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-06-04_02-25-50",
+            "content": "@@ -93,32 +93,108 @@\n nt, \n-vetInicial %5B%5Dint) %7B%0A    \n+primeira bool) %7B%0A%0A%09if primeira %7B%0A%09%09vetInicial := make(%5B%5Dint, len(vet))%0A%09%09copy(vetInicial, vet)%0A%09%7D%0A%0A%09\n if l\n@@ -287,20 +287,17 @@\n %0A    %7D%0A%0A\n-    \n+%09\n for i :=\n@@ -326,24 +326,17 @@\n + %7B%0A\n-        \n+%09%09\n vet%5Bi%5D \n-+\n = ve\n@@ -345,20 +345,23 @@\n i+1%5D\n-%0A    %7D%0A%0A    \n+ + vet%5Bi%5D%0A%09%7D%0A%0A%09\n vet \n@@ -379,21 +379,20 @@\n vet)-1%5D%0A\n-%0A    \n+%09 %0A%09\n copia :=\n@@ -414,20 +414,17 @@\n n(vet))%0A\n-    \n+%09\n copy(cop\n@@ -437,86 +437,294 @@\n t)%0A%0A\n-    processa(vet, vetInicial)%0A%0A    fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)\n+%09if len(vet) %3E= 1 %7B%0A%09%09processa(vet, false)%0A%09%7D%0A%0A%09fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)%0A%0A%09%0A%09%0A%09// 1. defina o ponto de parada%0A%09// 2. monte o vetor auxiliar com os resultados das somas%0A%09// 3. chame recursivamente a fun%C3%A7%C3%A3o processa para o vetor auxiliar%0A%09// 4. imprima o vetor original\n %0A%7D%0A%0A\n@@ -1002,69 +1002,8 @@\n %0A%09%7D%0A\n-%09vetInicial := make(%5B%5Dint, len%5Bvet%5D)%0A%09copy(vetInicial, vet)%0A%0A\n %09pro\n@@ -1013,26 +1013,20 @@\n sa(vet, \n-vetInicial\n+true\n )%0A%7D%0A%0Afun\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-06-04_02-28-28",
+            "content": "@@ -755,21 +755,21 @@\n int, len\n-(vet)\n+%5Bvet%5D\n )%0A%09copy(\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-29-05",
+            "content": "@@ -132,9 +132,9 @@\n  == \n-2\n+1\n  %7B%0A \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-29-30",
+            "content": "@@ -189,16 +189,31 @@\n + %22 %5D%22)%0A\n+        return%0A\n     %7D%0A%0A \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-29-41",
+            "content": "@@ -128,17 +128,17 @@\n vet) == \n-1\n+2\n  %7B%0A     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-04_02-29-49",
+            "content": "@@ -132,9 +132,9 @@\n  == \n-4\n+1\n  %7B%0A \n@@ -189,25 +189,16 @@\n + %22 %5D%22)%0A\n-%09%09return%0A\n     %7D%0A%0A \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-06-04_02-30-01",
+            "content": "@@ -128,17 +128,17 @@\n vet) == \n-1\n+4\n  %7B%0A     \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-30-07",
+            "content": "@@ -108,16 +108,111 @@\n %5B%5Dint) %7B\n+%0A    if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D\n %0A%0A    fo\n@@ -445,103 +445,8 @@\n %5D%22)%0A\n-%0A%09 if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-30-26",
+            "content": "@@ -298,17 +298,67 @@\n icial)%0A%0A\n-%09\n+    fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)%0A%0A%09 \n if len(v\n@@ -445,61 +445,8 @@\n  %7D%0A%0A\n-    fmt.Println(%22%5B %22 + Join(copia, %22 %22) + %22 %5D%22)%0A%0A%09 %0A%0A\n %7D%0A%0Af\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-06-04_02-30-36",
+            "content": "@@ -112,103 +112,8 @@\n t) %7B\n-%0A    if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D\n %0A%0A  \n@@ -298,16 +298,109 @@\n icial)%0A%0A\n+%09if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D%0A%0A\n     fmt.\n@@ -439,16 +439,21 @@\n + %22 %5D%22)%0A\n+%0A%09 %0A%0A\n %7D%0A%0Afunc \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-06-04_02-31-26",
+            "content": "@@ -108,16 +108,111 @@\n %5B%5Dint) %7B\n+%0A    if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D\n %0A%0A    fo\n@@ -811,51 +811,8 @@\n al)%0A\n-%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A\n %7D%0A%0Af\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-33-06",
+            "content": "@@ -82,16 +82,34 @@\n ssa(vet \n+%5B%5Dint, vetInicial \n %5B%5Dint) %7B\n@@ -698,16 +698,28 @@\n essa(vet\n+, vetInicial\n )%0A%09fmt.P\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-04_02-33-37",
+            "content": "@@ -91,117 +91,11 @@\n %5Dint\n-, vetInicial %5B%5Dint) %7B%0A    if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D\n+) %7B\n %0A%0A  \n@@ -680,28 +680,16 @@\n essa(vet\n-, vetInicial\n )%0A%09fmt.P\n@@ -710,23 +710,16 @@\n Join(vet\n-Inicial\n , %22 %22) +\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-04_02-34-35",
+            "content": "@@ -800,16 +800,66 @@\n nicial)%0A\n+%09fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A\n %7D%0A%0Afunc \n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-06-04_02-34-56",
+            "content": "@@ -804,58 +804,8 @@\n al)%0A\n-%09fmt.Println(%22%5B %22 + Join(vetInicial, %22 %22) + %22 %5D%22)%0A\n %7D%0A%0Af\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-06-04_02-35-04",
+            "content": "@@ -108,16 +108,104 @@\n %5B%5Dint) %7B\n+%0A    if len(vet) == 1 %7B%0A        fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09%09return%0A    %7D\n %0A%0A    fo\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-06-04_02-35-12",
+            "content": "@@ -112,46 +112,8 @@\n t) %7B\n-%0A    if len(vet) == 1 %7B%0A%09%09return%0A    %7D\n %0A%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-06-04_02-35-21",
+            "content": "\npackage main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int, vetInicial []int) {\n    if len(vet) == 1 {\n\t\treturn\n    }\n\n    for i := 0; i < len(vet)-1; i++ {\n        vet[i] += vet[i+1]\n    }\n\n    vet = vet[:len(vet)-1]\n\n    copia := make([]int, len(vet))\n    copy(copia, vet)\n\n    processa(vet, vetInicial)\n\n    fmt.Println(\"[ \" + Join(copia, \" \") + \" ]\")\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tvetInicial := make([]int, len(vet))\n\tcopy(vetInicial, vet)\n\n\tprocessa(vet, vetInicial)\n\tfmt.Println(\"[ \" + Join(vetInicial, \" \") + \" ]\")\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
+            "lines": "63"
         }
     ]
 }
