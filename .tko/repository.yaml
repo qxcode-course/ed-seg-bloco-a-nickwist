@@ -13,20 +13,20 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@bfs
-- ed@rec
 - ed@basic
-- ed@list
+- ed@bfs
 - ed@dfs
 - ed@tree
+- ed@list
 - ed@vector
+- ed@rec
 - ed@backtrack
-- ed@linear
 - ed@map_set
+- ed@linear
 flags:
   inbox: all
-  panel: graph
-  show_panel: 'true'
+  panel: skills
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
