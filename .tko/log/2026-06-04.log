@@ -208,3 +208,23 @@
 2026-06-04 17:29:08, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:25
 2026-06-04 17:29:09, MOVE, v:1, k:ed@mdc, mode:BACK
 2026-06-04 17:29:23, SELF, v:1, k:ed@mdc, self:1, rate:100, study:10
+2026-06-04 17:29:48, MOVE, v:1, k:ed@queimada, mode:DOWN
+2026-06-04 17:29:49, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-06-04 17:30:29, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-06-04 17:29:48, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 17:29:48, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 17:29:57, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 20:01:46, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-06-04 20:01:51, EXEC, v:1, k:ed@queimada, mode:FULL, rate:16, size:41
+2026-06-04 20:01:51, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 20:07:48, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-06-04 20:08:03, SELF, v:1, k:ed@mdc, self:1, rate:100
+2026-06-04 20:08:49, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-06-04 20:09:44, EXEC, v:1, k:ed@queimada, mode:FULL, rate:16
+2026-06-04 20:09:44, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 20:10:25, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 20:15:47, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-06-04 20:19:34, EXEC, v:1, k:ed@queimada, mode:FULL, rate:100, size:52
+2026-06-04 20:19:38, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-06-04 20:19:59, SELF, v:1, k:ed@queimada, self:1, rate:100, study:12, concept:1
+2026-06-04 20:20:08, MOVE, v:1, k:ed@labirinto, mode:DOWN

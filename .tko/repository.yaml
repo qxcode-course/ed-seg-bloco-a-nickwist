@@ -13,22 +13,22 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@rec
-- ed@tree
-- ed@dfs
-- ed@list
 - ed@bfs
-- ed@map_set
+- ed@rec
 - ed@basic
+- ed@list
+- ed@dfs
+- ed@tree
 - ed@vector
 - ed@backtrack
 - ed@linear
+- ed@map_set
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@mdc
-selected_index: 22
+selected: ed@labirinto
+selected_index: 24
