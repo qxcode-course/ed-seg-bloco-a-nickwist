@@ -14,21 +14,21 @@ sources:
   quests: null
 expanded:
 - ed@basic
+- ed@vector
+- ed@linear
+- ed@backtrack
 - ed@bfs
 - ed@dfs
 - ed@tree
-- ed@list
-- ed@vector
-- ed@rec
-- ed@backtrack
 - ed@map_set
-- ed@linear
+- ed@list
+- ed@rec
 flags:
   inbox: all
   panel: skills
-  show_panel: 'false'
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@labirinto
-selected_index: 24
+selected: ed@eh_primo
+selected_index: 26
