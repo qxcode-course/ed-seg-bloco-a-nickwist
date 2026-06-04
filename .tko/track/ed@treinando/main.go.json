@@ -1,0 +1,289 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-04_03-55-28",
+            "content": "@@ -148,22 +148,8 @@\n  %22%5B%22\n- + vet%5B%5D + %22%5D%22\n %0A%09%0A%7D\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-04_03-55-52",
+            "content": "@@ -150,16 +150,18 @@\n %5B%22 + vet\n+%5B%5D\n  + %22%5D%22%0A%09\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-04_03-55-55",
+            "content": "@@ -146,16 +146,22 @@\n rn %22%5B%22 +\n+ vet +\n  %22%5D%22%0A%09%0A%7D\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-04_03-56-06",
+            "content": "@@ -137,43 +137,8 @@\n %09%7D%0A%0A\n-%09if len(vet) == 1 %7B%0A%09%09return %0A%09%7D%0A%0A%0A\n %09ret\n@@ -1123,13 +1123,8 @@\n tln(\n-%22%5B%22, \n tost\n@@ -1133,13 +1133,8 @@\n vet)\n-, %22%5D%22\n )%0A%09%09\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-06-04_04-04-12",
+            "content": "@@ -166,14 +166,8 @@\n urn \n-vet%5B0%5D\n %0A%09%7D%0A\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-04-42",
+            "content": "@@ -166,32 +166,14 @@\n urn \n-fmt.Sprintf(%22%25d%22,\n vet%5B0%5D\n-)\n %0A%09%7D%0A\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-04-58",
+            "content": "@@ -125,16 +125,18 @@\n return %22\n+%5B%5D\n %22%0A%09%7D%0A%0A%09i\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-05-14",
+            "content": "@@ -94,16 +94,51 @@\n string %7B\n+%0A%09if len(vet) == 0 %7B%0A%09%09return %22%22%0A%09%7D\n %0A%0A%09if le\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-05-23",
+            "content": "@@ -164,16 +164,23 @@\n return %22\n+%5B%22 + %22%5D\n %22%0A%09%0A%7D%0A%0Af\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-04_04-05-39",
+            "content": "@@ -163,19 +163,18 @@\n %09return \n-nil\n+%22%22\n %0A%09%0A%7D%0A%0Afu\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-04_04-05-45",
+            "content": "@@ -163,18 +163,19 @@\n %09return \n-%22%22\n+nil\n %0A%09%0A%7D%0A%0Afu\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-04_04-06-18",
+            "content": "@@ -154,24 +154,25 @@\n 0%5D)%0A%09%7D%0A%0A\n+%0A\n %09return \n fmt.Spri\n@@ -167,52 +167,10 @@\n urn \n-fmt.Sprintf(%22%25d %25d%22, vet%5B0%5D, tostr(vet%5B1:%5D))\n+%22%22\n %0A%09%0A%7D\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-06-04_04-07-27",
+            "content": "@@ -178,16 +178,18 @@\n ntf(%22%25d \n+%25d\n %22, vet%5B0\n@@ -193,11 +193,9 @@\n t%5B0%5D\n- )+\n+,\n  tos\n@@ -205,16 +205,17 @@\n vet%5B1:%5D)\n+)\n %0A%09%0A%7D%0A%0Afu\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-06-04_04-07-59",
+            "content": "@@ -100,44 +100,8 @@\n  %7B%0A%0A\n-%09if len(vet) == 0 %7B%0A%09%09return %22%22%0A%09%7D%0A%0A\n %09if \n@@ -189,17 +189,16 @@\n vet%5B0%5D )\n- \n + tostr(\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-06-04_04-08-52",
+            "content": "@@ -126,17 +126,16 @@\n return %22\n-,\n %22%0A%09%7D%0A%0A%09i\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-10-17",
+            "content": "@@ -124,16 +124,20 @@\n %09%09return\n+ %22,%22\n %0A%09%7D%0A%0A%09if\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-10-28",
+            "content": "@@ -124,19 +124,16 @@\n %09%09return\n- %22%22\n %0A%09%7D%0A%0A%09if\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-10-36",
+            "content": "@@ -213,16 +213,17 @@\n intf(%22%25d\n+ \n %22, vet%5B0\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-14-19",
+            "content": "@@ -116,24 +116,18 @@\n  == 0 %7B%0A\n-        \n+%09%09\n return %22\n@@ -128,27 +128,21 @@\n turn %22%22%0A\n-    %7D%0A%0A    \n+%09%7D%0A%0A%09\n if len(v\n@@ -156,88 +156,80 @@\n 1 %7B%0A\n-        return strconv.Itoa(vet%5B0%5D)%0A    %7D%0A%0A    return strconv.Itoa(vet%5B0%5D) + %22 %22\n+%09%09return fmt.Sprintf(%22%25d%22,vet%5B0%5D)%0A%09%7D%0A%0A%09return fmt.Sprintf(%22%25d%22, vet%5B0%5D )\n  + t\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-17-19",
+            "content": "@@ -1233,18 +1233,17 @@\n ntln(%22%5B%22\n- +\n+,\n  tostr(v\n@@ -1245,18 +1245,17 @@\n str(vet)\n- +\n+,\n  %22%5D%22)%0A%09%09\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-18-24",
+            "content": "@@ -116,18 +116,24 @@\n  == 0 %7B%0A\n-%09%09\n+        \n return %22\n@@ -134,21 +134,27 @@\n turn %22%22%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n if len(v\n@@ -168,81 +168,88 @@\n 1 %7B%0A\n-%09%09return fmt.Sprintf(%22%25d%22,vet%5B0%5D)%0A%09%7D%0A%0A%09return fmt.Sprintf(%22%25d %22, vet%5B0%5D )\n+        return strconv.Itoa(vet%5B0%5D)%0A    %7D%0A%0A    return strconv.Itoa(vet%5B0%5D) + %22 %22\n  + t\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-19-20",
+            "content": "@@ -213,17 +213,16 @@\n intf(%22%25d\n-,\n  %22, vet%5B\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-19-34",
+            "content": "@@ -288,156 +288,26 @@\n  %7B%0A%09\n-if len(vet) == 0 %7B%0A%09%09return %22%22%0A%09%7D%0A%0A%09if len(vet) == 1 %7B%0A%09%09return fmt.Sprintf(%22%25d%22,vet%5B0%5D)%0A%09%7D%0A%0A%09return fmt.Sprintf(%22%25d, %22, vet%5B0%5D ) + tostr(vet%5B1:%5D)%0A%09\n+_ = vet%0A%09return %22%22\n %0A%7D%0A%0A\n",
+            "lines": "94"
+        },
+        {
+            "label": "2026-06-04_04-22-20",
+            "content": "@@ -1393,30 +1393,24 @@\n fmt.Println(\n-%22%5B%22 + \n tostrrev(vet\n@@ -1406,30 +1406,24 @@\n ostrrev(vet)\n- + %22%5D%22\n )%0A%09%09case %22re\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-23-50",
+            "content": "@@ -413,18 +413,9 @@\n vet%5B\n-len(ven)-1\n+0\n %5D ) \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-24-13",
+            "content": "@@ -413,17 +413,16 @@\n vet%5B\n-(\n len(ven)\n )-1%5D\n@@ -417,17 +417,16 @@\n len(ven)\n-)\n -1%5D ) + \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-24-20",
+            "content": "@@ -416,17 +416,17 @@\n %5B(len(ve\n-t\n+n\n ))-1%5D ) \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-24-39",
+            "content": "@@ -369,24 +369,17 @@\n %25d%22,vet%5B\n-len(vet)\n+0\n %5D)%0A%09%7D%0A%0A%09\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-24-55",
+            "content": "@@ -369,25 +369,24 @@\n %25d%22,vet%5B\n-(\n len(vet)\n )%5D)%0A%09%7D%0A%0A\n@@ -377,17 +377,16 @@\n len(vet)\n-)\n %5D)%0A%09%7D%0A%0A%09\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-25-26",
+            "content": "@@ -273,22 +273,8 @@\n t %5B%5D\n-int, primeiro \n int)\n@@ -365,25 +365,31 @@\n tf(%22%25d%22,\n- primeiro\n+vet%5B(len(vet))%5D\n )%0A%09%7D%0A%0A%09r\n@@ -1406,37 +1406,8 @@\n v%22:%0A\n-%09%09%09primeiro := vet%5Blen(vet)%5D%0A\n %09%09%09f\n@@ -1439,18 +1439,8 @@\n (vet\n-, primeiro\n ) + \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-26-48",
+            "content": "@@ -1429,25 +1429,24 @@\n  := vet%5B\n-(\n len(vet)\n )%5D%0A%09%09%09fm\n@@ -1437,17 +1437,16 @@\n len(vet)\n-)\n %5D%0A%09%09%09fmt\n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-06-04_04-27-05",
+            "content": "@@ -1438,18 +1438,16 @@\n len(vet)\n--1\n )%5D%0A%09%09%09fm\n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-06-04_04-27-41",
+            "content": "@@ -265,24 +265,38 @@\n trrev(vet %5B%5D\n+int, primeiro \n int) string \n@@ -384,23 +384,16 @@\n d%22, \n-vet%5Blen(vet)-1%5D\n+primeiro\n )%0A%09%7D\n@@ -1410,16 +1410,49 @@\n torev%22:%0A\n+%09%09%09primeiro := vet%5B(len(vet)-1)%5D%0A\n %09%09%09fmt.P\n@@ -1472,24 +1472,34 @@\n tostrrev(vet\n+, primeiro\n ) + %22%5D%22)%0A%09%09c\n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-06-04_04-28-54",
+            "content": "@@ -438,27 +438,24 @@\n 1%5D ) + tostr\n-rev\n (vet%5B1:%5D)%0A%09%0A\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-30-24",
+            "content": "@@ -454,19 +454,10 @@\n vet%5B\n-:len(vet)-\n 1\n+:\n %5D)%0A%09\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-30-58",
+            "content": "@@ -542,124 +542,15 @@\n  %7B%0A%09\n-if len(vet) %3C= 1 %7B%0A%09%09return%0A%09%7D%0A%09%0A%09vet%5B0%5D, vet%5Blen(vet)-1%5D = vet%5Blen(vet)-1%5D, vet%5B0%5D%0A%09%0A%09reverse%5Bvet%5B1 : len(vet)-1%5D%5D%0A\n+_ = vet\n %0A%7D%0A%0A\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-06-04_04-45-16",
+            "content": "@@ -632,17 +632,17 @@\n %09reverse\n-(\n+%5B\n vet%5B1 : \n@@ -652,17 +652,17 @@\n (vet)-1%5D\n-)\n+%5D\n %0A%0A%7D%0A%0A// \n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-06-04_04-45-31",
+            "content": "@@ -725,115 +725,25 @@\n  %7B%0A%09\n-if len(vet) == 0 %7B%0A%09%09return 0%0A%09%7D%0A%0A%09if len(vet) == 1 %7B%0A%09%09return vet%5B0%5D%0A%09%7D%0A%0A%09return vet%5B0%5D + sum%5B:len(vet)-1%5D\n+_ = vet%0A%09return 0\n %0A%7D%0A%0A\n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-06-04_04-56-56",
+            "content": "@@ -809,16 +809,35 @@\n n vet%5B0%5D\n+ + sum%5B:len(vet)-1%5D\n %0A%7D%0A%0A// m\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_04-57-05",
+            "content": "@@ -813,33 +813,8 @@\n t%5B0%5D\n- + sum%5B:vet%5B:len(vet)-1%5D%5D\n %0A%7D%0A%0A\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_04-58-32",
+            "content": "@@ -817,24 +817,25 @@\n  + sum%5B:vet%5B\n+:\n len(vet)-1%5D%5D\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_04-58-40",
+            "content": "@@ -816,21 +816,21 @@\n %5D + sum%5B\n+:\n vet%5B\n-:\n len(vet)\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_04-58-46",
+            "content": "@@ -815,25 +815,34 @@\n 0%5D + sum\n-(vet%5B1:%5D)\n+%5Bvet%5B:len(vet)-1%5D%5D\n %0A%7D%0A%0A// m\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_04-59-49",
+            "content": "@@ -900,111 +900,25 @@\n  %7B%0A%09\n-if len(vet) == 0 %7B%0A%09%09return 1%0A%09%7D%0A%0A%09if len(vet) == 1 %7B%0A%09%09return vet%5B0%5D%0A%09%7D%0A%0A%09return vet%5B0%5D * sum(vet%5B1:%5D)\n+_ = vet%0A%09return 0\n %0A%7D%0A%0A\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-06-04_05-00-27",
+            "content": "@@ -987,20 +987,19 @@\n et%5B0%5D * \n-mult\n+sum\n (vet%5B1:%5D\n",
+            "lines": "123"
+        },
+        {
+            "label": "2026-06-04_05-01-37",
+            "content": "@@ -1220,110 +1220,25 @@\n  %7B%0A%09\n-if len(vet) == 0 %7B%0A%09%09return -1%0A%09%7D%0A%0A%09if len(vet) == 1 %7B%0A%09%09return 0%0A%09%7D%0A%0A%09return vet%5B0%5D + sum(vet%5B1:%5D)%0A%7D%0A\n+_ = vet%0A%09return 0\n %0A%7D%0A%0A\n",
+            "lines": "123"
+        },
+        {
+            "label": "2026-06-04_05-07-14",
+            "content": "@@ -1294,17 +1294,37 @@\n %09return \n-0\n+vet%5B0%5D + sum(vet%5B1:%5D)\n %0A%7D%0A%0A%7D%0A%0Af\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-06-04_05-07-23",
+            "content": "@@ -1298,10 +1298,9 @@\n urn \n-=1\n+0\n %0A%7D%0A%0A\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-06-04_05-07-29",
+            "content": "@@ -1294,17 +1294,17 @@\n %09return \n--\n+=\n 1%0A%7D%0A%0A%7D%0A%0A\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-06-04_05-07-35",
+            "content": "@@ -1300,16 +1300,18 @@\n n -1%0A%7D%0A%0A\n+%7D%0A\n %0Afunc ma\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-06-04_05-07-42",
+            "content": "@@ -1220,94 +1220,16 @@\n  %7B%0A%09\n-%0A%09var rec func(v, %5B%5Dint) (int, int) %0A%0A%09rec = func(v, %5B%5Dint) (int, int) %7B%0A%09%09%0A%09%09\n if len(v\n ) ==\n@@ -1228,251 +1228,81 @@\n en(v\n+et\n ) == \n-1\n+0\n  %7B%0A%09%09\n-%09\n return \n-0, v%5B0%5D%0A%09%09%7D%0A%0A%09%09index, menor := rec(v%5B1:%5D)%0A%0A%09%09if v%5B0%5D %3C= menor %7B%0A            return 0, v%5B0%5D%0A        %7D%0A%0A        return idx + 1, menor%0A    %09%7D%0A%0A    %09indice, valor := rec(vet)%0A    %09fmt.Println(indice, valor)%0A%0A    %09return indice%0A%09\n+-1%0A%09%7D%0A%0A%09if len(vet) == 1 %7B%0A%09%09return 0%0A%09%7D%0A%0A%09return -1%0A\n %7D%0A%0A%0A\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-06-04_05-09-40",
+            "content": "@@ -1296,50 +1296,8 @@\n %0A%09%09%0A\n-%09%09if len(v) == 0 %7B%0A%09%09%09return -1, 0%0A%09%09%7D%0A%09%09%0A\n %09%09if\n@@ -1392,25 +1392,25 @@\n %0A           \n-%09\n+ \n return 0, v%5B\n@@ -1427,17 +1427,20 @@\n  %7D%0A%0A    \n-%09\n+    \n return i\n@@ -1453,20 +1453,28 @@\n , menor%0A\n-%09%7D%0A%0A\n+    %09%7D%0A%0A    \n %09indice,\n@@ -1492,16 +1492,20 @@\n ec(vet)%0A\n+    \n %09fmt.Pri\n@@ -1525,16 +1525,20 @@\n valor)%0A%0A\n+    \n %09return \n",
+            "lines": "144"
+        },
+        {
+            "label": "2026-06-04_05-11-38",
+            "content": "@@ -1224,32 +1224,33 @@\n %0A%09var rec func(v\n+,\n  %5B%5Dint) (int, in\n@@ -1263,24 +1263,25 @@\n rec = func(v\n+,\n  %5B%5Dint) (int\n",
+            "lines": "148"
+        },
+        {
+            "label": "2026-06-04_05-12-43",
+            "content": "@@ -1290,16 +1290,55 @@\n t) %7B%0A%09%09%0A\n+%09%09if len(v) == 0 %7B%0A%09%09%09return -1, 0%0A%09%09%7D%0A\n %09%09%0A%09%09if \n@@ -1476,19 +1476,17 @@\n return i\n-nde\n+d\n x + 1, m\n",
+            "lines": "148"
+        },
+        {
+            "label": "2026-06-04_05-13-59",
+            "content": "@@ -1466,17 +1466,21 @@\n indice, \n-_\n+valor\n  := rec(\n@@ -1485,16 +1485,43 @@\n c(vet)%0A%09\n+fmt.Println(indice, valor)%0A\n %0A%09return\n",
+            "lines": "145"
+        },
+        {
+            "label": "2026-06-04_05-14-19",
+            "content": "@@ -1294,47 +1294,8 @@\n %0A%09%09%0A\n-%09%09if len(v) == 0 %7B%0A%09%09%09return -1, 0%0A%09%09%7D%0A\n %09%09%0A%09\n",
+            "lines": "144"
+        },
+        {
+            "label": "2026-06-04_05-14-45",
+            "content": "\npackage main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc tostr(vet []int) string {\n\n\tif len(vet) == 0 {\n\t\treturn \"\"\n\t}\n\n\tif len(vet) == 1 {\n\t\treturn fmt.Sprintf(\"%d\",vet[0])\n\t}\n\n\treturn fmt.Sprintf(\"%d, \", vet[0] ) + tostr(vet[1:])\n\t\n}\n\nfunc tostrrev(vet []int) string {\n\tif len(vet) == 0 {\n\t\treturn \"\"\n\t}\n\n\tif len(vet) == 1 {\n\t\treturn fmt.Sprintf(\"%d\", vet[len(vet)-1])\n\t}\n\n\treturn fmt.Sprintf(\"%d, \", vet[(len(vet))-1] ) + tostrrev(vet[:len(vet)-1])\n\t\n}\n\n// reverse: inverte os elementos do slice\nfunc reverse(vet []int) {\n\tif len(vet) <= 1 {\n\t\treturn\n\t}\n\t\n\tvet[0], vet[len(vet)-1] = vet[len(vet)-1], vet[0]\n\t\n\treverse(vet[1 : len(vet)-1])\n\n}\n\n// sum: soma dos elementos do slice\nfunc sum(vet []int) int {\n\tif len(vet) == 0 {\n\t\treturn 0\n\t}\n\n\tif len(vet) == 1 {\n\t\treturn vet[0]\n\t}\n\n\treturn vet[0] + sum(vet[1:])\n}\n\n// mult: produto dos elementos do slice\nfunc mult(vet []int) int {\n\tif len(vet) == 0 {\n\t\treturn 1\n\t}\n\n\tif len(vet) == 1 {\n\t\treturn vet[0]\n\t}\n\n\treturn vet[0] * mult(vet[1:])\n}\n\n// min: retorna o \u00edndice e valor do menor valor\n// crie uma fun\u00e7\u00e3o recursiva interna do modelo\n// var rec func(v []int) (int, int)\n// para fazer uma recurs\u00e3o que retorna valor e \u00edndice\nfunc min(vet []int) int {\n\t\n\tvar rec func(v []int) (int, int) \n\n\trec = func(v []int) (int, int) {\n\t\t\n\t\tif len(v) == 0 {\n\t\t\treturn -1, 0\n\t\t}\n\t\t\n\t\tif len(v) == 1 {\n\t\t\treturn 0, v[0]\n\t\t}\n\n\t\tindex, menor := rec(v[1:])\n\n\t\tif v[0] <= menor {\n           \treturn 0, v[0]\n        }\n\n    \treturn index + 1, menor\n\t}\n\n\tindice, _ := rec(vet)\n\t\n\treturn indice\n\t}\n\n\nfunc main() {\n\tvar vet []int\n\tscanner := bufio.NewScanner(os.Stdin)\n\tfor {\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline := scanner.Text()\n\t\targs := strings.Fields(line)\n\t\tfmt.Println(\"$\" + line)\n\n\t\tswitch args[0] {\n\t\tcase \"end\":\n\t\t\treturn\n\t\tcase \"read\":\n\t\t\tvet = nil\n\t\t\tfor _, arg := range args[1:] {\n\t\t\t\tif val, err := strconv.Atoi(arg); err == nil {\n\t\t\t\t\tvet = append(vet, val)\n\t\t\t\t}\n\t\t\t}\n\t\tcase \"tostr\":\n\t\t\tfmt.Println(\"[\" + tostr(vet) + \"]\")\n\t\tcase \"torev\":\n\t\t\tfmt.Println(\"[\" + tostrrev(vet) + \"]\")\n\t\tcase \"reverse\":\n\t\t\treverse(vet)\n\t\tcase \"sum\":\n\t\t\tfmt.Println(sum(vet))\n\t\tcase \"mult\":\n\t\t\tfmt.Println(mult(vet))\n\t\tcase \"min\":\n\t\t\tfmt.Println(min(vet))\n\t\tdefault:\n\t\t\tfmt.Println(\"fail: comando invalido\")\n\t\t}\n\t}\n}\n",
+            "lines": "147"
+        }
+    ]
+}

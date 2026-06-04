@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -9,30 +10,68 @@ import (
 )
 
 func tostr(vet []int) string {
-	_ = vet
-	return ""
+
+	if len(vet) == 0 {
+		return ""
+	}
+
+	if len(vet) == 1 {
+		return fmt.Sprintf("%d",vet[0])
+	}
+
+	return fmt.Sprintf("%d, ", vet[0] ) + tostr(vet[1:])
+	
 }
 
 func tostrrev(vet []int) string {
-	_ = vet
-	return ""
+	if len(vet) == 0 {
+		return ""
+	}
+
+	if len(vet) == 1 {
+		return fmt.Sprintf("%d", vet[len(vet)-1])
+	}
+
+	return fmt.Sprintf("%d, ", vet[(len(vet))-1] ) + tostrrev(vet[:len(vet)-1])
+	
 }
 
 // reverse: inverte os elementos do slice
 func reverse(vet []int) {
-	_ = vet
+	if len(vet) <= 1 {
+		return
+	}
+	
+	vet[0], vet[len(vet)-1] = vet[len(vet)-1], vet[0]
+	
+	reverse(vet[1 : len(vet)-1])
+
 }
 
 // sum: soma dos elementos do slice
 func sum(vet []int) int {
-	_ = vet
-	return 0
+	if len(vet) == 0 {
+		return 0
+	}
+
+	if len(vet) == 1 {
+		return vet[0]
+	}
+
+	return vet[0] + sum(vet[1:])
 }
 
 // mult: produto dos elementos do slice
 func mult(vet []int) int {
-	_ = vet
-	return 0
+	if len(vet) == 0 {
+		return 1
+	}
+
+	if len(vet) == 1 {
+		return vet[0]
+	}
+
+	return vet[0] * mult(vet[1:])
 }
 
 // min: retorna o índice e valor do menor valor
@@ -40,9 +79,33 @@ func mult(vet []int) int {
 // var rec func(v []int) (int, int)
 // para fazer uma recursão que retorna valor e índice
 func min(vet []int) int {
-	_ = vet
-	return 0
-}
+	
+	var rec func(v []int) (int, int) 
+
+	rec = func(v []int) (int, int) {
+		
+		if len(v) == 0 {
+			return -1, 0
+		}
+		
+		if len(v) == 1 {
+			return 0, v[0]
+		}
+
+		index, menor := rec(v[1:])
+
+		if v[0] <= menor {
+           	return 0, v[0]
+        }
+
+    	return index + 1, menor
+	}
+
+	indice, _ := rec(vet)
+	
+	return indice
+	}
+
 
 func main() {
 	var vet []int
@@ -66,9 +129,9 @@ func main() {
 				}
 			}
 		case "tostr":
-			fmt.Println(tostr(vet))
+			fmt.Println("[" + tostr(vet) + "]")
 		case "torev":
-			fmt.Println(tostrrev(vet))
+			fmt.Println("[" + tostrrev(vet) + "]")
 		case "reverse":
 			reverse(vet)
 		case "sum":
