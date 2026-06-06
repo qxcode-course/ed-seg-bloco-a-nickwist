@@ -168,7 +168,6 @@ func (v *Vector) Slice(inicio, fim int) *Vector {
 
 	n := v.size
 
-	// normaliza índices manualmente (circular)
 	for inicio < 0 {
 		inicio += n
 	}
