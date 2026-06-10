@@ -1,0 +1,12 @@
+2026-06-07 00:01:40, MOVE, v:1, k:ed@vetbuild, mode:PICK
+2026-06-07 00:01:44, EXEC, v:1, k:ed@vetbuild, mode:FULL, rate:100, size:291
+2026-06-07 00:02:31, EXEC, v:1, k:ed@vetbuild, mode:FREE
+2026-06-07 00:03:49, MOVE, v:1, k:ed@pintando, mode:PICK
+2026-06-07 00:05:02, EXEC, v:1, k:ed@pintando, mode:FREE
+2026-06-07 00:06:57, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-06-07 00:07:02, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100
+2026-06-07 00:08:01, EXEC, v:1, k:ed@eh_primo, mode:FREE
+2026-06-07 00:08:17, MOVE, v:1, k:ed@labirinto, mode:PICK
+2026-06-07 00:08:22, EXEC, v:1, k:ed@labirinto, mode:FULL, rate:100
+2026-06-07 00:08:22, MOVE, v:1, k:ed@labirinto, mode:EDIT
+2026-06-07 00:12:03, MOVE, v:1, k:ed@labirinto, mode:EDIT

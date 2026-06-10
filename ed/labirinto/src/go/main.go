@@ -64,6 +64,7 @@ func main() {
 	}
 
 	// Procura posições de início e endPos e conserta para _
+
 	var startPos, endPos Pos
 	for l := range nl {
 		for c := range nc {
