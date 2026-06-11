@@ -43,3 +43,17 @@
 2026-06-10 15:20:09, SELF, v:1, k:ed@lista_d1, self:1, rate:100, study:110, concept:1
 2026-06-10 15:20:09, MOVE, v:1, k:ed@lista_d1, mode:PICK
 2026-06-10 15:20:11, MOVE, v:1, k:ed@lista_d1, mode:BACK
+2026-06-10 17:30:26, MOVE, v:1, k:ed@lista_d2, mode:DOWN
+2026-06-10 17:30:27, MOVE, v:1, k:ed@lista_d2, mode:PICK
+2026-06-10 17:32:15, EXEC, v:1, k:ed@lista_d2, mode:FULL, rate:0, size:93
+2026-06-10 17:30:25, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-06-10 17:30:25, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-06-10 17:30:25, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-06-10 17:30:26, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-06-10 17:51:37, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-06-10 17:55:59, EXEC, v:1, k:ed@lista_d2, mode:FULL, size:129, fail:COMP
+2026-06-10 17:56:03, EXEC, v:1, k:ed@lista_d2, mode:FULL, fail:COMP
+2026-06-10 17:56:11, EXEC, v:1, k:ed@lista_d2, mode:FULL, size:129, fail:COMP
+2026-06-10 17:56:14, EXEC, v:1, k:ed@lista_d2, mode:FULL, fail:COMP
+2026-06-10 17:56:44, EXEC, v:1, k:ed@lista_d2, mode:FULL, size:137, fail:COMP
+2026-06-10 17:56:45, EXEC, v:1, k:ed@lista_d2, mode:FULL, fail:COMP

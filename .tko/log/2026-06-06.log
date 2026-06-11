@@ -114,3 +114,12 @@
 2026-06-06 16:09:19, EXEC, v:1, k:ed@multiset, mode:FULL, rate:100, size:227
 2026-06-06 16:09:24, MOVE, v:1, k:ed@multiset, mode:BACK
 2026-06-06 16:09:43, SELF, v:1, k:ed@multiset, self:1, rate:100, study:75
+2026-06-06 18:41:46, MOVE, v:1, k:ed@lista_d1, mode:DOWN
+2026-06-06 18:41:49, MOVE, v:1, k:ed@lista_d1, mode:PICK
+2026-06-06 18:41:52, EXEC, v:1, k:ed@lista_d1, mode:FULL, rate:0, size:57
+2026-06-06 18:43:45, MOVE, v:1, k:ed@lista_d1, mode:BACK
+2026-06-06 18:43:48, MOVE, v:1, k:ed@lista_d1, mode:PICK
+2026-06-06 18:41:46, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-06 18:41:46, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-06 18:41:46, MOVE, v:1, k:ed@lista_d1, mode:EDIT
+2026-06-06 18:41:46, MOVE, v:1, k:ed@lista_d1, mode:EDIT
