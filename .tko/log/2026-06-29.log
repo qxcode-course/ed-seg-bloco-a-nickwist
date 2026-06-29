@@ -35,3 +35,21 @@
 2026-06-29 00:39:58, MOVE, v:1, k:ed@prin_list1, mode:EDIT
 2026-06-29 00:44:11, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:100, size:195
 2026-06-29 00:44:27, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-06-29 00:45:12, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-29 00:45:41, EXEC, v:1, k:ed@editorint, mode:FULL, fail:COMP
+2026-06-29 00:45:41, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-29 00:45:48, MOVE, v:1, k:ed@prin_list1, mode:PICK
+2026-06-29 00:45:49, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:100
+2026-06-29 00:45:50, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-06-29 00:46:06, SELF, v:1, k:ed@prin_list1, self:1, rate:100, study:65, concept:1
+2026-06-29 00:46:17, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-29 00:46:25, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-29 00:56:34, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:58:01, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:58:13, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:58:54, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:59:09, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:59:21, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:59:39, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 00:59:52, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 01:00:51, EXEC, v:1, k:ed@editorint, mode:FREE

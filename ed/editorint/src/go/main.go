@@ -38,15 +38,44 @@ func (e *Editor) KeyEnter() {
 }
 
 func (e *Editor) KeyRight() {
+	if e.itChar != e.itLine.Value.End() {
+		e.itChar = e.itChar.Next()
+		return
+	}
+
+	if e.itLine != e.text.End() {
+		e.itLine = e.itLine.Next()
+		e.itChar = e.itLine.Value.Front()
+	}
 }
 
 func (e *Editor) KeyUp() {
+	if e.itLine != e.itLine.Value.Front() {
+		e.itLine = e.itLine.Prev()
+	}
 }
 
 func (e *Editor) KeyDown() {
+	if e.itLine != e.itLine.Value.End() {
+		e.itLine = e.itLine.Next()
+	}
 }
 
 func (e *Editor) KeyBackspace() {
+	if e.itChar != e.itLine.Value.Front() { // Se o cursor não está no início da linha
+		e.itChar = e.itLine.Value.Erase(e.itChar.prev)
+		return
+	}
+	// Estamos no início da linha
+	if e.itLine != e.text.Front() { // Se não está na primeira linha
+		line := e.itLine.Value
+		e.itLine = e.itLine.Prev()
+		e.itChar = e.itLine.Value.End()
+		for char := line.Front(); char != line.End(); char = char.Next() {
+			letra := char.Value
+			e.InsertChar(letra)
+		}
+	}
 }
 
 func (e *Editor) KeyDelete() {
