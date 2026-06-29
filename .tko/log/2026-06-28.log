@@ -1,0 +1,8 @@
+2026-06-28 23:40:40, MOVE, v:1, k:ed@prin_list1, mode:DOWN
+2026-06-28 23:40:40, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-06-28 23:40:40, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-06-28 23:40:40, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-06-28 23:42:41, MOVE, v:1, k:ed@prin_list1, mode:PICK
+2026-06-28 23:43:00, EXEC, v:1, k:ed@prin_list1, mode:FULL, size:172, fail:COMP
+2026-06-28 23:44:17, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:0, size:171
+2026-06-28 23:44:14, MOVE, v:1, k:ed@prin_list1, mode:EDIT

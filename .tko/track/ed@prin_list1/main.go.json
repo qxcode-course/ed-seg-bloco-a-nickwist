@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_23-43-00",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22strings%22%0A\n )%0A%0A// mo\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-28_23-44-17",
+            "content": "@@ -133,190 +133,8 @@\n g %7B%0A\n-%09for len(l) %3E 1 %7B%0A%09%09fmt.Println(%22%5B%22)%0A%09%09for i := 0; i %3C len(l); i++ %7B%0A%09%09%09if i == sword %7B%0A%09%09%09%09fmt.Print(l%5Bi%5D, %22%3E%22)%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Print(l%5Bi%5D, %22 %22)%0A%09%09%09%7D%0A%09%09%7D%0A%09%09fmt.Println(%22%5D%22)%0A%09%7D%0A%0A\n %09ret\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-29_00-02-12",
+            "content": "@@ -134,20 +134,19 @@\n  %7B%0A%09for \n-Size\n+len\n (l) %3E 1 \n@@ -188,12 +188,11 @@\n i %3C \n-Size\n+len\n (l);\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-29_00-06-54",
+            "content": "@@ -134,23 +134,22 @@\n  %7B%0A%09for \n-l.\n Size(\n+l\n ) %3E 1 %7B%0A\n@@ -189,15 +189,14 @@\n i %3C \n-l.\n Size(\n+l\n ); i\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-29_00-07-24",
+            "content": "@@ -208,20 +208,17 @@\n %7B%0A%09%09%09if \n-l%5Bi%5D\n+i\n  == swor\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-29_00-08-15",
+            "content": "@@ -153,10 +153,8 @@\n 1 %7B%0A\n-%09%0A\n %09%09fm\n@@ -172,30 +172,8 @@\n %5B%22)%0A\n-%0A%09%09node := l.Front()%0A%0A\n %09%09fo\n@@ -208,20 +208,20 @@\n %7B%0A%09%09%09if \n-node\n+l%5Bi%5D\n  == swor\n@@ -238,26 +238,20 @@\n t.Print(\n-node.Value\n+l%5Bi%5D\n , %22%3E%22)%0A%09\n@@ -279,18 +279,12 @@\n int(\n-node.Value\n+l%5Bi%5D\n , %22 \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-06-29_00-18-16",
+            "content": "@@ -330,33 +330,8 @@\n %09%09%09%7D\n-%0A%0A%09%09node = Next(l, node)%09\n %0A%09%09%7D\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-29_00-19-45",
+            "content": "@@ -145,24 +145,26 @@\n ize() %3E 1 %7B%0A\n+%09%0A\n %09%09fmt.Printl\n@@ -356,16 +356,17 @@\n e)%09%0A%09%09%7D%0A\n+%09\n %09fmt.Pri\n@@ -380,35 +380,10 @@\n %22)%0A%09\n-l.Erase(Next(l, sword))%0A%0A%09\n %7D\n+%0A\n %0A%09re\n@@ -390,18 +390,16 @@\n turn %22%22%0A\n-%0A%0A\n %7D%0A%0A// mo\n@@ -491,70 +491,18 @@\n  %7B%0A%09\n-if it.Next() == nil %7B%0A%09%09return l.Front()%0A%09%7D%0A%0A%09return it.Next()\n+return nil\n %0A%7D%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-29_00-26-47",
+            "content": "@@ -160,16 +160,18 @@\n mt.Print\n+ln\n (%22%5B%22)%0A%0A%09\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-06-29_00-26-58",
+            "content": "@@ -635,16 +635,42 @@\n chosen)%0A\n+%09fmt.Println(qtd, chosen)%0A\n %09l := Ne\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-06-29_00-27-06",
+            "content": "@@ -163,17 +163,16 @@\n Print(%22%5B\n- \n %22)%0A%0A%09%09no\n@@ -272,17 +272,16 @@\n alue, %22%3E\n- \n %22)%0A%09%09%09%7D \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-29_00-27-18",
+            "content": "@@ -794,16 +794,20 @@\n nge qtd \n+- 1 \n %7B%0A%09%09fmt.\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-29_00-33-05",
+            "content": "@@ -794,20 +794,16 @@\n nge qtd \n-- 1 \n %7B%0A%09%09fmt.\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-29_00-33-11",
+            "content": "@@ -371,16 +371,41 @@\n tln(%22%5D%22)\n+%0A%09l.Erase(Next(l, sword))\n %0A%0A%09%7D%0A%09re\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-29_00-33-30",
+            "content": "@@ -119,16 +119,23 @@\n de%5Bint%5D)\n+ string\n  %7B%0A%09for \n@@ -376,16 +376,27 @@\n %5D%22)%0A%0A%09%7D%0A\n+%09return %22%22%0A\n %0A%0A%7D%0A%0A// \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-29_00-33-44",
+            "content": "@@ -124,27 +124,9 @@\n t%5D) \n-string %7B%0A%09txt := %22%22\n+%7B\n %0A%09fo\n@@ -148,19 +148,23 @@\n %7B%0A%09%09\n-txt += \n+fmt.Print(\n %22%5B %22\n+)\n %0A%0A%09%09\n@@ -373,19 +373,8 @@\n %0A%09%7D%0A\n-%09return %22%22%0A\n %0A%0A%7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-06-29_00-34-29",
+            "content": "@@ -252,31 +252,24 @@\n sword %7B%0A%09%09%09%09\n-txt += \n fmt.Printf(%22\n@@ -269,18 +269,9 @@\n rint\n-f(%22%25d%3E %22, \n+(\n node\n@@ -272,24 +272,30 @@\n t(node.Value\n+, %22%3E %22\n )%0A%09%09%09%7D else \n@@ -300,23 +300,16 @@\n e %7B%0A%09%09%09%09\n-txt += \n fmt.Prin\n@@ -313,17 +313,9 @@\n rint\n-f(%22%25d %22, \n+(\n node\n@@ -320,16 +320,21 @@\n de.Value\n+, %22 %22\n )%0A%09%09%09%7D%0A%0A\n@@ -366,19 +366,24 @@\n %09%7D%0A%09\n-txt += %22 \n+fmt.Println(%22\n %5D%22\n+)\n %0A%0A%09%7D\n@@ -391,19 +391,19 @@\n %09return \n-txt\n+%22%22%0A\n %0A%0A%7D%0A%0A// \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-06-29_00-36-04",
+            "content": "@@ -259,34 +259,33 @@\n %0A%09%09%09%09txt += fmt.\n-Sp\n+P\n rintf(%22%25d%3E %22, no\n@@ -325,10 +325,9 @@\n fmt.\n-Sp\n+P\n rint\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-29_00-36-36",
+            "content": "@@ -140,16 +140,36 @@\n t := %22%22%0A\n+%09for l.Size() %3E 1 %7B%0A\n %09%09txt +=\n@@ -397,16 +397,19 @@\n = %22 %5D%22%0A%0A\n+%09%7D%0A\n %09return \n@@ -412,16 +412,17 @@\n urn txt%0A\n+%0A\n %7D%0A%0A// mo\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-06-29_00-37-28",
+            "content": "@@ -313,16 +313,17 @@\n intf(%22%25d\n+ \n %22, node.\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-29_00-37-48",
+            "content": "@@ -313,17 +313,16 @@\n intf(%22%25d\n- \n %22, node.\n@@ -371,16 +371,17 @@\n txt += %22\n+ \n %5D%22%0A%0A%09ret\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-29_00-38-06",
+            "content": "@@ -774,16 +774,47 @@\n d - 1 %7B%0A\n+%09%09fmt.Println(ToStr(l, sword))%0A\n %09%09l.Eras\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-29_00-39-55",
+            "content": "@@ -778,39 +778,8 @@\n 1 %7B%0A\n-%09%09fmt.Println(ToStr(l, sword))%0A\n %09%09l.\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-29_00-40-00",
+            "content": "@@ -494,74 +494,22 @@\n f it\n+.Next()\n  == nil\n- %7C%7C l.Size() == 0 %7B%0A%09%09return nil%0A%09%7D%0A%0A%09if it.next == it.root\n  %7B%0A%09\n@@ -545,12 +545,14 @@\n  it.\n-n\n+N\n ext\n+()\n %0A%7D%0A%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-29_00-44-11",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\n// mostra a lista com o elemento sword destacado\nfunc ToStr(l *DList[int], sword *DNode[int]) string {\n\ttxt := \"\"\n\t\ttxt += \"[ \"\n\n\t\tnode := l.Front()\n\n\t\tfor i := 0; i < l.Size(); i++ {\n\t\t\tif node == sword {\n\t\t\t\ttxt += fmt.Sprintf(\"%d> \", node.Value)\n\t\t\t} else {\n\t\t\t\ttxt += fmt.Sprintf(\"%d \", node.Value)\n\t\t\t}\n\n\t\tnode = Next(l, node)\t\n\t\t}\n\ttxt += \"]\"\n\n\treturn txt\n}\n\n// move para frente na lista circular\nfunc Next(l *DList[int], it *DNode[int]) *DNode[int] {\n\tif it == nil || l.Size() == 0 {\n\t\treturn nil\n\t}\n\n\tif it.next == it.root {\n\t\treturn l.Front()\n\t}\n\n\treturn it.next\n}\n\nfunc main() {\n\tvar qtd, chosen int\n\tfmt.Scan(&qtd, &chosen)\n\tl := NewDList[int]()\n\tfor i := 1; i <= qtd; i++ {\n\t\tl.PushBack(i)\n\t}\n\tsword := l.Front()\n\tfor range chosen - 1 {\n\t\tsword = Next(l, sword)\n\t}\n\tfor range qtd - 1 {\n\t\tfmt.Println(ToStr(l, sword))\n\t\tl.Erase(Next(l, sword))\n\t\tsword = Next(l, sword)\n\t}\n\tfmt.Println(ToStr(l, sword))\n}\n",
+            "lines": "58"
+        }
+    ]
+}

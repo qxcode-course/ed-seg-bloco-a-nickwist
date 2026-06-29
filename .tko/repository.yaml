@@ -13,9 +13,9 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@map_set
 - ed@list
 - ed@vector
+- ed@map_set
 flags:
   inbox: all
   panel: skills
