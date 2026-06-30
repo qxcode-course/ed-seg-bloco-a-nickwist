@@ -53,3 +53,24 @@
 2026-06-29 00:59:39, EXEC, v:1, k:ed@editorint, mode:FREE
 2026-06-29 00:59:52, EXEC, v:1, k:ed@editorint, mode:FREE
 2026-06-29 01:00:51, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:18:28, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-29 23:20:03, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-29 23:20:19, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:22:19, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:24:08, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:25:06, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:26:24, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-29 23:26:29, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0, size:294
+2026-06-29 23:26:29, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-29 23:30:20, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:31:10, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:31:57, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-06-29 23:32:04, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0, size:308
+2026-06-29 23:32:17, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0
+2026-06-29 23:32:17, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-29 23:32:38, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:40:56, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:41:57, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:43:22, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:57:03, EXEC, v:1, k:ed@editorint, mode:FREE
+2026-06-29 23:57:35, EXEC, v:1, k:ed@editorint, mode:FREE

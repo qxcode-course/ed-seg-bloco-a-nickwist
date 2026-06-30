@@ -32,9 +32,28 @@ func (e *Editor) KeyLeft() {
 }
 
 func (e *Editor) KeyEnter() {
+	if e.itChar != e.itLine.Value.End() { // Se o cursor não está no fim da linha
+		linhanova := NewList[rune]()
+		linhaantiga := e.itLine.Value
+		e.text.Insert(e.itLine.Next(), linhanova)
+		
+		for char := e.itChar; char != linhaantiga.End(); char = char.Next() {
+			linhanova.Insert(linhanova.End(), char.Value)	
+		}
+
+		for e.itChar != linhaantiga.End() {
+			e.itChar = linhaantiga.Erase(e.itChar)
+		}
+
+		e.itLine = e.itLine.Next()
+		e.itChar = e.itLine.Value.Front()
+		return
+	}
+
 	e.text.Insert(e.itLine.Next(), NewList[rune]()) // cria uma nova linha e insere abaixo da linha corrente
-	e.itLine = e.itLine.Next()        // vai pra próxima linha
-	e.itChar = e.itLine.Value.Front() // move o cursor para o início da linha
+	e.itLine = e.itLine.Next() // vai pra próxima linha
+	e.itChar = e.itLine.Value.Front() // move o cursor para o início da linha		
+
 }
 
 func (e *Editor) KeyRight() {
@@ -50,15 +69,43 @@ func (e *Editor) KeyRight() {
 }
 
 func (e *Editor) KeyUp() {
-	if e.itLine != e.itLine.Value.Front() {
+	if e.itLine == e.text.Front() {
+		return
+	}	
+		pos := 0
+		for char := e.itLine.Value.Front(); char != e.itChar; char = char.Next() {
+			pos++
+		}
+
 		e.itLine = e.itLine.Prev()
-	}
+
+		e.itChar = e.itLine.Value.Front()
+		
+		for i := 0; i < pos && e.itChar != e.itLine.Value.End(); i++ {
+			e.itChar = e.itChar.Next()
+		}
+
+	
 }
 
 func (e *Editor) KeyDown() {
-	if e.itLine != e.itLine.Value.End() {
+	if e.itLine == e.text.End() {
+		return
+	}	
+		pos := 0
+		for char := e.itLine.Value.Front(); char != e.itChar; char = char.Next() {
+			pos++
+		}
+
 		e.itLine = e.itLine.Next()
-	}
+
+		e.itChar = e.itLine.Value.Front()
+		
+		for i := 0; i < pos && e.itChar != e.itLine.Value.End(); i++ {
+			e.itChar = e.itChar.Next()
+		}
+
+	
 }
 
 func (e *Editor) KeyBackspace() {
@@ -68,6 +115,7 @@ func (e *Editor) KeyBackspace() {
 	}
 	// Estamos no início da linha
 	if e.itLine != e.text.Front() { // Se não está na primeira linha
+		linhaexcluida := e.itLine
 		line := e.itLine.Value
 		e.itLine = e.itLine.Prev()
 		e.itChar = e.itLine.Value.End()
@@ -75,10 +123,23 @@ func (e *Editor) KeyBackspace() {
 			letra := char.Value
 			e.InsertChar(letra)
 		}
+		e.text.Erase(linhaexcluida)
 	}
 }
 
 func (e *Editor) KeyDelete() {
+	if e.itChar != e.itLine.Value.End() { // Se o cursor não está no fim da linha
+		e.itLine.Value.Erase(e.itLine.Value.End().Prev())
+		return
+	}
+
+	linhaexcluida := e.itLine.Next()
+		line := e.itLine.Next().Value
+		for char := line.Front(); char != line.End(); char = char.Next() {
+			letra := char.Value
+			e.InsertChar(letra)
+		}
+		e.text.Erase(linhaexcluida)
 }
 
 func main() { // Texto inicial e posição do cursor

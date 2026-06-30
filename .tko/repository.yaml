@@ -12,10 +12,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@map_set
-- ed@vector
-- ed@list
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -25,5 +22,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@editorint
-selected_index: 22
+selected: ed@dfs
+selected_index: 8
