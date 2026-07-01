@@ -1,0 +1,27 @@
+2026-07-01 00:22:22, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-07-01 00:22:58, MOVE, v:1, k:ed@lista_d4, mode:BACK
+2026-07-01 00:24:24, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-07-01 00:24:26, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0
+2026-07-01 00:24:38, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0, size:124
+2026-07-01 00:24:37, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-07-01 00:27:55, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:124, fail:COMP
+2026-07-01 00:28:10, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0, size:125
+2026-07-01 00:28:44, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:125, fail:COMP
+2026-07-01 00:28:42, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-07-01 00:42:04, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-07-01 00:42:34, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:135, fail:COMP
+2026-07-01 00:42:51, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:66, size:135
+2026-07-01 00:44:01, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:134, fail:COMP
+2026-07-01 00:44:03, EXEC, v:1, k:ed@lista_d4, mode:FULL, fail:COMP
+2026-07-01 00:45:19, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:136, fail:COMP
+2026-07-01 00:45:30, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:136, fail:COMP
+2026-07-01 00:46:04, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:66, size:134
+2026-07-01 00:46:22, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:134, fail:COMP
+2026-07-01 00:46:27, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:134, fail:COMP
+2026-07-01 00:46:33, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:66, size:134
+2026-07-01 00:46:31, MOVE, v:1, k:ed@lista_d4, mode:EDIT
+2026-07-01 00:48:48, EXEC, v:1, k:ed@lista_d4, mode:FULL, size:134, fail:COMP
+2026-07-01 00:49:42, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:100, size:141
+2026-07-01 00:50:08, SELF, v:1, k:ed@lista_d4, self:1, rate:100, study:20
+2026-07-01 00:50:09, MOVE, v:1, k:ed@lista_d4, mode:BACK
+2026-07-01 00:50:16, MOVE, v:1, k:ed@bufferring, mode:DOWN

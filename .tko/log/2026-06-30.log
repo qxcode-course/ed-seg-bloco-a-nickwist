@@ -29,3 +29,10 @@
 2026-06-30 00:31:31, MOVE, v:1, k:ed@editorint, mode:PICK
 2026-06-30 00:31:50, EXEC, v:1, k:ed@editorint, mode:LOCK, rate:0
 2026-06-30 00:31:53, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-06-30 00:32:49, MOVE, v:1, k:ed@lista_d4, mode:DOWN
+2026-06-30 00:32:51, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-06-30 00:33:11, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0, size:124
+2026-06-30 00:33:12, MOVE, v:1, k:ed@lista_d4, mode:BACK
+2026-06-30 00:33:19, MOVE, v:1, k:ed@lista_d4, mode:PICK
+2026-06-30 00:33:21, EXEC, v:1, k:ed@lista_d4, mode:FULL, rate:0
+2026-06-30 13:52:13, SELF, v:1, k:ed@editorint, self:1, rate:100, concept:1
