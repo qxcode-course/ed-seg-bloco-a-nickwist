@@ -13,10 +13,10 @@ sources:
   writeable: false
   quests: null
 expanded:
+- ed@map_set
 - ed@linear
 - ed@vector
 - ed@list
-- ed@map_set
 flags:
   inbox: all
   panel: skills

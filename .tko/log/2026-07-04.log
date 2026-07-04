@@ -45,3 +45,21 @@
 2026-07-04 01:35:49, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:100
 2026-07-04 01:35:50, MOVE, v:1, k:ed@bufferring, mode:BACK
 2026-07-04 01:35:49, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-07-04 04:03:31, MOVE, v:1, k:ed@fila_enc, mode:DOWN
+2026-07-04 04:03:43, MOVE, v:1, k:ed@fila_enc, mode:PICK
+2026-07-04 04:03:55, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:0, size:82
+2026-07-04 04:03:31, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:06:37, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:03:55, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:13:18, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:14:51, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:0, size:93
+2026-07-04 04:15:33, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:33, size:94
+2026-07-04 04:18:26, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:15:33, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:21:02, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:66, size:112
+2026-07-04 04:22:43, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:66, size:122
+2026-07-04 04:23:05, EXEC, v:1, k:ed@fila_enc, mode:FULL, rate:100, size:122
+2026-07-04 04:23:09, MOVE, v:1, k:ed@fila_enc, mode:BACK
+2026-07-04 04:23:20, SELF, v:1, k:ed@fila_enc, self:1, rate:100, study:20
+2026-07-04 04:23:03, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:23:05, MOVE, v:1, k:ed@fila_enc, mode:EDIT
