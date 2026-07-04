@@ -63,3 +63,37 @@
 2026-07-04 04:23:20, SELF, v:1, k:ed@fila_enc, self:1, rate:100, study:20
 2026-07-04 04:23:03, MOVE, v:1, k:ed@fila_enc, mode:EDIT
 2026-07-04 04:23:05, MOVE, v:1, k:ed@fila_enc, mode:EDIT
+2026-07-04 04:24:54, MOVE, v:1, k:ed@pilha, mode:DOWN
+2026-07-04 04:25:00, MOVE, v:1, k:ed@pilha, mode:PICK
+2026-07-04 04:25:04, EXEC, v:1, k:ed@pilha, mode:FREE, size:80
+2026-07-04 04:25:39, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0
+2026-07-04 04:26:52, EXEC, v:1, k:ed@pilha, mode:FULL, size:81, fail:COMP
+2026-07-04 04:24:54, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 04:28:13, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 04:25:39, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 21:55:07, MOVE, v:1, k:ed@pilha, mode:PICK
+2026-07-04 21:55:10, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0, size:87
+2026-07-04 21:57:34, MOVE, v:1, k:ed@pilha, mode:BACK
+2026-07-04 21:55:10, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 21:57:12, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:00:28, MOVE, v:1, k:ed@pilha, mode:PICK
+2026-07-04 22:01:37, EXEC, v:1, k:ed@pilha, mode:FULL, rate:0, size:91
+2026-07-04 22:01:58, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:91
+2026-07-04 22:04:50, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:01:57, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:06:19, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:102
+2026-07-04 22:06:20, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33
+2026-07-04 22:07:37, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:06:20, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:12:47, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:106
+2026-07-04 22:13:10, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:106
+2026-07-04 22:14:06, EXEC, v:1, k:ed@pilha, mode:FULL, rate:33, size:110
+2026-07-04 22:14:13, EXEC, v:1, k:ed@pilha, mode:FULL, rate:66, size:110
+2026-07-04 22:14:54, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:14:13, MOVE, v:1, k:ed@pilha, mode:EDIT
+2026-07-04 22:16:39, EXEC, v:1, k:ed@pilha, mode:FULL, rate:100, size:119
+2026-07-04 22:16:40, MOVE, v:1, k:ed@pilha, mode:BACK
+2026-07-04 22:16:50, SELF, v:1, k:ed@pilha, self:1, rate:100, study:30
+2026-07-04 22:16:58, MOVE, v:1, k:ed@chaves, mode:DOWN
+2026-07-04 22:17:00, MOVE, v:1, k:ed@chaves, mode:PICK
+2026-07-04 22:17:09, MOVE, v:1, k:ed@chaves, mode:BACK
