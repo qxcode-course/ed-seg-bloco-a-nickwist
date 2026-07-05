@@ -13,10 +13,10 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@linear
-- ed@vector
 - ed@list
+- ed@vector
 - ed@map_set
+- ed@linear
 flags:
   inbox: all
   panel: skills
@@ -26,5 +26,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@chaves
-selected_index: 32
+selected: ed@queimando
+selected_index: 33

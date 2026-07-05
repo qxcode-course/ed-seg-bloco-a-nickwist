@@ -97,3 +97,12 @@
 2026-07-04 22:16:58, MOVE, v:1, k:ed@chaves, mode:DOWN
 2026-07-04 22:17:00, MOVE, v:1, k:ed@chaves, mode:PICK
 2026-07-04 22:17:09, MOVE, v:1, k:ed@chaves, mode:BACK
+2026-07-04 22:17:58, MOVE, v:1, k:ed@chaves, mode:PICK
+2026-07-04 22:18:01, EXEC, v:1, k:ed@chaves, mode:FULL, rate:0, size:47
+2026-07-04 22:18:00, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 22:25:21, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 22:36:41, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 22:42:04, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 22:45:07, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 22:52:09, MOVE, v:1, k:ed@chaves, mode:EDIT
+2026-07-04 23:17:38, MOVE, v:1, k:ed@chaves, mode:EDIT

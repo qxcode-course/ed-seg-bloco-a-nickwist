@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_22-18-01",
+            "content": "@@ -20,15 +20,8 @@\n t (%0A\n-%09%22fmt%22%0A\n )%0A%0Af\n@@ -37,259 +37,6 @@\n ) %7B%0A\n-%09q := NewQueue%5Brune%5D()%0A%09var mm, nn int%0A%0A%09for i := 'a'; i %3C 'p'; i++ %7B%0A%09%09q.Enqueue(i)%0A%09%7D%0A%0A%09for q.IsEmpty() %7B%0A%09%09primeiro := q%5B1%5D%0A%09%09segundo := q%5B2%5D%0A%0A%09%09q.Dequeue()%0A%09%09q.Dequeue()%0A%0A%09%09fmt.Scan(&mm, &nn)%0A%0A%09%09if mm %3E= nn %7B%0A%09%09%09q.Enqueue(primeiro)%0A%09%09%7D else if %0A%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-07-05_01-04-03",
+            "content": "@@ -280,15 +280,23 @@\n ro)%0A%09%09%7D \n+else if \n %0A%0A%09%7D%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_01-04-21",
+            "content": "@@ -138,9 +138,8 @@\n for \n-!\n q.Is\n@@ -163,26 +163,19 @@\n iro := q\n-.Dequeue()\n+%5B1%5D\n %0A%09%09segun\n@@ -180,16 +180,38 @@\n undo := \n+q%5B2%5D%0A%0A%09%09q.Dequeue()%0A%09%09\n q.Dequeu\n@@ -246,16 +246,17 @@\n %09if mm %3E\n+=\n  nn %7B%0A%09%09\n@@ -284,72 +284,11 @@\n %09%09%7D \n-else if nn %3E mm %7B%0A%09%09%09q.Enqueue(segundo)%0A%09%09%7D%0A%0A%09%7D%0A%09%0A%09fmt.Println(q)\n+%0A%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_01-14-43",
+            "content": "@@ -98,17 +98,16 @@\n 'a'; i %3C\n-=\n  'p'; i+\n@@ -138,26 +138,20 @@\n for \n+!\n q.\n-items.Len() != 1\n+IsEmpty()\n  %7B%0A%09\n@@ -313,16 +313,17 @@\n %09%09%7D%0A%0A%09%7D%0A\n+%09\n %0A%09fmt.Pr\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_01-20-40",
+            "content": "@@ -319,64 +319,8 @@\n %0A%09%09%7D\n- else %7B%0A%09%09%09q.Enqueue(primeiro)%0A%09%09%09q.Enqueue(segundo)%0A%09%09%7D\n %0A%0A%09%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_01-23-13",
+            "content": "@@ -316,17 +316,71 @@\n do)%0A%09%09%7D \n-%09\n+else %7B%0A%09%09%09q.Enqueue(primeiro)%0A%09%09%09q.Enqueue(segundo)%0A%09%09%7D\n %0A%0A%09%7D%0A%0A%09f\n@@ -391,17 +391,12 @@\n rint\n-f(%22%25c %5Cn%22\n+ln(q\n )%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-05_01-23-46",
+            "content": "@@ -315,16 +315,18 @@\n ndo)%0A%09%09%7D\n+ %09\n %0A%0A%09%7D%0A%0A%09f\n@@ -342,24 +342,12 @@\n (%22%25c\n+ \n %5Cn%22\n-, q.Dequeue()\n )%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_01-24-02",
+            "content": "@@ -95,9 +95,9 @@\n := '\n-A\n+a\n '; i\n@@ -101,17 +101,17 @@\n ; i %3C= '\n-P\n+p\n '; i++ %7B\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_01-24-10",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tq := NewQueue[rune]()\n\tvar mm, nn int\n\n\tfor i := 'A'; i <= 'P'; i++ {\n\t\tq.Enqueue(i)\n\t}\n\n\tfor q.items.Len() != 1 {\n\t\tprimeiro := q.Dequeue()\n\t\tsegundo := q.Dequeue()\n\n\t\tfmt.Scan(&mm, &nn)\n\n\t\tif mm > nn {\n\t\t\tq.Enqueue(primeiro)\n\t\t} else if nn > mm {\n\t\t\tq.Enqueue(segundo)\n\t\t}\n\n\t}\n\n\tfmt.Printf(\"%c\\n\", q.Dequeue())\n}\n",
+            "lines": "30"
+        }
+    ]
+}
