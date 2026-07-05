@@ -7,8 +7,13 @@
         },
         {
             "label": "2026-06-04_20-19-34",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\n\tnl := len(grid)\n\tnc := len(grid[0])\n\n\tif l < 0 || l >= nl || c < 0 || c >= nc || grid[l][c] != '#' {\n\t\treturn\n\t}\n\n\tif grid[l][c] == '#' {\n\t\tgrid[l][c] = 'o'\n\t}\n\n\tburnTrees(grid, l+1, c)\n\tburnTrees(grid, l, c+1)\n\tburnTrees(grid, l-1, c)\n\tburnTrees(grid, l, c-1)\n\n\t// queime a arvore colocando o caractere 'o' na posi\u00e7\u00e3o atual\n\t// chame a recurs\u00e3o para todos os 4 vizinhos\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(grid [][]rune) {\n\tfor _, line := range grid {\n\t\tfmt.Println(string(line))\n\t}\n}\n",
+            "content": "@@ -347,16 +347,125 @@\n , c-1)%0A%0A\n+%09// queime a arvore colocando o caractere 'o' na posi%C3%A7%C3%A3o atual%0A%09// chame a recurs%C3%A3o para todos os 4 vizinhos%0A\n %7D%0A%0Afunc \n",
             "lines": "52"
+        },
+        {
+            "label": "2026-07-05_01-51-40",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\n\tnl := len(grid)\n\tnc := len(grid[0])\n\n\tif l < 0 || l >= nl || c < 0 || c >= nc || grid[l][c] != '#' {\n\t\treturn\n\t}\n\n\tif grid[l][c] == '#' {\n\t\tgrid[l][c] = 'o'\n\t}\n\n\tburnTrees(grid, l+1, c)\n\tburnTrees(grid, l, c+1)\n\tburnTrees(grid, l-1, c)\n\tburnTrees(grid, l, c-1)\n\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(grid [][]rune) {\n\tfor _, line := range grid {\n\t\tfmt.Println(string(line))\n\t}\n}\n",
+            "lines": "50"
         }
     ]
 }

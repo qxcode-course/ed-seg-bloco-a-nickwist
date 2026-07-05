@@ -13,10 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@list
-- ed@vector
+- ed@basic
 - ed@map_set
+- ed@backtrack
+- ed@rec
+- ed@list
 - ed@linear
+- ed@vector
 flags:
   inbox: all
   panel: skills
@@ -26,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@queimando
-selected_index: 33
+selected: ed@basic
+selected_index: 0

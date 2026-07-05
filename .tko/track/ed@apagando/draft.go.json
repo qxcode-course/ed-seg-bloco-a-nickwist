@@ -12,8 +12,68 @@
         },
         {
             "label": "2026-05-29_00-06-48",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n}\n",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -37,347 +37,7 @@\n ) %7B%0A\n-%09var qntdpessoas, qntdsaida, pessoa int%0A%09ids := make(map%5Bint%5Dbool)%0A%09idsnovo := make(map%5Bint%5Dbool)%0A%0A%09fmt.Scan(&qntdpessoas)%0A%09for i := 0; i %3C qntdpessoas; i++ %7B%0A%09%09fmt.Scan(&pessoa)%0A%09%09ids%5Bpessoa%5D = true%0A%09%7D%0A%0A%09fmt.Scan(&qntdsaida)%0A%0A%09for i := 0; i %3C qntdsaida; i++ %7B%0A%09%09fmt.Scan(&pessoa)%0A%09%09if ids%5Bpessoa%5D != true %7B%0A%09%09%09idsnovo%5Bpessoa%5D = true%0A%09%09%7D%0A%09%7D\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-05_18-08-28",
+            "content": "@@ -384,89 +384,7 @@\n %7D%0A%09%7D\n-%0A%0A%09for valor, _ := range idsnovo %7B%0A%09%09fmt.Printf(%22%25d%22, &valor)%0A%09%7D%0A%0A%09fmt.Println(%22%22)\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-05_18-12-04",
+            "content": "@@ -390,19 +390,17 @@\n %09for\n- _,\n  valor\n-es\n+, _\n  := \n@@ -440,18 +440,16 @@\n , &valor\n-es\n )%0A%09%7D%0A%0A%09f\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-12-30",
+            "content": "@@ -390,17 +390,19 @@\n %09for\n+ _,\n  valor\n-, _\n+es\n  := \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-15-43",
+            "content": "@@ -392,18 +392,16 @@\n or valor\n-es\n , _ := r\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-15-49",
+            "content": "@@ -436,16 +436,17 @@\n f(%22%25d%22, \n+&\n valores)\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-16-42",
+            "content": "@@ -338,17 +338,17 @@\n pessoa%5D \n-=\n+!\n = true %7B\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-16-50",
+            "content": "@@ -433,17 +433,16 @@\n intf(%22%25d\n- \n %22, valor\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-16-57",
+            "content": "@@ -342,9 +342,9 @@\n oa%5D \n-!\n+=\n = tr\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-17-22",
+            "content": "@@ -92,15 +92,26 @@\n  := \n-%5B%5Dint%7B%7D\n+make(map%5Bint%5Dbool)\n %0A%09id\n@@ -141,38 +141,8 @@\n ool)\n-%0A%09sairam := make(map%5Bint%5Dbool)\n %0A%0A%09f\n@@ -228,30 +228,23 @@\n %09ids\n- = append(ids, pessoa)\n+%5Bpessoa%5D = true\n %0A%09%7D%0A\n@@ -327,15 +327,14 @@\n )%0A%09%09\n-%09sairam\n+if ids\n %5Bpes\n@@ -342,69 +342,15 @@\n oa%5D \n+!\n = true\n-%0A%09%7D%0A%0A%09for _, pessoa := range ids %7B%0A%09%09if !sairam%5Bpessoa%5D\n  %7B%0A%09\n@@ -386,24 +386,23 @@\n %09%7D%0A%0A\n-%09%0A\n %09for \n-_, pessoa\n+valores, _\n  := \n@@ -423,17 +423,17 @@\n %7B%0A%09%09fmt.\n-p\n+P\n rintf(%22%25\n@@ -437,22 +437,23 @@\n (%22%25d %22, \n-pessoa\n+valores\n )%0A%09%7D%0A%0A%09f\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_18-24-48",
+            "content": "@@ -349,16 +349,17 @@\n ssoa)%0A%09%09\n+%09\n sairam%5Bp\n@@ -459,24 +459,26 @@\n rue%0A%09%09%7D%0A%09%7D%0A%0A\n+%09%0A\n %09for _, pess\n@@ -501,25 +501,25 @@\n ovo %7B%0A%09%09fmt.\n-P\n+p\n rintf(%22%25d %22,\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-05_18-24-50",
+            "content": "@@ -108,23 +108,34 @@\n novo := \n-%5B%5Dint%7B%7D\n+make(map%5Bint%5Dbool)\n %0A%09sairam\n@@ -442,35 +442,23 @@\n novo\n- = append(idsnovo, pessoa)%09\n+%5Bpessoa%5D = true\n %0A%09%09%7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_18-25-31",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar qntdpessoas, qntdsaida, pessoa int\n\tids := []int{}\n\tidsnovo := []int{}\n\tsairam := make(map[int]bool)\n\n\tfmt.Scan(&qntdpessoas)\n\tfor i := 0; i < qntdpessoas; i++ {\n\t\tfmt.Scan(&pessoa)\n\t\tids = append(ids, pessoa)\n\t}\n\n\tfmt.Scan(&qntdsaida)\n\n\tfor i := 0; i < qntdsaida; i++ {\n\t\tfmt.Scan(&pessoa)\n\t\tsairam[pessoa] = true\n\t}\n\n\tfor _, pessoa := range ids {\n\t\tif !sairam[pessoa] {\n\t\t\tidsnovo = append(idsnovo, pessoa)\t\n\t\t}\n\t}\n\n\tfor _, pessoa := range idsnovo {\n\t\tfmt.Printf(\"%d \", pessoa)\n\t}\n\n\tfmt.Println(\"\")\n}\n",
+            "lines": "37"
         }
     ]
 }

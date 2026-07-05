@@ -4,6 +4,11 @@ type Stack[T any] struct {
 	data []T
 }
 
+type Pos struct {
+	linha int
+	coluna int
+}
+
 func NewStack[T any]() *Stack[T] {
 	return &Stack[T]{data: []T{}}
 }

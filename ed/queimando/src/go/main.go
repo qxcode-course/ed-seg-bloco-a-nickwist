@@ -6,17 +6,38 @@ import (
 	"os"
 )
 
+func podequeimar(mat [][]rune, l, c int) bool {
+	if l < 0 || l >= len(mat) {
+		return false
+	}
+
+	if c < 0 || c >= len(mat[l]) {
+		return false
+	}
+
+	return mat[l][c] == '#'
+
+}
+
 func burnTrees(grid [][]rune, l, c int) {
 	stack := NewStack[Pos]()
-	_ , _ , _ = mat, l, c
 
-	// Essa função deve usar uma list como pilha
-	// e marcar as árvores na matriz como queimados
-	// Uma sugestão de como fazer isso é:
-	// - adicionar a primeira posição na pilha
-	// - enquanto a pilha não estiver vazia:
-	//   - retirar o elemento do topo
-	//   - se puder ser queimado, queime e adicione seus vizinhos à pilha
+	stack.Push(Pos{linha: l, coluna: c})
+
+	for !stack.IsEmpty() {
+		pos := stack.Pop()
+
+		if !podequeimar(grid, pos.linha, pos.coluna) {
+			continue
+		}
+
+		grid[pos.linha][pos.coluna] = 'o'
+
+		stack.Push(Pos{linha: pos.linha + 1, coluna: pos.coluna})
+		stack.Push(Pos{linha: pos.linha - 1, coluna: pos.coluna})
+		stack.Push(Pos{linha: pos.linha, coluna: pos.coluna - 1})
+		stack.Push(Pos{linha: pos.linha, coluna: pos.coluna + 1})
+	}
 
 }
 
