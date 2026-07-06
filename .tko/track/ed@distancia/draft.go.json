@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_17-16-02",
+            "content": "@@ -10,825 +10,76 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22strings%22%0A)%0A%0Afunc podeColocar(seq %5B%5Drune, pos, digito, limite int) bool %7B%0A%09char := rune('0' + digito)%0A%0A%09for i := 0; i %3C= limite; i++ %7B%0A%09%09esquerda := pos - i%0A%09%09direita := pos + i%0A%0A%09%09if esquerda %3E= 0 && seq%5Besquerda%5D == char %7B%0A%09%09%09return false%0A%09%09%7D%0A%0A%09%09if direita %3E= 0 && seq%5Bdireita%5D == char %7B%0A%09%09%09return false%0A%09%09%7D%0A%09%7D%0A%0A%09return true%0A%7D%0A%0Afunc substituicao(L, inicio int, seq string) bool %7B%0A%09seqRune := %5B%5Drune(seq)%0A%0A%09if !strings.Contains(seq, %22.%22) %7B%0A%09%09fmt.Println(seq)%0A%09%09return true%0A%09%7D%0A%0A%09for i := inicio; i %3C len(seq); i++ %7B%0A%09%09if seq%5Bi%5D == '.' %7B%0A%09%09%09for digito := 0; digito %3C= L; digito++ %7B%0A%09%09%09%09if podeColocar(seqRune, i, digito, L) %7B%0A%09%09%09%09%09seqRune%5Bi%5D = rune('0' + digito)%0A%09%09%09%09%7D%0A%0A%09%09%09%09if substituicao(L, i+1, seq) %7B%0A%09%09%09%09%09return true%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0A%0Afunc main() %7B%0A%09var seq string%0A%09var L int%0A%0A%09\n+%0A%0A%0Afunc main() %7B%0A    var seq string%0A    var L int%0A%0A    \n fmt.\n@@ -87,15 +87,17 @@\n can(\n-&\n seq)%0A\n-%09\n+    \n fmt.\n@@ -105,36 +105,10 @@\n can(\n-&\n L)%0A%0A\n-%09substituicao(L, 0, seq)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-06_17-51-07",
+            "content": "@@ -1,886 +1,47 @@\n-package main%0A%0Aimport (%0A%09%22fmt%22%0A%09%22strings%22%0A)%0A%0Afunc podeColocar(seq %5B%5Drune, pos, digito, limite int) bool %7B%0A%09char := rune('0' + digito)%0A%0A%09for i := 0; i %3C limite; i++ %7B%0A%09%09esquerda := pos - i%0A%09%09direita := pos + i%0A%0A%09%09if esquerda %3E= 0 && seq%5Besquerda%5D == char %7B%0A%09%09%09return false%0A%09%09%7D%0A%0A%09%09if direita %3E= 0 && seq%5Bdireita%5D == char %7B%0A%09%09%09return false%0A%09%09%7D%0A%09%7D%0A%0A%09return true%0A%7D%0A%0Afunc substituicao(L, inicio int, seq string) bool %7B%0A%09seqRune := %5B%5Drune(seq)%0A%0A%09if !strings.Contains(seq, %22.%22) %7B%0A%09%09fmt.Println(seq)%0A%09%09return true%0A%09%7D%0A%0A%09for i := inicio; i %3C len(seq); i++ %7B%0A%09%09if seq%5Bi%5D == '.' %7B%0A%09%09%09for digito := 0; digito %3C= L; digito++ %7B%0A%09%09%09%09if podeColocar(seqRune, i, digito, L) %7B%0A%09%09%09%09%09seqRune%5Bi%5D = rune('0' + digito)%0A%09%09%09%09%7D%0A%0A%09%09%09%09if substituicao(L, i+1, seq) %7B%0A%09%09%09%09%09return true%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return false%0A%7D%0A%0Afunc main() %7B%0A%09var seq string%0A%09var L int%0A%0A%09fmt.Scan(&seq)%0A%09fmt.Scan(&L)%0A%0A%09substituicao(L, 0, seq)%0A%7D\n+@@ -143,16 +143,17 @@%0A = 0; i %253C%0A+=%0A  limite;\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-07-06_17-51-40",
+            "content": "@@ -143,17 +143,16 @@\n = 0; i %3C\n-=\n  limite;\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-07-06_17-51-57",
+            "content": "@@ -536,10 +536,8 @@\n seq)\n--1\n ; i+\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-07-06_17-51-57",
+            "content": "@@ -395,22 +395,117 @@\n seq \n-%5B%5Drune) bool %7B\n+string) bool %7B%0A%09seqRune := %5B%5Drune(seq)%0A%0A%09if !strings.Contains(seq, %22.%22) %7B%0A%09%09fmt.Println(seq)%0A%09%09return true%0A%09%7D\n %0A%0A%09f\n@@ -532,16 +532,18 @@\n len(seq)\n+-1\n ; i++ %7B%0A\n@@ -629,16 +629,20 @@\n ocar(seq\n+Rune\n , i, dig\n@@ -659,16 +659,20 @@\n %09%09%09%09%09seq\n+Rune\n %5Bi%5D = ru\n@@ -859,36 +859,8 @@\n L)%0A%0A\n-    seqRune := %5B%5Drune(seq)%0A%0A\n %09sub\n@@ -878,16 +878,12 @@\n , 0, seq\n-Rune\n )%0A%7D%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-07-06_17-54-17",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22strings%22%0A\n )%0A%0Afunc \n@@ -750,17 +750,20 @@\n an(&L)%0A%0A\n-%09\n+    \n seqRune \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-06_17-54-28",
+            "content": "@@ -272,17 +272,18 @@\n direita \n-%3C\n+%3E=\n  0 && se\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-06_17-54-37",
+            "content": "@@ -274,24 +274,17 @@\n reita %3C \n-len(seq)\n+0\n  && seq%5B\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-06_17-55-01",
+            "content": "@@ -582,25 +582,23 @@\n to)%0A%09%09%09%09\n+%7D%0A\n %0A%09%09%09%09\n-    \n if subst\n@@ -625,20 +625,16 @@\n  %7B%0A%09%09%09%09%09\n-    \n return t\n@@ -645,133 +645,34 @@\n %09%09%09%09\n-    %7D%0A                %7D%0A                seq%5Bi%5D = '.'%0A            %7D%0A            return false%0A%09%09%7D%0A%0A%09%7D%0A    fmt.Pi%0A    return tru\n+%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return fals\n e%0A%7D%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-06_17-57-18",
+            "content": "@@ -743,16 +743,17 @@\n lse%0A%09%09%7D%0A\n+%0A\n %09%7D%0A    f\n@@ -760,27 +760,9 @@\n mt.P\n-rintln(string(seq))\n+i\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-06_17-57-36",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc podeColocar(seq []rune, pos, digito, limite int) bool {\n\tchar := rune('0' + digito)\n\n\tfor i := 0; i <= limite; i++ {\n\t\tesquerda := pos - i\n\t\tdireita := pos + i\n\n\t\tif esquerda >= 0 && seq[esquerda] == char {\n\t\t\treturn false\n\t\t}\n\n\t\tif direita < len(seq) && seq[direita] == char {\n\t\t\treturn false\n\t\t}\n\t}\n\n\treturn true\n}\n\nfunc substituicao(L, inicio int, seq []rune) bool {\n\n\tfor i := inicio; i < len(seq); i++ {\n\t\tif seq[i] == '.' {\n\t\t\tfor digito := 0; digito <= L; digito++ {\n\t\t\t\tif podeColocar(seq, i, digito, L) {\n\t\t\t\t\tseq[i] = rune('0' + digito)\n\t\t\t\t\n\t\t\t\t    if substituicao(L, i+1, seq) {\n\t\t\t\t\t    return true\n\t\t\t\t    }\n                }\n                seq[i] = '.'\n            }\n            return false\n\t\t}\n\t}\n    fmt.Println(string(seq))\n    return true\n}\n\nfunc main() {\n\tvar seq string\n\tvar L int\n\n\tfmt.Scan(&seq)\n\tfmt.Scan(&L)\n\n\tseqRune := []rune(seq)\n\n\tsubstituicao(L, 0, seqRune)\n}\n",
+            "lines": "57"
+        }
+    ]
+}

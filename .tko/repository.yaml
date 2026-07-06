@@ -13,16 +13,16 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@tree
+- ed@vector
 - ed@linear
-- ed@backtrack
 - ed@bfs
 - ed@list
-- ed@vector
 - ed@dfs
 - ed@map_set
-- ed@basic
+- ed@backtrack
 - ed@rec
+- ed@tree
+- ed@basic
 flags:
   inbox: all
   panel: skills
@@ -32,5 +32,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@distancia
-selected_index: 72
+selected: ed@wordsearch
+selected_index: 73

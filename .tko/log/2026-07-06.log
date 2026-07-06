@@ -68,3 +68,40 @@
 2026-07-06 17:10:14, MOVE, v:1, k:ed@subset_sum, mode:EDIT
 2026-07-06 17:10:40, MOVE, v:1, k:ed@distancia, mode:EDIT
 2026-07-06 17:10:40, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:16:02, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-07-06 17:16:02, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:13
+2026-07-06 17:16:02, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:20:54, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:25:56, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:30:30, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:35:35, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:40:16, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:41:04, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:50:16, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:51:07, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:51:36, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:51:36, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:51:40, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:51:57, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:51:57, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:59
+2026-07-06 17:54:17, EXEC, v:1, k:ed@distancia, mode:FULL, size:55, fail:COMP
+2026-07-06 17:54:18, EXEC, v:1, k:ed@distancia, mode:FULL, fail:COMP
+2026-07-06 17:54:24, EXEC, v:1, k:ed@distancia, mode:FULL, fail:COMP
+2026-07-06 17:54:28, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:54
+2026-07-06 17:54:37, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:54
+2026-07-06 17:55:01, EXEC, v:1, k:ed@distancia, mode:FULL, rate:0, size:54
+2026-07-06 17:55:57, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:55:01, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:57:18, EXEC, v:1, k:ed@distancia, mode:FREE, size:58
+2026-07-06 17:57:30, MOVE, v:1, k:ed@distancia, mode:BACK
+2026-07-06 17:57:34, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-07-06 17:57:36, EXEC, v:1, k:ed@distancia, mode:FULL, rate:100, size:57
+2026-07-06 17:57:37, EXEC, v:1, k:ed@distancia, mode:FULL, rate:100
+2026-07-06 17:57:37, EXEC, v:1, k:ed@distancia, mode:FULL, rate:100
+2026-07-06 17:57:40, MOVE, v:1, k:ed@distancia, mode:BACK
+2026-07-06 17:57:47, SELF, v:1, k:ed@distancia, self:1, rate:100, study:50
+2026-07-06 17:57:27, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 17:57:37, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-07-06 18:01:11, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-07-06 18:01:22, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25, size:62
+2026-07-06 18:01:46, MOVE, v:1, k:ed@wordsearch, mode:BACK
