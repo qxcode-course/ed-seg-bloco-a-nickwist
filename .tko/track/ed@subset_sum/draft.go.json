@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_17-10-14",
+            "content": "package main\nimport \"fmt\"\n\nfunc somar(nums []int, valor, inicio, soma int) bool {\n\n    if soma == valor {\n        return true\n    }\n\n    for i := inicio; i < len(nums); i++ {\n        soma += nums[i]\n\n        if somar(nums, valor, i+1, soma) {\n            return true\n        }\n\n        soma -= nums[i]\n    }\n\n    return false\n}\n\nfunc main() {\n    var quant, valor, numero int\n    var nums []int\n\n    fmt.Scan(&quant, &valor)\n\n    for i := 0; i < quant; i++ {\n        fmt.Scan(&numero)\n        nums = append(nums, numero)\n    }\n    \n    fmt.Println(somar(nums, valor, 0, 0))\n}\n",
+            "lines": "35"
+        }
+    ]
+}
