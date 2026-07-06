@@ -1,5 +1,10 @@
 package main
 
+type Pos struct {
+	linha int
+	coluna int
+}
+
 type Stack[T any] struct {
 	data []T
 }

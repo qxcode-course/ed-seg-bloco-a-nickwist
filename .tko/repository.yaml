@@ -14,15 +14,12 @@ sources:
   quests: null
 expanded:
 - ed@vector
+- ed@basic
+- ed@map_set
 - ed@linear
+- ed@rec
 - ed@bfs
 - ed@list
-- ed@dfs
-- ed@map_set
-- ed@backtrack
-- ed@rec
-- ed@tree
-- ed@basic
 flags:
   inbox: all
   panel: skills
@@ -32,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@wordsearch
-selected_index: 73
+selected: ed@dfs
+selected_index: 72

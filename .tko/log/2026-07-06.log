@@ -105,3 +105,16 @@
 2026-07-06 18:01:11, MOVE, v:1, k:ed@wordsearch, mode:PICK
 2026-07-06 18:01:22, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25, size:62
 2026-07-06 18:01:46, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-07-06 18:03:06, MOVE, v:1, k:ed@wordsearch, mode:PICK
+2026-07-06 18:07:03, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:25
+2026-07-06 18:07:03, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:07:48, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:08:21, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:10:51, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:17:37, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:22:41, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:27:59, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:32:53, MOVE, v:1, k:ed@wordsearch, mode:EDIT
+2026-07-06 18:34:22, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:100, size:107
+2026-07-06 18:34:30, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-07-06 18:35:06, SELF, v:1, k:ed@wordsearch, self:1, rate:100, study:30, concept:1
