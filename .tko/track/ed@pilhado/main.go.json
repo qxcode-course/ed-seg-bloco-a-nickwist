@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-21-39",
+            "content": "@@ -10,57 +10,4 @@\n ain%0A\n-%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09%0A%7D%0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2026-07-06_04-22-06",
+            "content": "@@ -1,473 +1,158 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09scanner.Scan()%0A%09line := scanner.Text()%0A%09var nl, nc, lfire, cfire int%0A%09fmt.Sscanf(line, %22%25d %25d %25d %25d%22, &nl, &nc, &lfire, &cfire)%0A%0A%09grid := make(%5B%5D%5B%5Drune, 0, nl)%0A%09for range nl %7B%0A%09%09scanner.Scan()%0A%09%09line := %5B%5Drune(scanner.Text())%0A%09%09grid = append(grid, line)%0A%09%7D%0A%09showGrid(grid)%0A%7D%0A%0Afunc showGrid(grid %5B%5D%5B%5Drune) %7B%0A%09for _, line := range grid %7B%0A%09%09fmt.Println(string(line))%0A%09%7D%0A%7D%0A%7D\n+@@ -7,16 +7,50 @@%0A e main%250A%250A%0A+import (%250A%2509%2522bufio%2522%250A%2509%2522fmt%2522%250A%2509%2522os%2522%250A)%250A%250A%0A func mai%0A@@ -55,11 +55,12 @@%0A ain() %257B%250A%0A+%2509%0A %250A%257D%250A\n %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-06_04-23-42",
+            "content": "@@ -464,8 +464,10 @@\n ))%0A%09%7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-06_04-23-53",
+            "content": "@@ -45,1075 +45,8 @@\n %0A)%0A%0A\n-func podeAndar(mat %5B%5D%5B%5Drune, linha, coluna int) bool %7B%0A%09if linha %3C 0 %7C%7C linha %3E= len(mat) %7B%0A%09%09return false%0A%09%7D%0A%0A%09if coluna %3C 0 %7C%7C coluna %3E= len(mat%5Blinha%5D) %7B%0A%09%09return false%0A%09%7D%0A%0A%09if mat%5Blinha%5D%5Bcoluna%5D == '#' %7C%7C mat%5Blinha%5D%5Bcoluna%5D == '.' %7B%0A%09%09return false%0A%09%7D%0A%0A%09return true%0A%7D%0A%0Afunc caminhar(mat %5B%5D%5B%5Drune, inicio, fim Pos) %7B%0A%09caminho := NewStack%5BPos%5D()%0A%09becos := NewStack%5BPos%5D()%0A%0A%09caminho.Push(inicio)%0A%0A%09for !caminho.IsEmpty() %7B%0A%09%09atual := caminho.Top()%0A%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'%0A%0A%09%09if atual.linha == fim.linha && atual.coluna == fim.coluna %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09validos := %5B%5DPos%7B%7D%0A%0A%09%09vizinhos := %5B%5DPos%7B%0A%09%09%09%7Blinha: atual.linha - 1, coluna: atual.coluna%7D,%0A%09%09%09%7Blinha: atual.linha + 1, coluna: atual.coluna%7D,%0A%09%09%09%7Blinha: atual.linha, coluna: atual.coluna + 1%7D,%0A%09%09%09%7Blinha: atual.linha, coluna: atual.coluna - 1%7D,%0A%09%09%7D%0A%0A%09%09for _, vizinho := range vizinhos %7B%0A%09%09%09if podeAndar(mat, vizinho.linha, vizinho.coluna) %7B%0A%09%09%09%09validos = append(validos, vizinho)%0A%09%09%09%7D%0A%09%09%7D%0A%09%09if len(validos) %3E 0 %7B%0A%09%09%09caminho.Push(validos%5B0%5D)%0A%09%09%7D else %7B%0A%09%09%09becos.Push(atual)%0A%09%09%09caminho.Pop()%0A%09%09%7D%0A%0A%09%7D%0A%7D%0A%0A\n func\n@@ -145,16 +145,30 @@\n r nl, nc\n+, lfire, cfire\n  int%0A%09fm\n@@ -186,16 +186,22 @@\n ne, %22%25d \n+%25d %25d \n %25d%22, &nl\n@@ -209,83 +209,25 @@\n  &nc\n-)%0A%0A%09inicio := Pos%7Blinha: -1, coluna: -1%7D%0A%09fim := Pos%7Blinha: -1, coluna: -1%7D\n+, &lfire, &cfire)\n %0A%0A%09g\n@@ -259,33 +259,21 @@\n nl)%0A\n-%0A\n %09for \n-i := 0; i %3C nl; i++\n+range nl\n  %7B%0A%09\n@@ -290,32 +290,39 @@\n can()%0A%09%09line := \n+%5B%5Drune(\n scanner.Text()%0A%0A\n@@ -323,32 +323,8 @@\n xt()\n-%0A%0A%09%09linha := %5B%5Drune(line\n )%0A%09%09\n@@ -350,194 +350,13 @@\n  lin\n-ha)%0A%0A%09%09for x, y := range linha %7B%0A%09%09%09if y == 'I' %7B%0A%09%09%09%09inicio = Pos%7Blinha: i, coluna: x%7D%0A%09%09%09%7D%0A%0A%09%09%09if y == 'F' %7B%0A%09%09%09%09fim = Pos%7Blinha: i, coluna: x%7D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09caminhar(grid, inicio, fim)\n+e)%0A%09%7D\n %0A%09sh\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-06_05-15-15",
+            "content": "@@ -488,16 +488,55 @@\n ho.Top()\n+%0A%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'\n %0A%0A%09%09if a\n@@ -609,48 +609,8 @@\n %09%7D%0A%0A\n-%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'%0A%0A\n %09%09va\n",
+            "lines": "100"
+        },
+        {
+            "label": "2026-07-06_05-19-55",
+            "content": "@@ -309,62 +309,12 @@\n urn \n-mat%5Blinha%5D%5Bcoluna%5D == ' ' %7C%7C mat%5Blinha%5D%5Bcoluna%5D == 'F'\n+true\n %0A%7D%0A%0A\n@@ -492,47 +492,8 @@\n op()\n-%0A%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'\n %0A%0A%09%09\n@@ -566,16 +566,56 @@\n ak%0A%09%09%7D%0A%0A\n+%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'%0A%0A\n %09%09valido\n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-07-06_05-20-57",
+            "content": "@@ -538,16 +538,55 @@\n ho.Top()\n+%0A%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'\n %0A%0A%09%09if a\n@@ -659,48 +659,8 @@\n %09%7D%0A%0A\n-%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'%0A%0A\n %09%09va\n",
+            "lines": "100"
+        },
+        {
+            "label": "2026-07-06_05-21-21",
+            "content": "@@ -542,47 +542,8 @@\n op()\n-%0A%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'\n %0A%0A%09%09\n@@ -616,16 +616,56 @@\n ak%0A%09%09%7D%0A%0A\n+%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = '.'%0A%0A\n %09%09valido\n@@ -1135,48 +1135,8 @@\n al)%0A\n-%09%09%09mat%5Batual.linha%5D%5Batual.coluna%5D = ' '%0A\n %09%09%09c\n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-07-06_05-23-37",
+            "content": "@@ -1134,25 +1134,8 @@\n al)%0A\n-%09%09%09caminho.Pop()%0A\n %09%09%09m\n@@ -1170,16 +1170,32 @@\n %5D = ' '%0A\n+%09%09%09caminho.Pop()\n %0A%09%09%7D%0A%0A%09%7D\n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-07-06_05-25-18",
+            "content": "@@ -1151,79 +1151,8 @@\n p()%0A\n-%0A%09%09%09if atual.linha != inicio.linha %7C%7C atual.coluna != inicio.coluna %7B%0A%09\n %09%09%09m\n@@ -1187,20 +1187,16 @@\n %5D = ' '%0A\n-%09%09%09%7D\n %0A%09%09%7D%0A%0A%09%7D\n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-07-06_05-25-58",
+            "content": "@@ -1255,17 +1255,17 @@\n una%5D = '\n--\n+ \n '%0A%09%09%09%7D%0A%09\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-07-06_05-26-10",
+            "content": "@@ -1255,17 +1255,17 @@\n una%5D = '\n- \n+-\n '%0A%09%09%09%7D%0A%09\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-07-06_05-26-56",
+            "content": "@@ -367,323 +367,8 @@\n %0A%7D%0A%0A\n-func ehUmBeco(becos *Stack%5BPos%5D, pos Pos) bool %7B%0A%09pilha := NewStack%5BPos%5D()%0A%09encontrou := false%0A%0A%09for !becos.IsEmpty() %7B%0A%09%09p := becos.Pop() %0A%09%09becos.Push(p)%0A%09%0A%09%09if p.linha == pos.linha && p.coluna == pos.coluna %7B%0A%09%09%09encontrou = true%0A%09%09%7D%0A%09%7D%0A%0A%09for !pilha.IsEmpty() %7B%0A%09%09becos.Push(pilha.Pop())%0A%09%7D%0A%0A%09return encontrou%0A%7D%0A%0A\n func\n@@ -999,37 +999,8 @@\n una)\n- && !ehUmBeco(becos, vizinho)\n  %7B%0A%09\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-07-06_05-32-46",
+            "content": "@@ -501,16 +501,17 @@\n os.Pop()\n+ \n %0A%09%09becos\n@@ -519,16 +519,17 @@\n Push(p)%0A\n+%09\n %0A%09%09if p.\n",
+            "lines": "124"
+        },
+        {
+            "label": "2026-07-06_05-32-57",
+            "content": "@@ -504,21 +504,21 @@\n Pop()%0A%09%09\n-pilha\n+becos\n .Push(p)\n",
+            "lines": "124"
+        },
+        {
+            "label": "2026-07-06_05-34-11",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc podeAndar(mat [][]rune, linha, coluna int) bool {\n\tif linha < 0 || linha >= len(mat) {\n\t\treturn false\n\t}\n\n\tif coluna < 0 || coluna >= len(mat[linha]) {\n\t\treturn false\n\t}\n\n\tif mat[linha][coluna] == '#' || mat[linha][coluna] == '.' {\n\t\treturn false\n\t}\n\n\treturn mat[linha][coluna] == ' ' || mat[linha][coluna] == 'F'\n}\n\nfunc ehUmBeco(becos *Stack[Pos], pos Pos) bool {\n\tpilha := NewStack[Pos]()\n\tencontrou := false\n\n\tfor !becos.IsEmpty() {\n\t\tp := becos.Pop()\n\t\tpilha.Push(p)\n\n\t\tif p.linha == pos.linha && p.coluna == pos.coluna {\n\t\t\tencontrou = true\n\t\t}\n\t}\n\n\tfor !pilha.IsEmpty() {\n\t\tbecos.Push(pilha.Pop())\n\t}\n\n\treturn encontrou\n}\n\nfunc caminhar(mat [][]rune, inicio, fim Pos) {\n\tcaminho := NewStack[Pos]()\n\tbecos := NewStack[Pos]()\n\n\tcaminho.Push(inicio)\n\n\tfor !caminho.IsEmpty() {\n\t\tatual := caminho.Top()\n\t\tmat[atual.linha][atual.coluna] = '.'\n\n\t\tif atual.linha == fim.linha && atual.coluna == fim.coluna {\n\t\t\tbreak\n\t\t}\n\n\t\tvalidos := []Pos{}\n\n\t\tvizinhos := []Pos{\n\t\t\t{linha: atual.linha - 1, coluna: atual.coluna},\n\t\t\t{linha: atual.linha + 1, coluna: atual.coluna},\n\t\t\t{linha: atual.linha, coluna: atual.coluna + 1},\n\t\t\t{linha: atual.linha, coluna: atual.coluna - 1},\n\t\t}\n\n\t\tfor _, vizinho := range vizinhos {\n\t\t\tif podeAndar(mat, vizinho.linha, vizinho.coluna) && !ehUmBeco(becos, vizinho) {\n\t\t\t\tvalidos = append(validos, vizinho)\n\t\t\t}\n\t\t}\n\t\tif len(validos) > 0 {\n\t\t\tcaminho.Push(validos[0])\n\t\t} else {\n\t\t\tbecos.Push(atual)\n\t\t\tcaminho.Pop()\n\n\t\t\tif atual.linha != inicio.linha || atual.coluna != inicio.coluna {\n\t\t\t\tmat[atual.linha][atual.coluna] = ' '\n\t\t\t}\n\t\t}\n\n\t}\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc int\n\tfmt.Sscanf(line, \"%d %d\", &nl, &nc)\n\n\tinicio := Pos{linha: -1, coluna: -1}\n\tfim := Pos{linha: -1, coluna: -1}\n\n\tgrid := make([][]rune, 0, nl)\n\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\tline := scanner.Text()\n\n\t\tlinha := []rune(line)\n\t\tgrid = append(grid, linha)\n\n\t\tfor x, y := range linha {\n\t\t\tif y == 'I' {\n\t\t\t\tinicio = Pos{linha: i, coluna: x}\n\t\t\t}\n\n\t\t\tif y == 'F' {\n\t\t\t\tfim = Pos{linha: i, coluna: x}\n\t\t\t}\n\t\t}\n\t}\n\tcaminhar(grid, inicio, fim)\n\tshowGrid(grid)\n}\n\nfunc showGrid(grid [][]rune) {\n\tfor _, line := range grid {\n\t\tfmt.Println(string(line))\n\t}\n}\n",
+            "lines": "124"
+        }
+    ]
+}
