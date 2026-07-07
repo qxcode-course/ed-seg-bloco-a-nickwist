@@ -60,3 +60,15 @@
 2026-07-07 23:18:52, MOVE, v:1, k:ed@clonar, mode:PICK
 2026-07-07 23:18:55, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0, size:76
 2026-07-07 23:19:53, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-07-07 23:20:19, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-07-07 23:21:03, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0
+2026-07-07 23:21:03, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-07-07 23:24:22, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-07-07 23:30:15, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-07-07 23:31:42, EXEC, v:1, k:ed@clonar, mode:FULL, rate:100, size:83
+2026-07-07 23:31:43, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-07-07 23:31:48, SELF, v:1, k:ed@clonar, self:1, rate:100, study:10
+2026-07-07 23:32:07, MOVE, v:1, k:ed@soma, mode:DOWN
+2026-07-07 23:32:09, MOVE, v:1, k:ed@soma, mode:PICK
+2026-07-07 23:32:14, EXEC, v:1, k:ed@soma, mode:FULL, rate:0, size:83
+2026-07-07 23:32:14, MOVE, v:1, k:ed@soma, mode:BACK
