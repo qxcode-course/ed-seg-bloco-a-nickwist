@@ -1,0 +1,17 @@
+2026-07-07 04:50:40, MOVE, v:1, k:ed@serial, mode:DOWN
+2026-07-07 04:50:41, MOVE, v:1, k:ed@serial, mode:PICK
+2026-07-07 04:50:40, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 04:50:40, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 21:31:13, MOVE, v:1, k:ed@serial, mode:PICK
+2026-07-07 21:47:33, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 21:56:01, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 21:58:37, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 22:05:08, EXEC, v:1, k:ed@serial, mode:FULL, rate:100, size:82
+2026-07-07 22:05:14, MOVE, v:1, k:ed@serial, mode:BACK
+2026-07-07 22:05:04, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 22:05:07, MOVE, v:1, k:ed@serial, mode:EDIT
+2026-07-07 22:06:55, SELF, v:1, k:ed@serial, self:1, rate:100, study:30, concept:1
+2026-07-07 22:07:47, MOVE, v:1, k:ed@formatada, mode:DOWN
+2026-07-07 22:07:56, MOVE, v:1, k:ed@formatada, mode:PICK
+2026-07-07 22:07:58, EXEC, v:1, k:ed@formatada, mode:FULL, rate:0, size:72
+2026-07-07 22:08:48, MOVE, v:1, k:ed@formatada, mode:BACK
