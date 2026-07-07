@@ -39,3 +39,24 @@
 2026-07-07 23:04:18, MOVE, v:1, k:ed@inverter, mode:PICK
 2026-07-07 23:04:24, EXEC, v:1, k:ed@inverter, mode:FULL, rate:16, size:72
 2026-07-07 23:04:37, MOVE, v:1, k:ed@inverter, mode:BACK
+2026-07-07 23:05:16, MOVE, v:1, k:ed@inverter, mode:PICK
+2026-07-07 23:07:13, EXEC, v:1, k:ed@inverter, mode:FULL, rate:0, size:77
+2026-07-07 23:08:27, EXEC, v:1, k:ed@inverter, mode:FULL, rate:0, size:77
+2026-07-07 23:09:36, EXEC, v:1, k:ed@inverter, mode:FULL, rate:16, size:77
+2026-07-07 23:09:36, MOVE, v:1, k:ed@inverter, mode:EDIT
+2026-07-07 23:09:36, MOVE, v:1, k:ed@inverter, mode:EDIT
+2026-07-07 23:10:51, EXEC, v:1, k:ed@inverter, mode:FULL, rate:16, size:81
+2026-07-07 23:14:52, EXEC, v:1, k:ed@inverter, mode:FULL, rate:16, size:78
+2026-07-07 23:15:01, MOVE, v:1, k:ed@inverter, mode:EDIT
+2026-07-07 23:14:52, MOVE, v:1, k:ed@inverter, mode:EDIT
+2026-07-07 23:15:16, EXEC, v:1, k:ed@inverter, mode:FULL, rate:50, size:80
+2026-07-07 23:16:24, EXEC, v:1, k:ed@inverter, mode:FULL, rate:33, size:77
+2026-07-07 23:16:39, EXEC, v:1, k:ed@inverter, mode:FULL, rate:50, size:80
+2026-07-07 23:17:29, EXEC, v:1, k:ed@inverter, mode:FULL, rate:66, size:80
+2026-07-07 23:18:35, EXEC, v:1, k:ed@inverter, mode:FULL, rate:100, size:83
+2026-07-07 23:18:36, MOVE, v:1, k:ed@inverter, mode:BACK
+2026-07-07 23:18:43, SELF, v:1, k:ed@inverter, self:1, rate:100, study:10
+2026-07-07 23:18:45, MOVE, v:1, k:ed@clonar, mode:DOWN
+2026-07-07 23:18:52, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-07-07 23:18:55, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0, size:76
+2026-07-07 23:19:53, MOVE, v:1, k:ed@clonar, mode:BACK
