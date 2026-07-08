@@ -10,3 +10,31 @@
 2026-07-08 00:04:36, SELF, v:1, k:ed@soma
 2026-07-08 00:04:37, SELF, v:1, k:ed@soma, self:1, rate:100
 2026-07-08 00:04:44, SELF, v:1, k:ed@soma, self:1, rate:100, study:20
+2026-07-08 00:05:07, MOVE, v:1, k:ed@altura, mode:DOWN
+2026-07-08 00:05:07, MOVE, v:1, k:ed@altura, mode:PICK
+2026-07-08 00:05:18, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:108
+2026-07-08 00:05:55, MOVE, v:1, k:ed@altura, mode:BACK
+2026-07-08 00:05:06, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 00:05:18, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:06:36, MOVE, v:1, k:ed@altura, mode:PICK
+2026-07-08 02:06:40, EXEC, v:1, k:ed@altura, mode:FULL, rate:0
+2026-07-08 02:06:40, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:08:15, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:24:50, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:26:38, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:111
+2026-07-08 02:30:05, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:26:38, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:34:34, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:128
+2026-07-08 02:35:02, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:128
+2026-07-08 02:35:02, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:35:02, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:39:36, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:45:08, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:49:56, EXEC, v:1, k:ed@altura, mode:FULL, rate:14, size:145
+2026-07-08 02:49:56, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:49:56, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-08 02:50:19, EXEC, v:1, k:ed@altura, mode:FULL, rate:14, size:141
+2026-07-08 02:52:55, EXEC, v:1, k:ed@altura, mode:FULL, rate:100, size:140
+2026-07-08 02:52:58, EXEC, v:1, k:ed@altura, mode:FULL, rate:100
+2026-07-08 02:52:58, MOVE, v:1, k:ed@altura, mode:BACK
+2026-07-08 02:53:04, SELF, v:1, k:ed@altura, self:1, rate:100, study:30
