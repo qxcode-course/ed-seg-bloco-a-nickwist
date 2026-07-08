@@ -1,0 +1,12 @@
+2026-07-08 00:00:04, EXEC, v:1, k:ed@soma, mode:FULL, rate:71, size:97
+2026-07-08 00:01:19, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:97
+2026-07-08 00:01:27, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:97
+2026-07-08 00:01:27, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-08 00:01:27, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-08 00:04:03, EXEC, v:1, k:ed@soma, mode:FULL, rate:71, size:92
+2026-07-08 00:04:31, EXEC, v:1, k:ed@soma, mode:FULL, rate:100, size:92
+2026-07-08 00:04:34, MOVE, v:1, k:ed@soma, mode:BACK
+2026-07-08 00:04:35, SELF, v:1, k:ed@soma, self:1, rate:100
+2026-07-08 00:04:36, SELF, v:1, k:ed@soma
+2026-07-08 00:04:37, SELF, v:1, k:ed@soma, self:1, rate:100
+2026-07-08 00:04:44, SELF, v:1, k:ed@soma, self:1, rate:100, study:20

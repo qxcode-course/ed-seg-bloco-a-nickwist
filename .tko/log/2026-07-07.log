@@ -72,3 +72,25 @@
 2026-07-07 23:32:09, MOVE, v:1, k:ed@soma, mode:PICK
 2026-07-07 23:32:14, EXEC, v:1, k:ed@soma, mode:FULL, rate:0, size:83
 2026-07-07 23:32:14, MOVE, v:1, k:ed@soma, mode:BACK
+2026-07-07 23:32:37, MOVE, v:1, k:ed@soma, mode:PICK
+2026-07-07 23:32:38, EXEC, v:1, k:ed@soma, mode:FULL, rate:0
+2026-07-07 23:32:38, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:37:26, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:41:37, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:44:31, EXEC, v:1, k:ed@soma, mode:FULL, rate:42, size:86
+2026-07-07 23:45:33, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:94
+2026-07-07 23:46:18, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:98
+2026-07-07 23:46:30, EXEC, v:1, k:ed@soma, mode:FULL, rate:42, size:98
+2026-07-07 23:47:21, EXEC, v:1, k:ed@soma, mode:FULL, rate:42, size:98
+2026-07-07 23:47:35, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:47:21, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:47:38, EXEC, v:1, k:ed@soma, mode:FULL, rate:42, size:98
+2026-07-07 23:47:54, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:98
+2026-07-07 23:48:56, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:98
+2026-07-07 23:49:10, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:98
+2026-07-07 23:49:10, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:52:25, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:55:24, EXEC, v:1, k:ed@soma, mode:FULL, rate:28, size:95
+2026-07-07 23:56:34, EXEC, v:1, k:ed@soma, mode:FULL, rate:57, size:95
+2026-07-07 23:56:33, MOVE, v:1, k:ed@soma, mode:EDIT
+2026-07-07 23:56:34, MOVE, v:1, k:ed@soma, mode:EDIT
