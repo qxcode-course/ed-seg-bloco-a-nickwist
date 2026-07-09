@@ -13,15 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@bfs
+- ed@map_set
+- ed@tree
+- ed@rec
 - ed@basic
 - ed@linear
-- ed@list
-- ed@rec
 - ed@vector
-- ed@map_set
+- ed@list
+- ed@dfs
 - ed@backtrack
-- ed@tree
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@arvore-path
-selected_index: 85
+selected: ed@dfs_read
+selected_index: 90

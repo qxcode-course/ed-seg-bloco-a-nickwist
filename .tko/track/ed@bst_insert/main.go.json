@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-08_20-11-53",
+            "content": "@@ -160,16 +160,47 @@\n Node %7B%0A%09\n+// TODO%0A%09_ = values%0A%09return nil\n %0A%7D%0A%0A// -\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-07-09_04-17-50",
+            "content": "@@ -164,18 +164,8 @@\n  %7B%0A%09\n-return nil\n %0A%7D%0A%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-09_04-17-55",
+            "content": "@@ -163,12 +163,8 @@\n e %7B%0A\n-%09%0A%09%0A\n %09ret\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-09_04-19-59",
+            "content": "@@ -164,31 +164,11 @@\n  %7B%0A%09\n-if len(values) == 0 %7B\n %0A%09\n+%0A\n %09ret\n@@ -179,225 +179,8 @@\n nil%0A\n-%09%7D%0A%0A%09valor := (values)%5B0%5D%0A%09values = (values)%5B1:%5D%0A%0A%09node := &Node%7BValue: valor%7D%0A%0A%09if valor %3E values%5B0%5D %7B%0A%09%09node.Left = BstInsert(values)%0A%09%7D else if valor %3C values%5B0%5D %7B%0A%09%09node.Right = BstInsert(values)%0A%09%7D%0A%09return node%0A%0A\n %7D%0A%0A/\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-07-09_04-24-57",
+            "content": "@@ -182,45 +182,12 @@\n  == \n-1\n+0\n  %7B%0A\n-%09%09node := &Node%7BValue: value%5B0%5D%7D%0A\n %09%09re\n@@ -192,19 +192,18 @@\n return n\n-ode\n+il\n %0A%09%7D%0A%0A%09va\n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-07-09_04-25-49",
+            "content": "@@ -210,17 +210,16 @@\n e: value\n-s\n %5B0%5D%7D%0A%09%09r\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-07-09_04-25-52",
+            "content": "@@ -126,157 +126,8 @@\n %0A%7D%0A%0A\n-func jaEsta(values%5B%5D int, value int) bool %7B%0A%09for i := 0; i %3C len(values)-1; i++ %7B%0A%09%09if values%5Bi%5D == value %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09%0A%09return false%0A%7D%0A%0A\n func\n@@ -335,38 +335,8 @@\n s%5B0%5D\n- && !jaEsta(values, values%5B0%5D)\n  %7B%0A%09\n@@ -398,37 +398,8 @@\n s%5B0%5D\n- && jaEsta(values, values%5B0%5D)\n  %7B%0A%09\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-07-09_04-29-37",
+            "content": "@@ -140,19 +140,19 @@\n a(values\n- \n %5B%5D\n+ \n int, val\n@@ -252,16 +252,17 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%09\n %0A%09return\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-07-09_04-29-41",
+            "content": "@@ -568,33 +568,32 @@\n  %3C values%5B0%5D && \n-!\n jaEsta(values, v\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-07-09_04-29-48",
+            "content": "@@ -546,19 +546,22 @@\n lues)%0A%09%7D\n-%0A%0A%09\n+ else \n if valor\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-07-09_04-30-54",
+            "content": "@@ -131,186 +131,120 @@\n unc \n-eliminarRepetido(values %5B%5Dint) %5B%5Dint %7B%0A%09vistos := map%5Bint%5D\n+jaEsta(values %5B%5Dint, value int) \n bool\n-%7B%7D%0A%09valores := %5B%5Dint%7B%7D%0A%0A%09for _, n := range values %7B%0A%09%09if !vistos%5Bn%5D %7B%0A%09%09%09valores = append(valores, n)%0A%09%09%09vistos%5Bn%5D =\n+ %7B%0A%09for i := 0; i %3C len(values)-1; i++ %7B%0A%09%09if values%5Bi%5D == value %7B%0A%09%09%09return\n  tru\n@@ -265,15 +265,13 @@\n urn \n-v\n+f\n al\n-ore\n s\n+e\n %0A%7D%0A%0A\n@@ -471,32 +471,62 @@\n alor %3E values%5B0%5D\n+ && !jaEsta(values, values%5B0%5D)\n  %7B%0A%09%09node.Left =\n@@ -569,16 +569,46 @@\n alues%5B0%5D\n+ && !jaEsta(values, values%5B0%5D)\n  %7B%0A%09%09nod\n@@ -1578,33 +1578,15 @@\n ert(\n-eliminarRepetido(\n values)\n-)\n %0A%09BS\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-09_04-39-25",
+            "content": "@@ -615,24 +615,8 @@\n  %7B%0A%09\n-%09return nil%0A%09%7D%0A%0A\n %09nod\n@@ -643,16 +643,18 @@\n values)%0A\n+%09%7D\n %0A%09return\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-07-09_04-40-44",
+            "content": "@@ -607,24 +607,40 @@\n alues%5B0%5D %7B%0A%09\n+%09return nil%0A%09%7D%0A%0A\n %09node.Right \n@@ -659,18 +659,16 @@\n values)%0A\n-%09%7D\n %0A%09return\n",
+            "lines": "98"
+        },
+        {
+            "label": "2026-07-09_04-41-34",
+            "content": "@@ -588,45 +588,8 @@\n )%0A%09%7D\n- else %7B%0A%09%09return BstInsert(values)%0A%09%7D\n %0A%0A%09i\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-07-09_04-43-01",
+            "content": "@@ -131,377 +131,572 @@\n unc \n-colocar(node *Node, \n+eliminarRepetido(\n value\n- \n+s %5B%5D\n int) \n-*Node %7B%0A%09if node == nil %7B%0A%09%09return &Node%7BValue: value%7D%0A%09%7D%0A%0A%09if value %3C node.Value %7B%0A%09%09node.Left = colocar(node.Left, value)%0A%09%7D else \n+%5B%5Dint %7B%0A%09vistos := map%5Bint%5Dbool%7B%7D%0A%09valores := %5B%5Dint%7B%7D%0A%0A%09for _, n := range values %7B%0A%09%09if !vistos%5Bn%5D %7B%0A%09%09%09valores = append(valores, n)%0A%09%09%09vistos%5Bn%5D = true%0A%09%09%7D%0A%09%7D%0A%0A%09return valores%0A%7D%0A%0Afunc BstInsert(values %5B%5Dint) *Node %7B%0A%09if len(values) == 1 %7B%0A%09%09node := &Node%7BValue: values%5B0%5D%7D%0A%09%09return node%0A%09%7D%0A%0A%09valor := (values)%5B0%5D%0A%09values = (values)%5B1:%5D%0A%0A%09node := &Node%7BValue: valor%7D%0A%0A%09\n if val\n-ue %3E node.Value %7B%0A%09%09node.Right = colocar(node.Right, \n+or %3E values%5B0%5D %7B%0A%09%09node.Left = BstInsert(\n value\n+s\n )%0A%09%7D\n-%0A%0A%09return node%0A%7D%0A%0Afunc BstInsert(values %5B%5Dint) *Node %7B%0A%09var root *Node%0A%0A%09for _, n := range\n+ else %7B%0A%09%09return BstInsert(values)%0A%09%7D%0A%0A%09if valor %3C\n  values\n+%5B0%5D\n  %7B%0A%09%09\n-root = colocar(root, n\n+node.Right = BstInsert(values\n )%0A%09%7D%0A\n-%0A\n %09return \n root\n@@ -691,20 +691,21 @@\n %09return \n-root\n+node%0A\n %0A%7D%0A%0A// -\n@@ -1619,17 +1619,40 @@\n tInsert(\n-v\n+eliminarRepetido(values)\n )%0A%09BShow\n",
+            "lines": "97"
+        },
+        {
+            "label": "2026-07-09_04-51-23",
+            "content": "@@ -1424,21 +1424,16 @@\n Insert(v\n-alues\n )%0A%09BShow\n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-07-09_04-51-27",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Node struct {\n\tValue int\n\tLeft  *Node\n\tRight *Node\n}\n\nfunc colocar(node *Node, value int) *Node {\n\tif node == nil {\n\t\treturn &Node{Value: value}\n\t}\n\n\tif value < node.Value {\n\t\tnode.Left = colocar(node.Left, value)\n\t} else if value > node.Value {\n\t\tnode.Right = colocar(node.Right, value)\n\t}\n\n\treturn node\n}\n\nfunc BstInsert(values []int) *Node {\n\tvar root *Node\n\n\tfor _, n := range values {\n\t\troot = colocar(root, n)\n\t}\n\n\treturn root\n}\n\n// -----------------------------------------------------------------------------------\nfunc BShow(node *Node, history string) {\n\tif node != nil && (node.Left != nil || node.Right != nil) {\n\t\tBShow(node.Left, history+\"l\")\n\t}\n\tfor i := 0; i < len(history)-1; i++ {\n\t\tif history[i] != history[i+1] {\n\t\t\tfmt.Print(\"\u2502   \")\n\t\t} else {\n\t\t\tfmt.Print(\"    \")\n\t\t}\n\t}\n\tif history != \"\" {\n\t\tif history[len(history)-1] == 'l' {\n\t\t\tfmt.Print(\"\u256d\u2500\u2500\u2500\")\n\t\t} else {\n\t\t\tfmt.Print(\"\u2570\u2500\u2500\u2500\")\n\t\t}\n\t}\n\tif node == nil {\n\t\tfmt.Println(\"#\")\n\t\treturn\n\t}\n\tfmt.Println(node.Value)\n\tif node.Left != nil || node.Right != nil {\n\t\tBShow(node.Right, history+\"r\")\n\t}\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tvalues := make([]int, 0, len(parts))\n\tfor _, elem := range parts {\n\t\tv, err := strconv.Atoi(elem)\n\t\tif err == nil {\n\t\t\tvalues = append(values, v)\n\t\t}\n\t}\n\troot := BstInsert(values)\n\tBShow(root, \"\") // Chama a fun\u00e7\u00e3o de impress\u00e3o formatada\n}\n",
+            "lines": "83"
+        }
+    ]
+}
