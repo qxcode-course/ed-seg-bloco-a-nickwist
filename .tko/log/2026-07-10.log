@@ -61,3 +61,18 @@
 2026-07-10 20:56:02, MOVE, v:1, k:ed@pintura, mode:DOWN
 2026-07-10 20:56:03, MOVE, v:1, k:ed@pintura, mode:PICK
 2026-07-10 20:56:35, MOVE, v:1, k:ed@pintura, mode:BACK
+2026-07-10 21:02:17, SELF, v:1, k:ed@cercado, self:1, rate:100, study:40, concept:1
+2026-07-10 21:10:28, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-07-10 21:12:36, MOVE, v:1, k:ed@cercado, mode:BACK
+2026-07-10 21:14:15, MOVE, v:1, k:ed@pintura, mode:PICK
+2026-07-10 21:14:16, EXEC, v:1, k:ed@pintura, mode:FULL, size:57, fail:COMP
+2026-07-10 21:14:36, EXEC, v:1, k:ed@pintura, mode:FULL, size:52, fail:COMP
+2026-07-10 21:14:57, EXEC, v:1, k:ed@pintura, mode:FULL, rate:0, size:56
+2026-07-10 21:14:56, MOVE, v:1, k:ed@pintura, mode:EDIT
+2026-07-10 21:14:57, MOVE, v:1, k:ed@pintura, mode:EDIT
+2026-07-10 21:22:01, MOVE, v:1, k:ed@pintura, mode:EDIT
+2026-07-10 21:26:59, MOVE, v:1, k:ed@pintura, mode:EDIT
+2026-07-10 21:29:41, EXEC, v:1, k:ed@pintura, mode:FULL, rate:50, size:80
+2026-07-10 21:30:33, EXEC, v:1, k:ed@pintura, mode:FULL, rate:100, size:80
+2026-07-10 21:31:21, MOVE, v:1, k:ed@pintura, mode:BACK
+2026-07-10 21:31:26, SELF, v:1, k:ed@pintura, self:1, rate:100, study:20

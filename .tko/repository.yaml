@@ -13,15 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
-- ed@basic
 - ed@dfs
-- ed@tree
-- ed@linear
 - ed@backtrack
-- ed@map_set
 - ed@rec
+- ed@vector
 - ed@list
+- ed@linear
+- ed@map_set
+- ed@tree
+- ed@basic
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@pintura
-selected_index: 93
+selected: ed@battleship
+selected_index: 95

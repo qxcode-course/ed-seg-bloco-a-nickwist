@@ -8,11 +8,34 @@ import (
 	"strings"
 )
 
+func DFS(image [][]int, sr, sc, color, corInicial int) {
+	if sr < 0 || sc < 0 || sr >= len(image) || sc >= len(image[0]) {
+		return
+	}
+
+	if image[sr][sc] != corInicial {
+		return
+	}
+
+	image[sr][sc] = color
+
+	DFS(image, sr+1, sc, color, corInicial)
+	DFS(image, sr-1, sc, color, corInicial)
+	DFS(image, sr, sc+1, color, corInicial)
+	DFS(image, sr, sc-1, color, corInicial)
+}
+
 // Não modifique a assinatura da função floodFill
 func floodFill(image [][]int, sr int, sc int, color int) [][]int {
-	//
-	_ := image
-	return 0
+	corInicial := image[sr][sc]
+
+	if corInicial == color {
+		return image
+	}
+
+	DFS(image, sr, sc, color, corInicial)
+
+	return image
 }
 
 // Não modifique a função main

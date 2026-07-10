@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-10_21-14-16",
+            "content": "@@ -65,16 +65,158 @@\n s%22%0A)%0A%0A//\n+ N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o floodFill%0Afunc floodFill(image %5B%5D%5B%5Dint, sr int, sc int, color int) %5B%5D%5B%5Dint %7B%0A%09//%0A%09_ := image%0A%09return 0%0A%7D\n %0A%0A// N%C3%A3o\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-07-10_21-14-36",
+            "content": "@@ -69,140 +69,8 @@\n %0A%0A//\n- N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o floodFill%0Afunc floodFill(image %5B%5D%5B%5Dint, sr int, sc int, color int) %5B%5D%5B%5Dint %7B%0A%09//%0A%09return nil%0A%7D\n %0A%0A//\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_21-14-57",
+            "content": "@@ -67,625 +67,140 @@\n %0A)%0A%0A\n-func DFS(image %5B%5D%5B%5Dint, sr, sc, color, corInicial int) %7B%0A%09if sr %3C 0 %7C%7C sc %3C 0 %7C%7C sr %3E= len(image) %7C%7C sc %3E= len(image%5B0%5D) %7B%0A%09%09return%0A%09%7D%0A%0A%09if image%5Bsr%5D%5Bsc%5D != corInicial %7B%0A%09%09return%0A%09%7D%0A%0A%09image%5Bsr%5D%5Bsc%5D = color%0A%0A%09DFS(image, sr+1, sc, color, corInicial)%0A%09DFS(image, sr-1, sc, color, corInicial)%0A%09DFS(image, sr, sc+1, color, corInicial)%0A%09DFS(image, sr, sc-1, color, corInicial)%0A%7D%0A%0A// N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o floodFill%0Afunc floodFill(image %5B%5D%5B%5Dint, sr int, sc int, color int) %5B%5D%5B%5Dint %7B%0A%09corInicial := image%5Bsr%5D%5Bsc%5D%0A%0A%09if corInicial == color %7B%0A%09%09return nil%0A%09%7D%0A%0A%09DFS(image, sr, sc, color, corInicial)%0A%0A%09return image\n+// N%C3%A3o modifique a assinatura da fun%C3%A7%C3%A3o floodFill%0Afunc floodFill(image %5B%5D%5B%5Dint, sr int, sc int, color int) %5B%5D%5B%5Dint %7B%0A%09//%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_21-29-41",
+            "content": "@@ -619,21 +619,19 @@\n %09return \n-image\n+nil\n %0A%09%7D%0A%0A%09DF\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-07-10_21-30-33",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc DFS(image [][]int, sr, sc, color, corInicial int) {\n\tif sr < 0 || sc < 0 || sr >= len(image) || sc >= len(image[0]) {\n\t\treturn\n\t}\n\n\tif image[sr][sc] != corInicial {\n\t\treturn\n\t}\n\n\timage[sr][sc] = color\n\n\tDFS(image, sr+1, sc, color, corInicial)\n\tDFS(image, sr-1, sc, color, corInicial)\n\tDFS(image, sr, sc+1, color, corInicial)\n\tDFS(image, sr, sc-1, color, corInicial)\n}\n\n// N\u00e3o modifique a assinatura da fun\u00e7\u00e3o floodFill\nfunc floodFill(image [][]int, sr int, sc int, color int) [][]int {\n\tcorInicial := image[sr][sc]\n\n\tif corInicial == color {\n\t\treturn image\n\t}\n\n\tDFS(image, sr, sc, color, corInicial)\n\n\treturn image\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tnl, _ := strconv.Atoi(parts[0])\n\tnc, _ := strconv.Atoi(parts[1])\n\n\timage := make([][]int, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\trowStr := strings.Fields(scanner.Text())\n\t\trow := make([]int, nc)\n\t\tfor j := 0; j < nc; j++ {\n\t\t\trow[j], _ = strconv.Atoi(rowStr[j])\n\t\t}\n\t\timage[i] = row\n\t}\n\n\t// L\u00ea sr, sc e color\n\tscanner.Scan()\n\tparams := strings.Fields(scanner.Text())\n\tsr, _ := strconv.Atoi(params[0])\n\tsc, _ := strconv.Atoi(params[1])\n\tcolor, _ := strconv.Atoi(params[2])\n\n\tresult := floodFill(image, sr, sc, color)\n\n\t// Imprime a matriz resultante\n\tfor _, row := range result {\n\t\tfor j, val := range row {\n\t\t\tif j > 0 {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(val)\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "80"
+        }
+    ]
+}
