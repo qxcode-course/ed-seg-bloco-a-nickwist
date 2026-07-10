@@ -2,8 +2,103 @@
     "patches": [
         {
             "label": "2026-07-10_19-47-17",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00c3O ALTERE A ASSINATURA DA FUN\u00c7\u00c3O solve\nfunc solve(board [][]byte) {\n\t_ = board\n}\n\n// N\u00c3O ALTERE A MAIN\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tvar nrows, ncols int\n\tfmt.Sscanf(scanner.Text(), \"%d %d\", &nrows, &ncols)\n\tboard := make([][]byte, nrows)\n\tfor i := 0; i < nrows; i++ {\n\t\tscanner.Scan()\n\t\tboard[i] = []byte(scanner.Text())\n\t}\n\tsolve(board)\n\tfor _, row := range board {\n\t\tfmt.Println(string(row))\n\t}\n}\n",
+            "content": "@@ -45,466 +45,90 @@\n %0A)%0A%0A\n-func DFS(board %5B%5D%5B%5Dbyte, i, j int) %7B%0A%09if i %3C 0 %7C%7C j %3C 0 %7C%7C i %3E= len(board) %7C%7C i %3E= len(board%5B0%5D) %7B%0A%09%09return%0A%09%7D%0A%0A%09if board%5Bi%5D%5Bj%5D == 'X' %7B%0A%09%09return%0A%09%7D%0A%0A%09board%5Bi%5D%5Bj%5D = 'O'%0A%0A%09DFS(board, i+1, j)%0A%09DFS(board, i-1, j)%0A%09DFS(board, i, j+1)%0A%09DFS(board, i, j-1)%0A%7D%0A%0A// N%C3%83O ALTERE A ASSINATURA DA FUN%C3%87%C3%83O solve%0Afunc solve(board %5B%5D%5B%5Dbyte) %7B%0A%09for i := 0; i %3C len(board); i++ %7B%0A%09%09for j := 0; j %3C len(board%5B0%5D); j++ %7B%0A%09%09%09if board%5Bi%5D%5Bj%5D == 'O' %7B%0A%09%09%09%09DFS(board, i, j)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n+// N%C3%83O ALTERE A ASSINATURA DA FUN%C3%87%C3%83O solve%0Afunc solve(board %5B%5D%5B%5Dbyte) %7B%0A%09_ = board\n %0A%7D%0A%0A\n",
             "lines": "29"
+        },
+        {
+            "label": "2026-07-10_20-25-13",
+            "content": "@@ -119,17 +119,17 @@\n ard) %7C%7C \n-j\n+i\n  %3E= len(\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_20-28-00",
+            "content": "@@ -207,17 +207,17 @@\n %5D%5Bj%5D = '\n-X\n+O\n '%0A%0A%09DFS(\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_20-28-14",
+            "content": "@@ -115,18 +115,16 @@\n n(board)\n--1\n  %7C%7C j %3E=\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_20-28-23",
+            "content": "@@ -139,18 +139,16 @@\n oard%5B0%5D)\n--1\n  %7B%0A%09%09ret\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_20-29-06",
+            "content": "@@ -79,13 +79,8 @@\n int)\n- bool\n  %7B%0A%09\n@@ -139,16 +139,18 @@\n oard%5B0%5D)\n+-1\n  %7B%0A%09%09ret\n@@ -144,38 +144,32 @@\n 0%5D)-1 %7B%0A%09%09return\n- false\n %0A%09%7D%0A%0A%09if board%5Bi\n@@ -194,24 +194,34 @@\n turn\n- false%0A%09%7D%0A%0A%09if !\n+%0A%09%7D%0A%0A%09board%5Bi%5D%5Bj%5D = 'X'%0A%0A%09\n DFS(\n@@ -230,29 +230,25 @@\n ard, i+1, j)\n- %7C%7C%0A%09\n+%0A\n %09DFS(board, \n@@ -254,21 +254,17 @@\n  i-1, j)\n- %7C%7C%0A%09\n+%0A\n %09DFS(boa\n@@ -278,13 +278,9 @@\n j+1)\n- %7C%7C%0A%09\n+%0A\n %09DFS\n@@ -298,46 +298,8 @@\n j-1)\n- %7B%0A%09%09board%5Bi%5D%5Bj%5D = 'X'%0A%09%7D%0A%09return true\n %0A%7D%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-10_20-30-27",
+            "content": "@@ -231,33 +231,32 @@\n d, i+1, j) %7C%7C%0A%09%09\n-!\n DFS(board, i-1, \n@@ -259,25 +259,24 @@\n -1, j) %7C%7C%0A%09%09\n-!\n DFS(board, i\n@@ -287,17 +287,16 @@\n 1) %7C%7C%0A%09%09\n-!\n DFS(boar\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-10_20-33-04",
+            "content": "@@ -214,16 +214,17 @@\n %09%7D%0A%0A%09if \n+!\n DFS(boar\n@@ -231,32 +231,33 @@\n d, i+1, j) %7C%7C%0A%09%09\n+!\n DFS(board, i-1, \n@@ -260,24 +260,25 @@\n -1, j) %7C%7C%0A%09%09\n+!\n DFS(board, i\n@@ -289,16 +289,17 @@\n 1) %7C%7C%0A%09%09\n+!\n DFS(boar\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-10_20-34-03",
+            "content": "@@ -214,17 +214,16 @@\n %09%7D%0A%0A%09if \n-!\n DFS(boar\n@@ -230,33 +230,32 @@\n d, i+1, j) %7C%7C%0A%09%09\n-!\n DFS(board, i-1, \n@@ -258,25 +258,24 @@\n -1, j) %7C%7C%0A%09%09\n-!\n DFS(board, i\n@@ -290,9 +290,8 @@\n %7C%0A%09%09\n-!\n DFS(\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-10_20-34-14",
+            "content": "@@ -75,16 +75,21 @@\n , j int)\n+ bool\n  %7B%0A%09if i\n@@ -103,52 +103,16 @@\n  j %3C\n- 0 %7B%0A%09%09return%0A%09%7D%0A%0A%09if i == 0 %7C%7C j ==\n  0 %7C%7C i \n == l\n@@ -107,17 +107,17 @@\n  0 %7C%7C i \n-=\n+%3E\n = len(bo\n@@ -124,15 +124,17 @@\n ard)\n+-1\n  %7C%7C j \n-=\n+%3E\n = le\n@@ -148,32 +148,25 @@\n %5B0%5D)\n--1\n  %7B%0A%09%09\n-board%5Bi%5D%5Bj%5D = '.'\n+return false\n %0A%09%7D%0A\n@@ -199,22 +199,32 @@\n %09%09return\n+ false\n %0A%09%7D%0A%0A%09\n+if !\n DFS(boar\n@@ -229,26 +229,31 @@\n ard, i+1, j)\n-%0A%09\n+ %7C%7C%0A%09%09!\n DFS(board, i\n@@ -258,18 +258,23 @@\n  i-1, j)\n-%0A%09\n+ %7C%7C%0A%09%09!\n DFS(boar\n@@ -283,18 +283,23 @@\n  i, j+1)\n-%0A%09\n+ %7C%7C%0A%09%09!\n DFS(boar\n@@ -308,18 +308,20 @@\n  i, j-1)\n-%0A%0A\n+ %7B%0A%09\n %09board%5Bi\n@@ -331,16 +331,31 @@\n %5D = 'X'%0A\n+%09%7D%0A%09return true\n %0A%7D%0A%0A// N\n@@ -426,187 +426,8 @@\n ) %7B%0A\n-%09for i := 0; i %3C len(board); i++ %7B%0A%09%09DFS(board, i, 0)%0A%09%09DFS(board, i, len(board%5B0%5D)-1)%0A%09%7D%0A%0A%09for j := 0; j %3C len(board); j++ %7B%0A%09%09DFS(board, 0, j)%0A%09%09DFS(board, len(board)-1, j)%0A%09%7D%0A%0A\n %09for\n@@ -531,81 +531,24 @@\n %09%09%09%09\n+DFS(\n board\n-%5Bi%5D%5Bj%5D = 'X'%0A%09%09%09%7D else if board%5Bi%5D%5Bj%5D == '.' %7B%0A%09%09%09%09board%5Bi%5D%5Bj%5D = 'O'\n+, i, j)\n %0A%09%09%09\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-10_20-49-11",
+            "content": "@@ -525,35 +525,32 @@\n 0; j %3C len(board\n-%5B0%5D\n ); j++ %7B%0A%09%09DFS(b\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-49-52",
+            "content": "@@ -586,19 +586,16 @@\n en(board\n-%5B0%5D\n )-1, j)%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-50-08",
+            "content": "@@ -586,16 +586,19 @@\n en(board\n+%5B0%5D\n )-1, j)%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-51-07",
+            "content": "@@ -100,47 +100,8 @@\n  %3C 0\n- %7C%7C i %3E len(board) %7C%7C j %3E len(board%5B0%5D)\n  %7B%0A%09\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-51-47",
+            "content": "@@ -190,18 +190,16 @@\n n(board)\n--1\n  %7C%7C j ==\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-52-14",
+            "content": "@@ -103,17 +103,16 @@\n 0 %7C%7C i %3E\n-=\n  len(boa\n@@ -121,17 +121,16 @@\n ) %7C%7C j %3E\n-=\n  len(boa\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-52-25",
+            "content": "@@ -158,25 +158,135 @@\n %7D%0A%0A%09\n-board%5Bi%5D%5Bj%5D = '.'\n+if i == 0 %7C%7C j == 0 %7C%7C i == len(board)-1 %7C%7C j == len(board%5B0%5D)-1 %7B%0A%09%09board%5Bi%5D%5Bj%5D = '.'%0A%09%7D%0A%0A%09if board%5Bi%5D%5Bj%5D == 'X' %7B%0A%09%09return%0A%09%7D\n %0A%0A%09D\n@@ -364,16 +364,36 @@\n , j-1)%0A%0A\n+%09board%5Bi%5D%5Bj%5D = 'X'%0A%0A\n %7D%0A%0A// N%C3%83\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-10_20-53-54",
+            "content": "@@ -157,46 +157,8 @@\n %09%7D%0A%0A\n-%09if board%5Bi%5D%5Bj%5D == 'O' %7B%0A%09%09return%0A%09%7D%0A%0A\n %09boa\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-07-10_20-54-44",
+            "content": "@@ -173,9 +173,9 @@\n %5Bj%5D \n-!\n+=\n = 'O\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-07-10_20-55-50",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc DFS(board [][]byte, i, j int) {\n\tif i < 0 || j < 0 || i >= len(board) || j >= len(board[0]) {\n\t\treturn\n\t}\n\n\tif board[i][j] != 'O' {\n\t\treturn\n\t}\n\n\tboard[i][j] = '.'\n\n\tDFS(board, i+1, j)\n\tDFS(board, i-1, j)\n\tDFS(board, i, j+1)\n\tDFS(board, i, j-1)\n\n}\n\n// N\u00c3O ALTERE A ASSINATURA DA FUN\u00c7\u00c3O solve\nfunc solve(board [][]byte) {\n\tfor i := 0; i < len(board); i++ {\n\t\tDFS(board, i, 0)\n\t\tDFS(board, i, len(board[0])-1)\n\t}\n\n\tfor j := 0; j < len(board[0]); j++ {\n\t\tDFS(board, 0, j)\n\t\tDFS(board, len(board)-1, j)\n\t}\n\n\tfor i := 0; i < len(board); i++ {\n\t\tfor j := 0; j < len(board[0]); j++ {\n\t\t\tif board[i][j] == 'O' {\n\t\t\t\tboard[i][j] = 'X'\n\t\t\t} else if board[i][j] == '.' {\n\t\t\t\tboard[i][j] = 'O'\n\t\t\t}\n\t\t}\n\t}\n}\n\n// N\u00c3O ALTERE A MAIN\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tvar nrows, ncols int\n\tfmt.Sscanf(scanner.Text(), \"%d %d\", &nrows, &ncols)\n\tboard := make([][]byte, nrows)\n\tfor i := 0; i < nrows; i++ {\n\t\tscanner.Scan()\n\t\tboard[i] = []byte(scanner.Text())\n\t}\n\tsolve(board)\n\tfor _, row := range board {\n\t\tfmt.Println(string(row))\n\t}\n}\n",
+            "lines": "65"
         }
     ]
 }
