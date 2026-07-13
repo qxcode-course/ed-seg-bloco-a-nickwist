@@ -3,23 +3,24 @@ package main
 import "fmt"
 
 func pegarPrimo(primos []int, num, atual int) []int {
-
-	if len(primos) <= num {
-		for i := 2; i < atual; i++ {
-			if atual%i == 0 {
-				fmt.Println("a")
-                break
-				
-			}
-		}
-	} else {
-		return nil
+	if len(primos) >= num {
+		return primos
 	}
 
-	primos = append(primos, atual)
-	pegarPrimo(primos, num, atual+1)
+	ehPrimo := true
 
-	return primos
+	for i := 2; i < atual; i++ {
+		if atual%i == 0 {
+			ehPrimo = false
+			break
+		}
+	}
+
+	if ehPrimo {
+		primos = append(primos, atual)
+	}
+
+	return pegarPrimo(primos, num, atual+1)
 }
 
 func main() {
@@ -28,5 +29,13 @@ func main() {
 	fmt.Scan(&num)
 
 	primos = pegarPrimo(primos, num, 2)
-	fmt.Println(primos)
+	fmt.Print("[")
+	for i := 0; i < len(primos); i++ {
+		if i != len(primos)-1 {
+			fmt.Printf("%d, ", primos[i])
+		} else {
+			fmt.Printf("%d", primos[i])
+		}
+	}
+	fmt.Println("]")
 }
