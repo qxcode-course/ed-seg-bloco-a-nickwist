@@ -1,0 +1,40 @@
+2026-07-13 02:25:06, MOVE, v:1, k:ed@rotten, mode:DOWN
+2026-07-13 02:26:15, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-13 02:26:19, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:5
+2026-07-13 02:25:06, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:28:49, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:26:18, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:34:38, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:39:36, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:44:40, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:45:27, EXEC, v:1, k:ed@rotten, mode:FULL, size:79, fail:COMP
+2026-07-13 02:48:38, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:50:18, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:81
+2026-07-13 02:50:51, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:83
+2026-07-13 02:51:57, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:83
+2026-07-13 02:52:16, EXEC, v:1, k:ed@rotten, mode:FULL, rate:66, size:83
+2026-07-13 02:52:58, EXEC, v:1, k:ed@rotten, mode:FULL, rate:33, size:83
+2026-07-13 02:53:47, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:52:58, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:55:18, EXEC, v:1, k:ed@rotten, mode:FULL, rate:66, size:87
+2026-07-13 02:56:12, EXEC, v:1, k:ed@rotten, mode:FULL, rate:100, size:87
+2026-07-13 02:56:13, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-07-13 02:56:18, SELF, v:1, k:ed@rotten, self:1, rate:100, study:30, concept:1
+2026-07-13 02:56:18, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-13 02:56:19, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-07-13 02:56:31, MOVE, v:1, k:ed@enesimo, mode:DOWN
+2026-07-13 02:56:36, MOVE, v:1, k:ed@priminhos, mode:DOWN
+2026-07-13 02:56:37, MOVE, v:1, k:ed@priminhos, mode:PICK
+2026-07-13 02:56:38, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:0, size:5
+2026-07-13 02:56:11, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:56:12, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-13 02:56:31, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-07-13 02:56:31, MOVE, v:1, k:ed@enesimo, mode:EDIT
+2026-07-13 02:56:36, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 02:59:42, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 02:56:38, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 03:04:34, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 03:08:56, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:30
+2026-07-13 03:08:55, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 03:08:56, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-07-13 03:11:30, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:32

@@ -14,14 +14,15 @@ sources:
   quests: null
 expanded:
 - ed@dfs
-- ed@backtrack
-- ed@rec
 - ed@vector
+- ed@backtrack
+- ed@map_set
+- ed@basic
+- ed@tree
 - ed@list
 - ed@linear
-- ed@map_set
-- ed@tree
-- ed@basic
+- ed@bfs
+- ed@rec
 flags:
   inbox: all
   panel: skills
@@ -31,5 +32,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: ed@battleship
-selected_index: 95
+selected: ed@priminhos
+selected_index: 29

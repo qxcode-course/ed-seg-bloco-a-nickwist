@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-13_02-56-38",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,390 +23,53 @@\n mt%22%0A\n-%0A\n func \n-pegarPrimo(primos %5B%5Dint, num, atual int) %5B%5Dint %7B%0A%0A%09if len(primos) %3C= num %7B%0A%09%09for i := 2; i %3C atual; i++ %7B%0A%09%09%09if atual%25i == 0 %7B%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D else %7B%0A%09%09return nil%0A%09%7D%0A%0A%09primos = append(primos, atual)%0A%09pegarPrimo(primos, num, atual+1)%0A%0A%09return primos%0A%7D%0A%0Afunc main() %7B%0A%09var num int%0A%09var primos %5B%5Dint%0A%09fmt.Scan(&num)%0A%0A%09primos = pegarPrimo(primos, num, 2)%0A%09fmt.Println(primos\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-13_03-08-56",
+            "content": "@@ -161,51 +161,13 @@\n %09%09%09%09\n-fmt.Println(%22a%22)%0A                break%0A%09%09%09%09\n+break\n %0A%09%09%09\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-13_03-11-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc pegarPrimo(primos []int, num, atual int) []int {\n\n\tif len(primos) <= num {\n\t\tfor i := 2; i < atual; i++ {\n\t\t\tif atual%i == 0 {\n\t\t\t\tfmt.Println(\"a\")\n                break\n\t\t\t\t\n\t\t\t}\n\t\t}\n\t} else {\n\t\treturn nil\n\t}\n\n\tprimos = append(primos, atual)\n\tpegarPrimo(primos, num, atual+1)\n\n\treturn primos\n}\n\nfunc main() {\n\tvar num int\n\tvar primos []int\n\tfmt.Scan(&num)\n\n\tprimos = pegarPrimo(primos, num, 2)\n\tfmt.Println(primos)\n}\n",
+            "lines": "32"
+        }
+    ]
+}

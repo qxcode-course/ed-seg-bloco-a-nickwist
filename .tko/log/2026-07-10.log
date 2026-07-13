@@ -76,3 +76,35 @@
 2026-07-10 21:30:33, EXEC, v:1, k:ed@pintura, mode:FULL, rate:100, size:80
 2026-07-10 21:31:21, MOVE, v:1, k:ed@pintura, mode:BACK
 2026-07-10 21:31:26, SELF, v:1, k:ed@pintura, self:1, rate:100, study:20
+2026-07-10 21:32:14, MOVE, v:1, k:ed@caminho, mode:DOWN
+2026-07-10 21:32:18, MOVE, v:1, k:ed@caminho, mode:PICK
+2026-07-10 21:32:20, EXEC, v:1, k:ed@caminho, mode:FULL, size:111, fail:COMP
+2026-07-10 21:32:35, EXEC, v:1, k:ed@caminho, mode:FULL, rate:0, size:113
+2026-07-10 21:32:14, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 21:32:34, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 21:32:14, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 21:32:35, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 21:46:06, MOVE, v:1, k:ed@caminho, mode:BACK
+2026-07-10 21:46:07, MOVE, v:1, k:ed@caminho, mode:PICK
+2026-07-10 21:43:29, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 21:57:09, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:02:06, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:06:15, EXEC, v:1, k:ed@caminho, mode:FULL, rate:0, size:156
+2026-07-10 22:07:05, EXEC, v:1, k:ed@caminho, mode:FULL, rate:0, size:156
+2026-07-10 22:07:00, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:07:01, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:08:06, EXEC, v:1, k:ed@caminho, mode:FULL, rate:0, size:156
+2026-07-10 22:09:41, EXEC, v:1, k:ed@caminho, mode:FULL, rate:0, size:156
+2026-07-10 22:10:03, EXEC, v:1, k:ed@caminho, mode:FULL, rate:100, size:156
+2026-07-10 22:10:05, MOVE, v:1, k:ed@caminho, mode:BACK
+2026-07-10 22:10:10, SELF, v:1, k:ed@caminho, self:1, rate:100, study:30, concept:1
+2026-07-10 22:10:02, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:10:03, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-10 22:28:17, SELF, v:1, k:ed@dfs_read, self:1
+2026-07-10 22:28:17, MOVE, v:1, k:ed@dfs_read, mode:PICK
+2026-07-10 22:28:18, EXEC, v:1, k:ed@dfs_read, mode:LOCK, rate:0
+2026-07-10 22:28:21, MOVE, v:1, k:ed@dfs_read, mode:BACK
+2026-07-10 22:28:23, MOVE, v:1, k:ed@dfs_read, mode:PICK
+2026-07-10 22:28:26, EXEC, v:1, k:ed@dfs_read, mode:LOCK, rate:0
+2026-07-10 22:28:26, MOVE, v:1, k:ed@dfs_read, mode:BACK
+2026-07-10 22:28:26, MOVE, v:1, k:ed@dfs_read, mode:EDIT

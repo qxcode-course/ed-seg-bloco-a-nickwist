@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-10_21-32-20",
+            "content": "@@ -495,13 +495,8 @@\n ar()\n- %7B%0A%0A%7D\n %0A%0Afu\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-07-10_21-32-35",
+            "content": "@@ -446,856 +446,60 @@\n  %7B%0A%09\n-fila := %5B%5DPos%7BstartPos%7D%0A%0A%09visitado := make(map%5BPos%5Dbool)%0A%09visitado%5BstartPos%5D = true%0A%0A%09anterior := make(map%5BPos%5DPos)%0A%0A%09direcoes := %5B%5DPos%7B%0A%09%09%7B1, 0%7D,%0A%09%09%7B-1, 0%7D,%0A%09%09%7B0, 1%7D,%0A%09%09%7B0, -1%7D,%0A%09%7D%0A%0A%09for len(fila) %3E 0 %7B%0A%09%09atual := fila%5B0%5D%0A%09%09fila = fila%5B:1%5D%0A%0A%09%09if atual == endPos %7B%0A%09%09%09voltar(grid, anterior, startPos, endPos)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09for _, direcao := range direcoes %7B%0A%09%09%09vizinho := Pos%7B%0A%09%09%09%09l: atual.l + direcao.c,%0A%09%09%09%09c: atual.c + direcao.l,%0A%09%09%09%7D%0A%0A%09%09%09if inside(grid, vizinho) && grid%5Bvizinho.l%5D%5Bvizinho.c%5D != '#' && !visitado%5Bvizinho%5D %7B%0A%09%09%09%09visitado%5Bvizinho%5D = true%0A%09%09%09%09anterior%5Bvizinho%5D = atual%0A%09%09%09%09fila = append(fila, vizinho)%0A%09%09%09%7D%0A%0A%09%09%7D%0A%09%7D%0A%7D%0A%0Afunc voltar(grid %5B%5D%5B%5Drune, anterior map%5BPos%5DPos, startPos, endPos Pos) %7B%0A%09atual := endPos%0A%0A%09for atual != startPos %7B%0A%09%09grid%5Batual.l%5D%5Batual.c%5D = '.'%0A%09%09atual = anterior%5Batual%5D%0A%09%7D%0A%0A%09grid%5BstartPos.l%5D%5BendPos.c%5D = '.'\n+_, _, _ = grid, startPos, endPos%0A%7D%0A%0Afunc voltar() %7B%0A\n %0A%7D%0A%0A\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-07-10_22-06-15",
+            "content": "@@ -854,33 +854,33 @@\n c,%0A%09%09%09%09c: atual.\n-l\n+c\n  + direcao.c,%0A%09%09\n@@ -870,25 +870,25 @@\n c + direcao.\n-c\n+l\n ,%0A%09%09%09%7D%0A%0A%09%09%09i\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-07-10_22-07-05",
+            "content": "@@ -683,10 +683,10 @@\n ila%5B\n-1\n :\n+1\n %5D%0A%0A%09\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-07-10_22-08-06",
+            "content": "@@ -862,17 +862,17 @@\n : atual.\n-c\n+l\n  + direc\n@@ -874,17 +874,17 @@\n direcao.\n-l\n+c\n ,%0A%09%09%09%7D%0A%0A\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-07-10_22-09-41",
+            "content": "@@ -1275,21 +1275,19 @@\n tPos.l%5D%5B\n-start\n+end\n Pos.c%5D =\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-07-10_22-10-03",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype Pos struct {\n\tl, c int\n}\n\nfunc (p Pos) getNeig() []Pos {\n\treturn nil\n}\n\nfunc inside(grid [][]rune, pos Pos) bool {\n\tnrows := len(grid)\n\tncols := len(grid[0])\n\treturn pos.l >= 0 && pos.l < nrows && pos.c >= 0 && pos.c < ncols\n}\n\nfunc match(grid [][]rune, pos Pos, char rune) bool {\n\treturn inside(grid, pos) && grid[pos.l][pos.c] == char\n}\n\nfunc search(grid [][]rune, startPos Pos, endPos Pos) {\n\tfila := []Pos{startPos}\n\n\tvisitado := make(map[Pos]bool)\n\tvisitado[startPos] = true\n\n\tanterior := make(map[Pos]Pos)\n\n\tdirecoes := []Pos{\n\t\t{1, 0},\n\t\t{-1, 0},\n\t\t{0, 1},\n\t\t{0, -1},\n\t}\n\n\tfor len(fila) > 0 {\n\t\tatual := fila[0]\n\t\tfila = fila[1:]\n\n\t\tif atual == endPos {\n\t\t\tvoltar(grid, anterior, startPos, endPos)\n\t\t\tbreak\n\t\t}\n\n\t\tfor _, direcao := range direcoes {\n\t\t\tvizinho := Pos{\n\t\t\t\tl: atual.l + direcao.c,\n\t\t\t\tc: atual.c + direcao.l,\n\t\t\t}\n\n\t\t\tif inside(grid, vizinho) && grid[vizinho.l][vizinho.c] != '#' && !visitado[vizinho] {\n\t\t\t\tvisitado[vizinho] = true\n\t\t\t\tanterior[vizinho] = atual\n\t\t\t\tfila = append(fila, vizinho)\n\t\t\t}\n\n\t\t}\n\t}\n}\n\nfunc voltar(grid [][]rune, anterior map[Pos]Pos, startPos, endPos Pos) {\n\tatual := endPos\n\n\tfor atual != startPos {\n\t\tgrid[atual.l][atual.c] = '.'\n\t\tatual = anterior[atual]\n\t}\n\n\tgrid[startPos.l][startPos.c] = '.'\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tvar nl, nc int\n\tscanner.Scan()\n\tline := scanner.Text()\n\tfmt.Sscanf(line, \"%d %d\", &nl, &nc)\n\tmat := make([][]rune, nl) // Inicializa a matriz de runes\n\n\t// Carregando matriz\n\tfor i := range nl {\n\t\tscanner.Scan()\n\t\tline := scanner.Text()\n\t\tmat[i] = []rune(line)\n\t}\n\n\tvar inicio, fim Pos\n\n\t// Procurando inicio e fim e colocando ' ' nas posi\u00e7\u00f5es iniciais\n\tfor l := range nl {\n\t\tfor c := range nc {\n\t\t\tif mat[l][c] == 'I' {\n\t\t\t\tmat[l][c] = ' '\n\t\t\t\tinicio = Pos{l, c}\n\t\t\t}\n\t\t\tif mat[l][c] == 'F' {\n\t\t\t\tmat[l][c] = ' '\n\t\t\t\tfim = Pos{l, c}\n\t\t\t}\n\t\t}\n\t}\n\n\tsearch(mat, inicio, fim)\n\n\tfor _, line := range mat {\n\t\tfmt.Println(string(line)) // Converte o slice de runes de volta para string para imprimir\n\t}\n}\n",
+            "lines": "115"
+        }
+    ]
+}
